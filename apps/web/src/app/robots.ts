@@ -1,13 +1,14 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://codascript.com';
-  
+  const baseUrl =
+    process.env.NEXT_PUBLIC_APP_URL || "https://codascript.vercel.app";
+
   return {
     rules: {
-      userAgent: '*',
-      allow: ['/', '/learn'],
-      disallow: ['/dashboard', '/admin', '/login', '/api/', '/quiz/'],
+      userAgent: "*",
+      allow: ["/", "/learn"],
+      disallow: ["/dashboard", "/admin", "/login", "/api/", "/quiz/"],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
   };

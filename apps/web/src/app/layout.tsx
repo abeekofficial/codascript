@@ -17,17 +17,29 @@ import AuthProvider from "@/providers/AuthProvider";
 import Navbar from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'https://codascript.com'),
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_APP_URL || "https://codascript.vercel.app",
+  ),
   title: {
     default: "CodaScript | Dasturlashni o'rganish platformasi",
-    template: "%s | CodaScript"
+    template: "%s | CodaScript",
   },
-  description: "O'zbek tilida dasturlashni interaktiv tarzda o'rganing. HTML, CSS, JavaScript, React va TypeScript bo'yicha amaliy mashg'ulotlar va quizlar.",
-  keywords: ["dasturlash", "o'rganish", "javascript", "react", "o'zbek tilida", "dasturlash kurslari", "codascript"],
+  description:
+    "O'zbek tilida dasturlashni interaktiv tarzda o'rganing. HTML, CSS, JavaScript, React va TypeScript bo'yicha amaliy mashg'ulotlar va quizlar.",
+  keywords: [
+    "dasturlash",
+    "o'rganish",
+    "javascript",
+    "react",
+    "o'zbek tilida",
+    "dasturlash kurslari",
+    "codascript",
+  ],
   authors: [{ name: "CodaScript Team" }],
   openGraph: {
     title: "CodaScript | Dasturlashni o'rganish platformasi",
-    description: "O'zbek tilida dasturlashni interaktiv tarzda o'rganing. Dasturlash bo'yicha eng yaxshi platforma.",
+    description:
+      "O'zbek tilida dasturlashni interaktiv tarzda o'rganing. Dasturlash bo'yicha eng yaxshi platforma.",
     url: "/",
     siteName: "CodaScript",
     locale: "uz_UZ",
@@ -64,4 +76,3 @@ export default function RootLayout({
     </html>
   );
 }
-
