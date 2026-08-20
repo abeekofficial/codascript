@@ -1,4 +1,8 @@
 {
-  "framework": "nextjs",
-  "outputDirectory": ".next"
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/apps/web/.next/$1"
+    }
+  ]
 }
