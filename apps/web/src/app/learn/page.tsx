@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 // Next.js will fetch this on the server
 async function getTopics() {
-  const url = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+  const url = process.env.NEXT_PUBLIC_API_URL || 'https://codascript.onrender.com/api';
   try {
     const res = await fetch(`${url}/questions/topics`, { next: { revalidate: 3600 } });
     if (!res.ok) return [];

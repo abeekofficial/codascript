@@ -7,7 +7,7 @@ export interface LeaderboardUser {
   totalXP: number;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://codascript.onrender.com/api';
 
 const getHeaders = () => {
   const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
