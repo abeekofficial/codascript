@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     title: "CodaScript",
     description: "O'zbek tilida dasturlashni interaktiv tarzda o'rganing.",
   },
+  verification: {
+    google: "6s9u9QP6NWU4BBAyLnl66NdiZ4khra3jgkk1u4QKaFc",
+  },
 };
 
 export default function RootLayout({
