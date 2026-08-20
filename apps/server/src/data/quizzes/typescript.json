@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "typescript-001",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-002",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-003",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-004",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-005",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-006",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-007",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-008",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-009",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-010",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-011",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-012",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-013",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-014",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-015",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-016",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-017",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-018",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-019",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-020",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-021",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-022",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-023",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-024",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-025",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-026",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-027",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-028",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-029",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-030",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-031",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-032",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-033",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-034",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-035",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-036",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-037",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-038",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-039",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-040",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-041",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-042",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-043",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-044",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-045",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-046",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-047",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-048",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-049",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-050",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-051",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-052",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-053",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-054",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-055",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-056",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-057",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-058",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-059",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-060",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "Test: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-061",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-062",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-063",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-064",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-065",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-066",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-067",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-068",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-069",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-070",
+    "topic": "TypeScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-071",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-072",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-073",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-074",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-075",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-076",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-077",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-078",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-079",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-080",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-081",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-082",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-083",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-084",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-085",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-086",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-087",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-088",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-089",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-090",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-091",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-092",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-093",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-094",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-095",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-096",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-097",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-098",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-099",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-100",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-101",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-102",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-103",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-104",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-105",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-106",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-107",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-108",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-109",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-110",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-111",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-112",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-113",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-114",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-115",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-116",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-117",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-118",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-119",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-120",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-121",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-122",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-123",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-124",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-125",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-126",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-127",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-128",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-129",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-130",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-131",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-132",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-133",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-134",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-135",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-136",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-137",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-138",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-139",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-140",
+    "topic": "TypeScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-141",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-142",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-143",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-144",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-145",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-146",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-147",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-148",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-149",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-150",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-151",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-152",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-153",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-154",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-155",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-156",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-157",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-158",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-159",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-160",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-161",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-162",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-163",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-164",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-165",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-166",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-167",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-168",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-169",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-170",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-171",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-172",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-173",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-174",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-175",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-176",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-177",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-178",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-179",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-180",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-181",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: TypeScript JavaScriptga qanday qo'shimcha beradi?",
+    "options": [
+      "Statik tiplar",
+      "Faqat CSS",
+      "Faqat DOM",
+      "Faqat SQL"
+    ],
+    "correctAnswer": "Statik tiplar",
+    "correctOptionIndex": 0,
+    "explanation": "Statik tiplar — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-182",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: String tipini yozish?",
+    "options": [
+      "string",
+      "StringType",
+      "text",
+      "str"
+    ],
+    "correctAnswer": "string",
+    "correctOptionIndex": 0,
+    "explanation": "string — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-183",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Son tipi?",
+    "options": [
+      "number",
+      "int",
+      "float",
+      "numeric"
+    ],
+    "correctAnswer": "number",
+    "correctOptionIndex": 0,
+    "explanation": "number — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-184",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Boolean tipi?",
+    "options": [
+      "boolean",
+      "bool",
+      "logic",
+      "bit"
+    ],
+    "correctAnswer": "boolean",
+    "correctOptionIndex": 0,
+    "explanation": "boolean — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-185",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Ixtiyoriy property belgisi?",
+    "options": [
+      "?",
+      "!",
+      "optional:",
+      "*"
+    ],
+    "correctAnswer": "?",
+    "correctOptionIndex": 0,
+    "explanation": "? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-186",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Union type operatori?",
+    "options": [
+      "|",
+      "&",
+      "||",
+      "+"
+    ],
+    "correctAnswer": "|",
+    "correctOptionIndex": 0,
+    "explanation": "| — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-187",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Intersection type operatori?",
+    "options": [
+      "&",
+      "|",
+      "&&",
+      "+"
+    ],
+    "correctAnswer": "&",
+    "correctOptionIndex": 0,
+    "explanation": "& — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-188",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Type alias yaratish keywordi?",
+    "options": [
+      "type",
+      "alias",
+      "typedef",
+      "shape"
+    ],
+    "correctAnswer": "type",
+    "correctOptionIndex": 0,
+    "explanation": "type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-189",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Interface e'lon qilish?",
+    "options": [
+      "interface",
+      "contract",
+      "struct",
+      "shape"
+    ],
+    "correctAnswer": "interface",
+    "correctOptionIndex": 0,
+    "explanation": "interface — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-190",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Generik sintaksis belgisi?",
+    "options": [
+      "<>",
+      "[]",
+      "{}",
+      "()"
+    ],
+    "correctAnswer": "<>",
+    "correctOptionIndex": 0,
+    "explanation": "<> — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-191",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Unknown va any orasida xavfsizroq tipi?",
+    "options": [
+      "unknown",
+      "any",
+      "never",
+      "object"
+    ],
+    "correctAnswer": "unknown",
+    "correctOptionIndex": 0,
+    "explanation": "unknown — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-192",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Hech qachon qaytmaydigan qiymat tipi?",
+    "options": [
+      "never",
+      "void",
+      "undefined",
+      "null"
+    ],
+    "correctAnswer": "never",
+    "correctOptionIndex": 0,
+    "explanation": "never — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-193",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Funksiya qiymat qaytarmasa odatda?",
+    "options": [
+      "void",
+      "none",
+      "empty",
+      "null"
+    ],
+    "correctAnswer": "void",
+    "correctOptionIndex": 0,
+    "explanation": "void — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-194",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Enum nima uchun ishlatiladi?",
+    "options": [
+      "Nomlangan konstantalar to'plami",
+      "DOM yaratish",
+      "CSS yozish",
+      "HTTP yuborish"
+    ],
+    "correctAnswer": "Nomlangan konstantalar to'plami",
+    "correctOptionIndex": 0,
+    "explanation": "Nomlangan konstantalar to'plami — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-195",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: TypeScript fayl kengaytmasi?",
+    "options": [
+      ".ts",
+      ".type",
+      ".tsxjs",
+      ".typescript"
+    ],
+    "correctAnswer": ".ts",
+    "correctOptionIndex": 0,
+    "explanation": ".ts — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-196",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React + TypeScript fayl kengaytmasi?",
+    "options": [
+      ".tsx",
+      ".jsx",
+      ".react",
+      ".rtsx"
+    ],
+    "correctAnswer": ".tsx",
+    "correctOptionIndex": 0,
+    "explanation": ".tsx — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-197",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Readonly nima qiladi?",
+    "options": [
+      "Propertyni qayta tayinlashni cheklaydi",
+      "Propertyni yashiradi",
+      "Propertyni o'chiradi",
+      "Propertyni nullable qiladi"
+    ],
+    "correctAnswer": "Propertyni qayta tayinlashni cheklaydi",
+    "correctOptionIndex": 0,
+    "explanation": "Propertyni qayta tayinlashni cheklaydi — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-198",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Optional chaining operatori?",
+    "options": [
+      "?.",
+      "??",
+      ".?.",
+      "?"
+    ],
+    "correctAnswer": "?.",
+    "correctOptionIndex": 0,
+    "explanation": "?. — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-199",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Nullish coalescing operatori?",
+    "options": [
+      "??",
+      "||",
+      "??=",
+      "::"
+    ],
+    "correctAnswer": "??",
+    "correctOptionIndex": 0,
+    "explanation": "?? — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "typescript-200",
+    "topic": "TypeScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Type assertionning keng tarqalgan sintaksisi?",
+    "options": [
+      "value as Type",
+      "value to Type",
+      "cast(value, Type)",
+      "Type(value)"
+    ],
+    "correctAnswer": "value as Type",
+    "correctOptionIndex": 0,
+    "explanation": "value as Type — TypeScript bo'yicha ushbu savolning to'g'ri javobi."
+  }
+]

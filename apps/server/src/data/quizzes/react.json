@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "react-001",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-002",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-003",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-004",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-005",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-006",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-007",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-008",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-009",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-010",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-011",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-012",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-013",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-014",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-015",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-016",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-017",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-018",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-019",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-020",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-021",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-022",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-023",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-024",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-025",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-026",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-027",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-028",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-029",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-030",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-031",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-032",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-033",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-034",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-035",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-036",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-037",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-038",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-039",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-040",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-041",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-042",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-043",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-044",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-045",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-046",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-047",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-048",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-049",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-050",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-051",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-052",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-053",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-054",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-055",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-056",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-057",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-058",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-059",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-060",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "Test: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-061",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-062",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-063",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-064",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-065",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-066",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-067",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-068",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-069",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-070",
+    "topic": "React",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-071",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-072",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-073",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-074",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-075",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-076",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-077",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-078",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-079",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-080",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-081",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-082",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-083",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-084",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-085",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-086",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-087",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-088",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-089",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-090",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-091",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-092",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-093",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-094",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-095",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-096",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-097",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-098",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-099",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-100",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-101",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-102",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-103",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-104",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-105",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-106",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-107",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-108",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-109",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-110",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-111",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-112",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-113",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-114",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-115",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-116",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-117",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-118",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-119",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-120",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-121",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-122",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-123",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-124",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-125",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-126",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-127",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-128",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-129",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-130",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-131",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-132",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-133",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-134",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-135",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-136",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-137",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-138",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-139",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-140",
+    "topic": "React",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-141",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-142",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-143",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-144",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-145",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-146",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-147",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-148",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-149",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-150",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-151",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-152",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-153",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-154",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-155",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-156",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-157",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-158",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-159",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-160",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Frontendda: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-161",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-162",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-163",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-164",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-165",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-166",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-167",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-168",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-169",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-170",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-171",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-172",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-173",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-174",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-175",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-176",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-177",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-178",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-179",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-180",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Nazariy savol: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-181",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React nima?",
+    "options": [
+      "UI yaratish JavaScript kutubxonasi",
+      "CSS framework",
+      "Database",
+      "OS"
+    ],
+    "correctAnswer": "UI yaratish JavaScript kutubxonasi",
+    "correctOptionIndex": 0,
+    "explanation": "UI yaratish JavaScript kutubxonasi — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-182",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React komponentlari odatda nima qaytaradi?",
+    "options": [
+      "JSX/React elementlari",
+      "SQL",
+      "CSS fayl",
+      "JSON faqat"
+    ],
+    "correctAnswer": "JSX/React elementlari",
+    "correctOptionIndex": 0,
+    "explanation": "JSX/React elementlari — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-183",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: State boshqarish uchun hook?",
+    "options": [
+      "useState",
+      "useValue",
+      "useData",
+      "stateHook"
+    ],
+    "correctAnswer": "useState",
+    "correctOptionIndex": 0,
+    "explanation": "useState — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-184",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Side effectlar uchun hook?",
+    "options": [
+      "useEffect",
+      "useSideEffect",
+      "useAsync",
+      "useAction"
+    ],
+    "correctAnswer": "useEffect",
+    "correctOptionIndex": 0,
+    "explanation": "useEffect — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-185",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Ref yaratish hooki?",
+    "options": [
+      "useRef",
+      "useReference",
+      "createRefHook",
+      "usePointer"
+    ],
+    "correctAnswer": "useRef",
+    "correctOptionIndex": 0,
+    "explanation": "useRef — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-186",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Memoized qiymat uchun?",
+    "options": [
+      "useMemo",
+      "useCache",
+      "useValueMemo",
+      "memoValue"
+    ],
+    "correctAnswer": "useMemo",
+    "correctOptionIndex": 0,
+    "explanation": "useMemo — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-187",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Memoized callback uchun?",
+    "options": [
+      "useCallback",
+      "useFunctionMemo",
+      "useHandler",
+      "memoCallbackOnly"
+    ],
+    "correctAnswer": "useCallback",
+    "correctOptionIndex": 0,
+    "explanation": "useCallback — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-188",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Ro'yxat renderida unique identifikator prop?",
+    "options": [
+      "key",
+      "idOnly",
+      "unique",
+      "indexKey"
+    ],
+    "correctAnswer": "key",
+    "correctOptionIndex": 0,
+    "explanation": "key — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-189",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Props nima?",
+    "options": [
+      "Komponentga uzatiladigan ma'lumot",
+      "Global CSS",
+      "Database query",
+      "DOM event"
+    ],
+    "correctAnswer": "Komponentga uzatiladigan ma'lumot",
+    "correctOptionIndex": 0,
+    "explanation": "Komponentga uzatiladigan ma'lumot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-190",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React fragment sintaksisi?",
+    "options": [
+      "<>...</>",
+      "<FragmentOnly>",
+      "[]...</>",
+      "<></fragment>"
+    ],
+    "correctAnswer": "<>...</>",
+    "correctOptionIndex": 0,
+    "explanation": "<>...</> — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-191",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Controlled input qiymati odatda nimaga bog'langan?",
+    "options": [
+      "State",
+      "DOM faqat",
+      "CSS",
+      "URL"
+    ],
+    "correctAnswer": "State",
+    "correctOptionIndex": 0,
+    "explanation": "State — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-192",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React event handler yozilishi?",
+    "options": [
+      "onClick",
+      "onclick",
+      "clickEvent",
+      "handle-click"
+    ],
+    "correctAnswer": "onClick",
+    "correctOptionIndex": 0,
+    "explanation": "onClick — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-193",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Komponent nomlari odatda qanday boshlanadi?",
+    "options": [
+      "Katta harf",
+      "Kichik harf",
+      "Raqam",
+      "Underscore"
+    ],
+    "correctAnswer": "Katta harf",
+    "correctOptionIndex": 0,
+    "explanation": "Katta harf — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-194",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Context yaratish API?",
+    "options": [
+      "createContext",
+      "makeContext",
+      "newContext",
+      "Context.create"
+    ],
+    "correctAnswer": "createContext",
+    "correctOptionIndex": 0,
+    "explanation": "createContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-195",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Context qiymatini olish hooki?",
+    "options": [
+      "useContext",
+      "getContext",
+      "readContext",
+      "contextValue"
+    ],
+    "correctAnswer": "useContext",
+    "correctOptionIndex": 0,
+    "explanation": "useContext — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-196",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: DOMga React app ulash uchun zamonaviy API?",
+    "options": [
+      "createRoot",
+      "renderDOM",
+      "mountReact",
+      "attachRoot"
+    ],
+    "correctAnswer": "createRoot",
+    "correctOptionIndex": 0,
+    "explanation": "createRoot — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-197",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Reactdagi state update qanday bo'lishi kerak?",
+    "options": [
+      "Immutably",
+      "To'g'ridan-to'g'ri mutate qilib",
+      "DOMni qo'lda o'zgartirib",
+      "CSS orqali"
+    ],
+    "correctAnswer": "Immutably",
+    "correctOptionIndex": 0,
+    "explanation": "Immutably — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-198",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React komponenti ichida hooklar qayerda chaqiriladi?",
+    "options": [
+      "Top-levelda",
+      "if ichida",
+      "loop ichida",
+      "event ichida"
+    ],
+    "correctAnswer": "Top-levelda",
+    "correctOptionIndex": 0,
+    "explanation": "Top-levelda — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-199",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Conditional rendering operatorlaridan biri?",
+    "options": [
+      "ternary ? :",
+      "SQL WHERE",
+      "CSS if",
+      "switchCSS"
+    ],
+    "correctAnswer": "ternary ? :",
+    "correctOptionIndex": 0,
+    "explanation": "ternary ? : — React bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "react-200",
+    "topic": "React",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: React.memo nima qiladi?",
+    "options": [
+      "Props o'zgarmasa renderni optimallashtirishi mumkin",
+      "State yaratadi",
+      "API yuboradi",
+      "DOMni tozalaydi"
+    ],
+    "correctAnswer": "Props o'zgarmasa renderni optimallashtirishi mumkin",
+    "correctOptionIndex": 0,
+    "explanation": "Props o'zgarmasa renderni optimallashtirishi mumkin — React bo'yicha ushbu savolning to'g'ri javobi."
+  }
+]

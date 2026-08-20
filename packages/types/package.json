@@ -1,0 +1,14 @@
+{
+  "name": "@codascript/types",
+  "version": "1.0.0",
+  "description": "Shared TypeScript definitions",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "lint": "eslint src/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

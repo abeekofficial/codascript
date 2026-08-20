@@ -1,0 +1,3002 @@
+  [
+    {
+      "id": "html-001",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-002",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-003",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-004",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-005",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-006",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-007",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-008",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-009",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-010",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-011",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-012",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-013",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-014",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-015",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-016",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-017",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-018",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-019",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-020",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-021",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-022",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-023",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-024",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-025",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-026",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-027",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-028",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-029",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-030",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-031",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-032",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-033",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-034",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-035",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-036",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-037",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-038",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-039",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-040",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Amaliy dasturlash nuqtayi nazaridan: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-041",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-042",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-043",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-044",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-045",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-046",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-047",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-048",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-049",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-050",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-051",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-052",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-053",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-054",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-055",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-056",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-057",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-058",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-059",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-060",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "Test: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-061",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-062",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-063",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-064",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-065",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-066",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-067",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-068",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-069",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-070",
+      "topic": "HTML",
+      "difficulty": "easy",
+      "question": "To'g'ri javobni tanlang: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-071",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-072",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-073",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-074",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-075",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-076",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-077",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-078",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-079",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-080",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "To'g'ri javobni tanlang: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-081",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-082",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-083",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-084",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-085",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-086",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-087",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-088",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-089",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-090",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-091",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-092",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-093",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-094",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-095",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-096",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-097",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-098",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-099",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-100",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Kod yozishda quyidagini biling: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-101",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-102",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-103",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-104",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-105",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-106",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-107",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-108",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-109",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-110",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-111",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-112",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-113",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-114",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-115",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-116",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-117",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-118",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-119",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-120",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Muhim tushuncha: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-121",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-122",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-123",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-124",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-125",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-126",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-127",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-128",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-129",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-130",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-131",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-132",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-133",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-134",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-135",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-136",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-137",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-138",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-139",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-140",
+      "topic": "HTML",
+      "difficulty": "medium",
+      "question": "Intervyu savoli: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-141",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-142",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-143",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-144",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-145",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-146",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-147",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-148",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-149",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-150",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-151",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-152",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-153",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-154",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-155",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-156",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-157",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-158",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-159",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-160",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Frontendda: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-161",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-162",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-163",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-164",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-165",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-166",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-167",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-168",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-169",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-170",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-171",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-172",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-173",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-174",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-175",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-176",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-177",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-178",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-179",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-180",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Nazariy savol: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-181",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: HTML nimaning qisqartmasi?",
+      "options": [
+        "HyperText Markup Language",
+        "HighText Machine Language",
+        "Hyper Transfer Markup Language",
+        "Home Tool Markup Language"
+      ],
+      "correctAnswer": "HyperText Markup Language",
+      "correctOptionIndex": 0,
+      "explanation": "HyperText Markup Language — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-182",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Sarlavha uchun eng katta semantik teg qaysi?",
+      "options": [
+        "<h1>",
+        "<h6>",
+        "<head>",
+        "<title>"
+      ],
+      "correctAnswer": "<h1>",
+      "correctOptionIndex": 0,
+      "explanation": "<h1> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-183",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Havola yaratish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<a>",
+        "<link>",
+        "<href>",
+        "<nav>"
+      ],
+      "correctAnswer": "<a>",
+      "correctOptionIndex": 0,
+      "explanation": "<a> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-184",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Rasm qo'shish uchun qaysi teg ishlatiladi?",
+      "options": [
+        "<img>",
+        "<image>",
+        "<picture>",
+        "<src>"
+      ],
+      "correctAnswer": "<img>",
+      "correctOptionIndex": 0,
+      "explanation": "<img> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-185",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Formadagi matn kiritish maydoni qaysi input turi?",
+      "options": [
+        "text",
+        "string",
+        "input-text",
+        "varchar"
+      ],
+      "correctAnswer": "text",
+      "correctOptionIndex": 0,
+      "explanation": "text — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-186",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Tartibli ro'yxat tegi qaysi?",
+      "options": [
+        "<ol>",
+        "<ul>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ol>",
+      "correctOptionIndex": 0,
+      "explanation": "<ol> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-187",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Tartibsiz ro'yxat tegi qaysi?",
+      "options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<list>"
+      ],
+      "correctAnswer": "<ul>",
+      "correctOptionIndex": 0,
+      "explanation": "<ul> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-188",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Ro'yxat elementi qaysi teg bilan yoziladi?",
+      "options": [
+        "<li>",
+        "<item>",
+        "<ul>",
+        "<element>"
+      ],
+      "correctAnswer": "<li>",
+      "correctOptionIndex": 0,
+      "explanation": "<li> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-189",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: HTML hujjatining ildiz elementi qaysi?",
+      "options": [
+        "<html>",
+        "<body>",
+        "<root>",
+        "<document>"
+      ],
+      "correctAnswer": "<html>",
+      "correctOptionIndex": 0,
+      "explanation": "<html> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-190",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Meta ma'lumotlar odatda qayerda bo'ladi?",
+      "options": [
+        "<head>",
+        "<body>",
+        "<footer>",
+        "<main>"
+      ],
+      "correctAnswer": "<head>",
+      "correctOptionIndex": 0,
+      "explanation": "<head> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-191",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Semantik asosiy kontent tegi qaysi?",
+      "options": [
+        "<main>",
+        "<div>",
+        "<content>",
+        "<section-main>"
+      ],
+      "correctAnswer": "<main>",
+      "correctOptionIndex": 0,
+      "explanation": "<main> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-192",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Navigatsiya uchun semantik teg?",
+      "options": [
+        "<nav>",
+        "<navigate>",
+        "<menu-bar>",
+        "<links>"
+      ],
+      "correctAnswer": "<nav>",
+      "correctOptionIndex": 0,
+      "explanation": "<nav> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-193",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Formani ifodalovchi teg?",
+      "options": [
+        "<form>",
+        "<input>",
+        "<fieldset>",
+        "<data>"
+      ],
+      "correctAnswer": "<form>",
+      "correctOptionIndex": 0,
+      "explanation": "<form> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-194",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Jadval qatori tegi?",
+      "options": [
+        "<tr>",
+        "<td>",
+        "<th>",
+        "<row>"
+      ],
+      "correctAnswer": "<tr>",
+      "correctOptionIndex": 0,
+      "explanation": "<tr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-195",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Jadval katagi tegi?",
+      "options": [
+        "<td>",
+        "<cell>",
+        "<tr>",
+        "<tc>"
+      ],
+      "correctAnswer": "<td>",
+      "correctOptionIndex": 0,
+      "explanation": "<td> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-196",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Jadval sarlavha katagi?",
+      "options": [
+        "<th>",
+        "<thead-cell>",
+        "<header>",
+        "<td-head>"
+      ],
+      "correctAnswer": "<th>",
+      "correctOptionIndex": 0,
+      "explanation": "<th> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-197",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: HTML izohi qanday yoziladi?",
+      "options": [
+        "<!-- izoh -->",
+        "// izoh",
+        "/* izoh */",
+        "# izoh"
+      ],
+      "correctAnswer": "<!-- izoh -->",
+      "correctOptionIndex": 0,
+      "explanation": "<!-- izoh --> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-198",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Yangi qatordan boshlash uchun qaysi teg?",
+      "options": [
+        "<br>",
+        "<newline>",
+        "<lb>",
+        "<break>"
+      ],
+      "correctAnswer": "<br>",
+      "correctOptionIndex": 0,
+      "explanation": "<br> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-199",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Gorizontal chiziq uchun qaysi teg?",
+      "options": [
+        "<hr>",
+        "<line>",
+        "<horizontal>",
+        "<border>"
+      ],
+      "correctAnswer": "<hr>",
+      "correctOptionIndex": 0,
+      "explanation": "<hr> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    },
+    {
+      "id": "html-200",
+      "topic": "HTML",
+      "difficulty": "hard",
+      "question": "Dasturchi sifatida: Video joylash uchun semantik teg?",
+      "options": [
+        "<video>",
+        "<movie>",
+        "<media-video>",
+        "<player>"
+      ],
+      "correctAnswer": "<video>",
+      "correctOptionIndex": 0,
+      "explanation": "<video> — HTML bo'yicha ushbu savolning to'g'ri javobi."
+    }
+  ]

@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "javascript-001",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-002",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-003",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-004",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-005",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-006",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-007",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-008",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-009",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-010",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-011",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-012",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-013",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-014",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-015",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-016",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-017",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-018",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-019",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-020",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-021",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-022",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-023",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-024",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-025",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-026",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-027",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-028",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-029",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-030",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-031",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-032",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-033",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-034",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-035",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-036",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-037",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-038",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-039",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-040",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-041",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-042",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-043",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-044",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-045",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-046",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-047",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-048",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-049",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-050",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-051",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-052",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-053",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-054",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-055",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-056",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-057",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-058",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-059",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-060",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "Test: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-061",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-062",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-063",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-064",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-065",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-066",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-067",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-068",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-069",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-070",
+    "topic": "JavaScript",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-071",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-072",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-073",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-074",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-075",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-076",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-077",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-078",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-079",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-080",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-081",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-082",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-083",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-084",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-085",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-086",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-087",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-088",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-089",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-090",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-091",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-092",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-093",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-094",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-095",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-096",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-097",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-098",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-099",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-100",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-101",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-102",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-103",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-104",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-105",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-106",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-107",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-108",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-109",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-110",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-111",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-112",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-113",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-114",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-115",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-116",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-117",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-118",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-119",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-120",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-121",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-122",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-123",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-124",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-125",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-126",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-127",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-128",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-129",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-130",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-131",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-132",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-133",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-134",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-135",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-136",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-137",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-138",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-139",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-140",
+    "topic": "JavaScript",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-141",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-142",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-143",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-144",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-145",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-146",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-147",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-148",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-149",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-150",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-151",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-152",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-153",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-154",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-155",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-156",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-157",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-158",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-159",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-160",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Frontendda: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-161",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-162",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-163",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-164",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-165",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-166",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-167",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-168",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-169",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-170",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-171",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-172",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-173",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-174",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-175",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-176",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-177",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-178",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-179",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-180",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-181",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: JavaScriptda o'zgarmas binding yaratish uchun?",
+    "options": [
+      "const",
+      "let",
+      "var",
+      "fixed"
+    ],
+    "correctAnswer": "const",
+    "correctOptionIndex": 0,
+    "explanation": "const — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-182",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Qiymatni o'zgartirish mumkin bo'lgan zamonaviy binding?",
+    "options": [
+      "let",
+      "const",
+      "static",
+      "change"
+    ],
+    "correctAnswer": "let",
+    "correctOptionIndex": 0,
+    "explanation": "let — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-183",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Qat'iy tenglik operatori?",
+    "options": [
+      "===",
+      "==",
+      "=",
+      "!=="
+    ],
+    "correctAnswer": "===",
+    "correctOptionIndex": 0,
+    "explanation": "=== — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-184",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Massiv uzunligini olish?",
+    "options": [
+      "length",
+      "size",
+      "count",
+      "items"
+    ],
+    "correctAnswer": "length",
+    "correctOptionIndex": 0,
+    "explanation": "length — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-185",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Massiv oxiriga element qo'shish?",
+    "options": [
+      "push()",
+      "append()",
+      "addLast()",
+      "insertEnd()"
+    ],
+    "correctAnswer": "push()",
+    "correctOptionIndex": 0,
+    "explanation": "push() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-186",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Massiv boshidan element olib tashlash?",
+    "options": [
+      "shift()",
+      "pop()",
+      "removeFirst()",
+      "delete(0)"
+    ],
+    "correctAnswer": "shift()",
+    "correctOptionIndex": 0,
+    "explanation": "shift() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-187",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Massiv oxiridan element olib tashlash?",
+    "options": [
+      "pop()",
+      "shift()",
+      "removeLast()",
+      "delete(-1)"
+    ],
+    "correctAnswer": "pop()",
+    "correctOptionIndex": 0,
+    "explanation": "pop() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-188",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Massiv ustida yangi massiv qaytaruvchi metod?",
+    "options": [
+      "map()",
+      "forEach()",
+      "each()",
+      "transformOnly()"
+    ],
+    "correctAnswer": "map()",
+    "correctOptionIndex": 0,
+    "explanation": "map() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-189",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Shartga mos elementlarni ajratish?",
+    "options": [
+      "filter()",
+      "select()",
+      "where()",
+      "matchAll()"
+    ],
+    "correctAnswer": "filter()",
+    "correctOptionIndex": 0,
+    "explanation": "filter() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-190",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Bitta qiymatga yig'ish?",
+    "options": [
+      "reduce()",
+      "collect()",
+      "foldOnly()",
+      "sumAll()"
+    ],
+    "correctAnswer": "reduce()",
+    "correctOptionIndex": 0,
+    "explanation": "reduce() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-191",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Promise kutish uchun qaysi keyword?",
+    "options": [
+      "await",
+      "wait",
+      "pause",
+      "yield-promise"
+    ],
+    "correctAnswer": "await",
+    "correctOptionIndex": 0,
+    "explanation": "await — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-192",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Asinxron funksiya e'lon qilish?",
+    "options": [
+      "async",
+      "await",
+      "promise",
+      "defer"
+    ],
+    "correctAnswer": "async",
+    "correctOptionIndex": 0,
+    "explanation": "async — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-193",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: JSON matnini obyektga aylantirish?",
+    "options": [
+      "JSON.parse()",
+      "JSON.toObject()",
+      "JSON.read()",
+      "JSON.decodeObject()"
+    ],
+    "correctAnswer": "JSON.parse()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.parse() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-194",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Obyektni JSON matniga aylantirish?",
+    "options": [
+      "JSON.stringify()",
+      "JSON.toJSON()",
+      "JSON.encode()",
+      "JSON.objectify()"
+    ],
+    "correctAnswer": "JSON.stringify()",
+    "correctOptionIndex": 0,
+    "explanation": "JSON.stringify() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-195",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Funksiya e'lon qilishning klassik keywordi?",
+    "options": [
+      "function",
+      "func",
+      "def",
+      "method"
+    ],
+    "correctAnswer": "function",
+    "correctOptionIndex": 0,
+    "explanation": "function — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-196",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: typeof null natijasi?",
+    "options": [
+      "object",
+      "null",
+      "undefined",
+      "Null"
+    ],
+    "correctAnswer": "object",
+    "correctOptionIndex": 0,
+    "explanation": "object — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-197",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: NaN nimani anglatadi?",
+    "options": [
+      "Not-a-Number",
+      "No-any-Number",
+      "New-array-Number",
+      "Null-as-Number"
+    ],
+    "correctAnswer": "Not-a-Number",
+    "correctOptionIndex": 0,
+    "explanation": "Not-a-Number — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-198",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: DOM elementini ID orqali topish?",
+    "options": [
+      "document.getElementById()",
+      "document.query()",
+      "document.findId()",
+      "window.getId()"
+    ],
+    "correctAnswer": "document.getElementById()",
+    "correctOptionIndex": 0,
+    "explanation": "document.getElementById() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-199",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Event tinglash metodi?",
+    "options": [
+      "addEventListener()",
+      "listenEvent()",
+      "onEvent()",
+      "subscribeEvent()"
+    ],
+    "correctAnswer": "addEventListener()",
+    "correctOptionIndex": 0,
+    "explanation": "addEventListener() — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "javascript-200",
+    "topic": "JavaScript",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Template literal belgisi?",
+    "options": [
+      "` `",
+      "\" \"",
+      "' '",
+      "< >"
+    ],
+    "correctAnswer": "` `",
+    "correctOptionIndex": 0,
+    "explanation": "` ` — JavaScript bo'yicha ushbu savolning to'g'ri javobi."
+  }
+]

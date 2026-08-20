@@ -1,0 +1,6 @@
+{
+  "name": "@codascript/config",
+  "version": "1.0.0",
+  "description": "Shared configuration",
+  "main": "index.js"
+}

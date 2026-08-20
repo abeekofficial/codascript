@@ -1,0 +1,32 @@
+services:
+  - type: web
+    name: codascript-server
+    env: node
+    buildCommand: npm install -g pnpm && pnpm install && pnpm run build --filter @codascript/server
+    startCommand: pnpm --filter @codascript/server run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        sync: false
+      - key: JWT_ACCESS_SECRET
+        sync: false
+      - key: JWT_REFRESH_SECRET
+        sync: false
+      - key: FRONTEND_URL
+        sync: false
+
+  - type: web
+    name: codascript-web
+    env: node
+    buildCommand: npm install -g pnpm && pnpm install && pnpm run build --filter web
+    startCommand: pnpm --filter web run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        sync: false
+      - key: NEXT_PUBLIC_APP_URL
+        sync: false

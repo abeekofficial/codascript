@@ -1,0 +1,1 @@
+const mongoose = require('mongoose'); mongoose.connect('mongodb://127.0.0.1:27017/codascript', { serverSelectionTimeoutMS: 2000 }).then(() => { console.log('Connected'); process.exit(0); }).catch(e => { console.error(e.message); process.exit(1); });

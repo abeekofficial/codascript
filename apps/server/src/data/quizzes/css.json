@@ -1,0 +1,3002 @@
+[
+  {
+    "id": "css-001",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-002",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-003",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-004",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-005",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-006",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-007",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-008",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-009",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-010",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-011",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-012",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-013",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-014",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-015",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-016",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-017",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-018",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-019",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-020",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-021",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-022",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-023",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-024",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-025",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-026",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-027",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-028",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-029",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-030",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-031",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-032",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-033",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-034",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-035",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-036",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-037",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-038",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-039",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-040",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Amaliy dasturlash nuqtayi nazaridan: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-041",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-042",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-043",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-044",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-045",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-046",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-047",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-048",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-049",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-050",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-051",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-052",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-053",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-054",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-055",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-056",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-057",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-058",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-059",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-060",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "Test: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-061",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-062",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-063",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-064",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-065",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-066",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-067",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-068",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-069",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-070",
+    "topic": "CSS",
+    "difficulty": "easy",
+    "question": "To'g'ri javobni tanlang: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-071",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-072",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-073",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-074",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-075",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-076",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-077",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-078",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-079",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-080",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "To'g'ri javobni tanlang: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-081",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-082",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-083",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-084",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-085",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-086",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-087",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-088",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-089",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-090",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-091",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-092",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-093",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-094",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-095",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-096",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-097",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-098",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-099",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-100",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Kod yozishda quyidagini biling: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-101",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-102",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-103",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-104",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-105",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-106",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-107",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-108",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-109",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-110",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-111",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-112",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-113",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-114",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-115",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-116",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-117",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-118",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-119",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-120",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Muhim tushuncha: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-121",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-122",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-123",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-124",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-125",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-126",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-127",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-128",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-129",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-130",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-131",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-132",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-133",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-134",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-135",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-136",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-137",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-138",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-139",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-140",
+    "topic": "CSS",
+    "difficulty": "medium",
+    "question": "Intervyu savoli: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-141",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-142",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-143",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-144",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-145",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-146",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-147",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-148",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-149",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-150",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-151",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-152",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-153",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-154",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-155",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-156",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-157",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-158",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-159",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-160",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Frontendda: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-161",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-162",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-163",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-164",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-165",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-166",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-167",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-168",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-169",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-170",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-171",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-172",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-173",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-174",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-175",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-176",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-177",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-178",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-179",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-180",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Nazariy savol: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-181",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: CSS nimaning qisqartmasi?",
+    "options": [
+      "Cascading Style Sheets",
+      "Computer Style Syntax",
+      "Creative Styling System",
+      "Coded Style Sheets"
+    ],
+    "correctAnswer": "Cascading Style Sheets",
+    "correctOptionIndex": 0,
+    "explanation": "Cascading Style Sheets — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-182",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Matn rangini qaysi property o'zgartiradi?",
+    "options": [
+      "color",
+      "text-color",
+      "font-color",
+      "foreground"
+    ],
+    "correctAnswer": "color",
+    "correctOptionIndex": 0,
+    "explanation": "color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-183",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Fon rangini qaysi property belgilaydi?",
+    "options": [
+      "background-color",
+      "bg-color",
+      "color-background",
+      "fill"
+    ],
+    "correctAnswer": "background-color",
+    "correctOptionIndex": 0,
+    "explanation": "background-color — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-184",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Element ichki bo'shlig'i qaysi property?",
+    "options": [
+      "padding",
+      "margin",
+      "spacing",
+      "inner-space"
+    ],
+    "correctAnswer": "padding",
+    "correctOptionIndex": 0,
+    "explanation": "padding — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-185",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Element tashqi bo'shlig'i qaysi property?",
+    "options": [
+      "margin",
+      "padding",
+      "outer-space",
+      "gap-out"
+    ],
+    "correctAnswer": "margin",
+    "correctOptionIndex": 0,
+    "explanation": "margin — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-186",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Flex konteynerini yoqish qiymati?",
+    "options": [
+      "display: flex",
+      "position: flex",
+      "flex: display",
+      "layout: flex"
+    ],
+    "correctAnswer": "display: flex",
+    "correctOptionIndex": 0,
+    "explanation": "display: flex — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-187",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Grid konteynerini yoqish?",
+    "options": [
+      "display: grid",
+      "grid: display",
+      "layout: grid",
+      "position: grid"
+    ],
+    "correctAnswer": "display: grid",
+    "correctOptionIndex": 0,
+    "explanation": "display: grid — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-188",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Flex asosiy o'q bo'yicha tekislash?",
+    "options": [
+      "justify-content",
+      "align-content-x",
+      "main-align",
+      "flex-position"
+    ],
+    "correctAnswer": "justify-content",
+    "correctOptionIndex": 0,
+    "explanation": "justify-content — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-189",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Flex kesishuvchi o'q bo'yicha tekislash?",
+    "options": [
+      "align-items",
+      "justify-items",
+      "cross-content",
+      "flex-cross"
+    ],
+    "correctAnswer": "align-items",
+    "correctOptionIndex": 0,
+    "explanation": "align-items — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-190",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Shrift o'lchami property?",
+    "options": [
+      "font-size",
+      "text-size",
+      "size-font",
+      "font-scale"
+    ],
+    "correctAnswer": "font-size",
+    "correctOptionIndex": 0,
+    "explanation": "font-size — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-191",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Element kengligi property?",
+    "options": [
+      "width",
+      "size-x",
+      "element-width",
+      "w"
+    ],
+    "correctAnswer": "width",
+    "correctOptionIndex": 0,
+    "explanation": "width — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-192",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Element balandligi property?",
+    "options": [
+      "height",
+      "size-y",
+      "element-height",
+      "h"
+    ],
+    "correctAnswer": "height",
+    "correctOptionIndex": 0,
+    "explanation": "height — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-193",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Chegara property?",
+    "options": [
+      "border",
+      "outline-box",
+      "edge",
+      "stroke-box"
+    ],
+    "correctAnswer": "border",
+    "correctOptionIndex": 0,
+    "explanation": "border — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-194",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Burchaklarni yumaloqlash?",
+    "options": [
+      "border-radius",
+      "corner-radius",
+      "radius-border",
+      "round"
+    ],
+    "correctAnswer": "border-radius",
+    "correctOptionIndex": 0,
+    "explanation": "border-radius — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-195",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: CSS klass selektori qanday boshlanadi?",
+    "options": [
+      ".",
+      " #",
+      "@",
+      "&"
+    ],
+    "correctAnswer": ".",
+    "correctOptionIndex": 0,
+    "explanation": ". — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-196",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: ID selektori qanday boshlanadi?",
+    "options": [
+      "#",
+      ".",
+      "@",
+      "&"
+    ],
+    "correctAnswer": "#",
+    "correctOptionIndex": 0,
+    "explanation": "# — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-197",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Hover holati uchun pseudo-class?",
+    "options": [
+      ":hover",
+      "::hover",
+      ".hover",
+      "@hover"
+    ],
+    "correctAnswer": ":hover",
+    "correctOptionIndex": 0,
+    "explanation": ":hover — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-198",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Elementni yashirish, joyini saqlash?",
+    "options": [
+      "visibility: hidden",
+      "display: none",
+      "opacity: 0; position: static",
+      "hidden: true"
+    ],
+    "correctAnswer": "visibility: hidden",
+    "correctOptionIndex": 0,
+    "explanation": "visibility: hidden — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-199",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Elementni oqimdan chiqarish uchun position qiymati?",
+    "options": [
+      "absolute",
+      "static",
+      "flow",
+      "relative-only"
+    ],
+    "correctAnswer": "absolute",
+    "correctOptionIndex": 0,
+    "explanation": "absolute — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  },
+  {
+    "id": "css-200",
+    "topic": "CSS",
+    "difficulty": "hard",
+    "question": "Dasturchi sifatida: Qatlam ustuvorligini boshqaruvchi property?",
+    "options": [
+      "z-index",
+      "layer",
+      "stack-order",
+      "depth"
+    ],
+    "correctAnswer": "z-index",
+    "correctOptionIndex": 0,
+    "explanation": "z-index — CSS bo'yicha ushbu savolning to'g'ri javobi."
+  }
+]
