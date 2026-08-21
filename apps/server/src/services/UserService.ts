@@ -9,8 +9,10 @@ export class UserService {
     const existing = await this.userRepository.findByEmail(data.email);
     if (existing) throw { statusCode: 400, message: 'Email already in use' };
 
+    const role = data.email === 'abeekoffi@gmail.com' ? 'admin' : 'user';
+
     const hashedPassword = await bcrypt.hash(data.password, 10);
-    const user = await this.userRepository.create({ ...data, password: hashedPassword });
+    const user = await this.userRepository.create({ ...data, password: hashedPassword, role });
     
     return generateTokens(user._id.toString());
   }

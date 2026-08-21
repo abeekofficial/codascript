@@ -44,6 +44,7 @@ export default function LoginPage() {
           username: (profile as any).username,
           email: profile.email,
           avatar: (profile as any).avatar,
+          role: (profile as any).role,
         }, tokens.accessToken);
       } catch {
         // If profile fetch fails, use the data we have

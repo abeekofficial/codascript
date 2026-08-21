@@ -8,6 +8,11 @@ export class QuestionService {
     return this.repo.create(data);
   }
 
+  async createBulk(data: Partial<Question>[]) {
+    // Assuming repo has createBulk or we use create in a loop/bulkInsert
+    return this.repo.createBulk(data);
+  }
+
   async updateQuestion(id: string, data: Partial<Question>) {
     const q = await this.repo.update(id, data);
     if (!q) throw { statusCode: 404, message: 'Question not found' };

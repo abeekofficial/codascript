@@ -125,5 +125,27 @@ export const api = {
     if (!res.ok) throw new Error('Failed to complete quiz');
     const data = await res.json();
     return data.data;
+  },
+
+  addQuestion: async (questionData: any) => {
+    const res = await fetch(`${API_URL}/questions`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify(questionData)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to add question');
+    return data.data;
+  },
+
+  bulkAddQuestions: async (questionsData: any[]) => {
+    const res = await fetch(`${API_URL}/questions/bulk`, {
+      method: 'POST',
+      headers: getHeaders(),
+      body: JSON.stringify(questionsData)
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to add questions bulk');
+    return data.data;
   }
 };

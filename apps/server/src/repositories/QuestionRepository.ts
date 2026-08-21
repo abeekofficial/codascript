@@ -7,6 +7,19 @@ export class QuestionRepository {
     return q.save();
   }
 
+  async createBulk(data: Partial<Question>[]): Promise<Question[]> {
+    try {
+      const docs = await QuestionModel.insertMany(data, { ordered: false });
+      return docs as unknown as Question[];
+    } catch (error: any) {
+      if (error.code === 11000) {
+        // Return successfully inserted docs if any, effectively ignoring duplicates
+        return (error.insertedDocs || []) as unknown as Question[];
+      }
+      throw error;
+    }
+  }
+
   async findById(id: string): Promise<Question | null> {
     return QuestionModel.findById(id).lean();
   }

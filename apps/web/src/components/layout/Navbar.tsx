@@ -30,6 +30,11 @@ export default function Navbar() {
               <Link href="/dashboard" className="text-sm font-medium transition-colors hover:text-primary">
                 Dashboard
               </Link>
+              {user?.role === 'admin' && (
+                <Link href="/admin" className="text-sm font-medium transition-colors hover:text-primary text-red-500">
+                  Admin
+                </Link>
+              )}
               <Link href="/leaderboard" className="text-sm font-medium transition-colors hover:text-primary">
                 Reyting
               </Link>

@@ -23,6 +23,7 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
             username: (profile as any).username,
             email: profile.email,
             avatar: (profile as any).avatar,
+            role: (profile as any).role,
           });
         })
         .catch(() => {

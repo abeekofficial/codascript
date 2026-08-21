@@ -24,3 +24,22 @@ export const protect = (req: AuthRequest, res: Response, next: NextFunction) => 
     return res.status(401).json({ success: false, message: 'Not authorized, token failed' });
   }
 };
+
+import { UserModel } from '../models/User';
+
+export const admin = async (req: AuthRequest, res: Response, next: NextFunction) => {
+  if (!req.userId) {
+    return res.status(401).json({ success: false, message: 'Not authorized' });
+  }
+
+  try {
+    const user = await UserModel.findById(req.userId);
+    if (user && user.role === 'admin') {
+      next();
+    } else {
+      return res.status(403).json({ success: false, message: 'Not authorized as an admin' });
+    }
+  } catch (error) {
+    return res.status(500).json({ success: false, message: 'Server error' });
+  }
+};

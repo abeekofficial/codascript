@@ -8,6 +8,7 @@ interface User {
   avatar?: string;
   score?: number;
   streak?: number;
+  role?: string;
 }
 
 interface AuthState {

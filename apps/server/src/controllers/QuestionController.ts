@@ -11,6 +11,13 @@ export class QuestionController {
     } catch (error) { next(error); }
   }
 
+  static async createBulk(req: Request, res: Response, next: NextFunction) {
+    try {
+      const q = await questionService.createBulk(req.body);
+      res.status(201).json({ success: true, data: q });
+    } catch (error) { next(error); }
+  }
+
   static async update(req: Request, res: Response, next: NextFunction) {
     try {
       const q = await questionService.updateQuestion(req.params.id, req.body);
