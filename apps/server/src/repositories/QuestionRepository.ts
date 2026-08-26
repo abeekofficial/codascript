@@ -36,11 +36,15 @@ export class QuestionRepository {
     topic: string, 
     difficulty: string, 
     mode: 'topic' | 'mixed', 
-    limit: number | 'all'
+    limit: number | 'all',
+    subtopic?: string
   ): Promise<Question[]> {
     const query: any = { isActive: true };
     if (mode === 'topic' && topic) {
       query.topic = { $regex: new RegExp('^' + topic + '$', 'i') };
+      if (subtopic && subtopic !== 'Barchasi') {
+        query.subtopic = subtopic;
+      }
     }
     if (difficulty !== 'mixed') {
       query.difficulty = difficulty;
@@ -55,10 +59,21 @@ export class QuestionRepository {
     return QuestionModel.distinct('topic', { isActive: true });
   }
 
-  async getCount(topic: string, difficulty: string, mode: 'topic' | 'mixed'): Promise<number> {
+  async getSubtopics(topic: string): Promise<string[]> {
+    return QuestionModel.distinct('subtopic', { 
+      topic: { $regex: new RegExp('^' + topic + '$', 'i') }, 
+      isActive: true, 
+      subtopic: { $ne: null } 
+    });
+  }
+
+  async getCount(topic: string, difficulty: string, mode: 'topic' | 'mixed', subtopic?: string): Promise<number> {
     const query: any = { isActive: true };
     if (mode === 'topic' && topic) {
       query.topic = { $regex: new RegExp('^' + topic + '$', 'i') };
+      if (subtopic && subtopic !== 'Barchasi') {
+        query.subtopic = subtopic;
+      }
     }
     if (difficulty !== 'mixed') {
       query.difficulty = difficulty;

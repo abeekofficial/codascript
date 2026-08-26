@@ -3,15 +3,21 @@ import { create } from "zustand";
 export interface ClientQuestion {
   id: string;
   topic: string;
+  subtopic?: string;
   difficulty: "easy" | "medium" | "hard" | "mixed";
   question: string;
   options: string[];
+  type?: 'multiple_choice' | 'code';
+  language?: string;
+  starterCode?: string;
+  testCases?: { input: string; expectedOutput: string; isHidden?: boolean }[];
 }
 
 export interface AnswerResult {
   isCorrect: boolean;
   explanation?: string;
   selectedOptionIndex: number;
+  correctAnswerText?: string;
 }
 
 interface QuizState {
@@ -23,11 +29,13 @@ interface QuizState {
   isStarted: boolean;
   isFinished: boolean;
   topic: string;
+  subtopic?: string;
   difficulty: "easy" | "medium" | "hard" | "mixed";
   mode: "topic" | "mixed";
   questionCount: number | "all";
   setQuizConfig: (config: {
     topic?: string;
+    subtopic?: string;
     difficulty?: "easy" | "medium" | "hard" | "mixed";
     mode?: "topic" | "mixed";
     questionCount?: number | "all";

@@ -17,7 +17,7 @@ export class UserRepository {
   }
 
   async getLeaderboard(limit: number = 10): Promise<User[]> {
-    return UserModel.find({}, { name: 1, totalXP: 1 })
+    return UserModel.find({}, { name: 1, username: 1, totalXP: 1 })
       .sort({ totalXP: -1 })
       .limit(limit)
       .lean();
@@ -29,5 +29,9 @@ export class UserRepository {
 
   async findByUsername(username: string): Promise<User | null> {
     return UserModel.findOne({ username }).lean();
+  }
+
+  async delete(id: string): Promise<void> {
+    await UserModel.findByIdAndDelete(id);
   }
 }

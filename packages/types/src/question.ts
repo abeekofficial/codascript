@@ -10,8 +10,17 @@ export interface Question {
   correctOptionId: number;
   explanation?: string;
   code?: string;
+  type?: 'multiple_choice' | 'code';
+  language?: string;
+  starterCode?: string;
+  testCases?: { input: string; expectedOutput: string; isHidden?: boolean }[];
   tags?: string[];
   isActive: boolean;
+  genericId?: string;
+  author?: string;
+  status?: 'pending' | 'approved' | 'rejected';
+  upvotes?: string[];
+  downvotes?: string[];
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }

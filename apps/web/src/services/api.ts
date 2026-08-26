@@ -1,28 +1,116 @@
-import { User } from "@codascript/types";
-import { ClientQuestion, AnswerResult } from "../store/quizStore";
+import { User } from '@codascript/types';
+import { AnswerResult, ClientQuestion } from '../store/quizStore';
 
 export interface LeaderboardUser {
   _id: string;
   name: string;
   totalXP: number;
+  completedQuizzes: number;
 }
 
-const API_URL = process.env.NEXT_PUBLIC_API_URL || 'https://codascript.onrender.com/api';
+export interface ProfileStats {
+  totalQuizzes: number;
+  accuracy: number;
+  totalTime: string;
+}
+
+export interface GrowthDataPoint {
+  month: string;
+  xp: number;
+  accuracy: number;
+}
+
+export interface SkillStat {
+  tech: string;
+  value: number;
+  solved: number;
+}
+
+const API_URL =
+  process.env.NEXT_PUBLIC_API_URL || 'https://codascript.onrender.com/api';
+
+const getToken = () =>
+  typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+const getRefreshToken = () =>
+  typeof window !== 'undefined' ? localStorage.getItem('refreshToken') : null;
 
 const getHeaders = () => {
-  const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
+  const token = getToken();
   return {
     'Content-Type': 'application/json',
-    ...(token ? { 'Authorization': `Bearer ${token}` } : {})
+    ...(token ? { Authorization: `Bearer ${token}` } : {}),
   };
 };
+
+/**
+ * Markazlashgan fetch wrapper: 401 bo'lsa avtomatik refresh token bilan qayta urinadi.
+ * Agar refresh ham muvaffaqiyatsiz bo'lsa, foydalanuvchini logout qiladi.
+ */
+async function fetchWithAuth(
+  url: string,
+  options: RequestInit = {}
+): Promise<Response> {
+  const headers = getHeaders();
+  let res = await fetch(url, {
+    ...options,
+    headers: { ...headers, ...options.headers },
+  });
+
+  if (res.status === 401) {
+    const refreshToken = getRefreshToken();
+    if (refreshToken) {
+      try {
+        const refreshRes = await fetch(`${API_URL}/auth/refresh`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refreshToken }),
+        });
+
+        if (refreshRes.ok) {
+          const refreshData = await refreshRes.json();
+          const newTokens = refreshData.data;
+
+          if (typeof window !== 'undefined') {
+            localStorage.setItem('token', newTokens.accessToken);
+            localStorage.setItem('refreshToken', newTokens.refreshToken);
+          }
+
+          // Asl so'rovni yangi token bilan qayta urinish
+          const newHeaders = {
+            ...options.headers,
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${newTokens.accessToken}`,
+          };
+          res = await fetch(url, { ...options, headers: newHeaders });
+        } else {
+          // Refresh muvaffaqiyatsiz — logout
+          performLogout();
+        }
+      } catch {
+        performLogout();
+      }
+    } else {
+      performLogout();
+    }
+  }
+
+  return res;
+}
+
+function performLogout() {
+  if (typeof window !== 'undefined') {
+    localStorage.removeItem('token');
+    localStorage.removeItem('refreshToken');
+    window.location.href = '/login';
+  }
+}
 
 export const api = {
   login: async (email: string, password: string) => {
     const res = await fetch(`${API_URL}/auth/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, password })
+      body: JSON.stringify({ email, password }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Login failed');
@@ -33,41 +121,82 @@ export const api = {
     const res = await fetch(`${API_URL}/auth/register`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ name, email, password })
+      body: JSON.stringify({ name, email, password }),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Registration failed');
     return data.data;
   },
 
-  updateProfile: async (profileData: { name?: string; username?: string; avatar?: string }) => {
-    const res = await fetch(`${API_URL}/auth/profile`, {
+  updateProfile: async (profileData: {
+    name?: string;
+    username?: string;
+    avatar?: string;
+    bio?: string;
+  }) => {
+    const res = await fetchWithAuth(`${API_URL}/auth/profile`, {
       method: 'PUT',
-      headers: getHeaders(),
       body: JSON.stringify(profileData),
     });
     const data = await res.json();
-    if (!res.ok) throw new Error(data.message || 'Profilni yangilashda xatolik');
+    if (!res.ok)
+      throw new Error(data.message || 'Profilni yangilashda xatolik');
     return data.data;
   },
 
-  changePassword: async (passwordData: { currentPassword: string; newPassword: string }) => {
-    const res = await fetch(`${API_URL}/auth/password`, {
+  changePassword: async (currentPassword: string, newPassword: string) => {
+    const res = await fetchWithAuth(`${API_URL}/auth/password`, {
       method: 'PUT',
-      headers: getHeaders(),
-      body: JSON.stringify(passwordData),
+      body: JSON.stringify({ currentPassword, newPassword }),
     });
     const data = await res.json();
-    if (!res.ok) throw new Error(data.message || 'Parolni yangilashda xatolik');
+    if (!res.ok) throw new Error(data.message || 'Failed to change password');
+    return data;
+  },
+
+  deleteAccount: async () => {
+    const res = await fetchWithAuth(`${API_URL}/auth/account`, {
+      method: 'DELETE',
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to delete account');
+    return data;
+  },
+
+  forgotPassword: async (email: string) => {
+    const res = await fetch(`${API_URL}/auth/forgot-password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Error sending email');
+    return data;
+  },
+
+  resetPassword: async (token: string, newPassword: string) => {
+    const res = await fetch(`${API_URL}/auth/reset-password`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ token, newPassword }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Error resetting password');
     return data;
   },
 
   getProfile: async (): Promise<User> => {
-    const res = await fetch(`${API_URL}/auth/me`, {
+    const res = await fetchWithAuth(`${API_URL}/auth/me`, {
       method: 'GET',
-      headers: getHeaders()
     });
     if (!res.ok) throw new Error('Failed to fetch profile');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getPublicProfile: async (username: string): Promise<User> => {
+    const res = await fetch(`${API_URL}/users/${username}`);
+    if (!res.ok) throw new Error('Foydalanuvchi topilmadi');
     const data = await res.json();
     return data.data;
   },
@@ -79,7 +208,42 @@ export const api = {
     return data.data;
   },
 
-  // Real implementations for Quiz API
+  // ===== Profil statistikasi uchun yangi endpointlar =====
+
+  getProfileStats: async (): Promise<ProfileStats> => {
+    const res = await fetchWithAuth(`${API_URL}/quiz/profile-stats`);
+    if (!res.ok) throw new Error('Failed to fetch profile stats');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getGrowthData: async (): Promise<GrowthDataPoint[]> => {
+    const res = await fetchWithAuth(`${API_URL}/quiz/growth-data`);
+    if (!res.ok) throw new Error('Failed to fetch growth data');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getSkillStats: async (): Promise<SkillStat[]> => {
+    const res = await fetchWithAuth(`${API_URL}/quiz/skill-stats`);
+    if (!res.ok) throw new Error('Failed to fetch skill stats');
+    const data = await res.json();
+    return data.data;
+  },
+
+  // ===== Quiz tarix endpointi =====
+
+  getHistory: async (page = 1, limit = 20) => {
+    const res = await fetchWithAuth(
+      `${API_URL}/quiz/history?page=${page}&limit=${limit}`
+    );
+    if (!res.ok) throw new Error('Failed to fetch quiz history');
+    const data = await res.json();
+    return data.data;
+  },
+
+  // ===== Quiz API =====
+
   getTopics: async (): Promise<string[]> => {
     const res = await fetch(`${API_URL}/questions/topics`);
     if (!res.ok) throw new Error('Failed to fetch topics');
@@ -87,40 +251,77 @@ export const api = {
     return data.data;
   },
 
-  getQuestionCount: async (topic: string, difficulty: string, mode: string): Promise<number> => {
-    const res = await fetch(`${API_URL}/questions/count?topic=${topic}&difficulty=${difficulty}&mode=${mode}`);
-    if (!res.ok) throw new Error('Failed to fetch question count');
+  getQuestionCount: async (
+    topic: string,
+    difficulty: string,
+    mode: string,
+    subtopic?: string
+  ): Promise<number> => {
+    let url = `${API_URL}/questions/count?topic=${topic}&difficulty=${difficulty}&mode=${mode}`;
+    if (subtopic && subtopic !== 'Barchasi')
+      url += `&subtopic=${encodeURIComponent(subtopic)}`;
+    const res = await fetchWithAuth(url);
+    if (!res.ok) throw new Error('Failed to get question count');
     const data = await res.json();
     return data.data;
   },
 
-  startQuiz: async (topic: string, difficulty: string, mode: string, count: number | 'all') => {
-    const res = await fetch(`${API_URL}/quiz/start`, {
+  startQuiz: async (
+    topic: string,
+    difficulty: string,
+    mode: string,
+    count: number | 'all',
+    subtopic?: string
+  ) => {
+    const res = await fetchWithAuth(`${API_URL}/quiz/start`, {
       method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify({ topic, difficulty, mode, count })
+      body: JSON.stringify({ topic, difficulty, mode, count, subtopic }),
     });
     if (!res.ok) throw new Error('Failed to start quiz');
     const data = await res.json();
-    return data.data as { quizId: string, questions: ClientQuestion[] };
+    return data.data as { quizId: string; questions: ClientQuestion[] };
   },
 
-  submitAnswer: async (quizId: string, questionId: string, selectedOptionIndex: number, selectedOptionText: string) => {
-    const res = await fetch(`${API_URL}/quiz/answer`, {
+  submitAnswer: async (
+    quizId: string,
+    questionId: string,
+    selectedOptionIndex: number,
+    selectedOptionText: string
+  ) => {
+    const res = await fetchWithAuth(`${API_URL}/quiz/answer`, {
       method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify({ quizId, questionId, selectedOptionIndex, selectedOptionText })
+      body: JSON.stringify({
+        quizId,
+        questionId,
+        selectedOptionIndex,
+        selectedOptionText,
+      }),
     });
     if (!res.ok) throw new Error('Failed to submit answer');
     const data = await res.json();
-    return data.data as AnswerResult;
+    return {
+      ...data.data,
+      selectedOptionIndex,
+    } as AnswerResult;
+  },
+
+  getTestCases: async (quizId: string, questionId: string) => {
+    const res = await fetchWithAuth(
+      `${API_URL}/quiz/${quizId}/questions/${questionId}/test-cases`
+    );
+    if (!res.ok) throw new Error('Failed to fetch test cases');
+    const data = await res.json();
+    return data.data as {
+      input: string;
+      expectedOutput: string;
+      isHidden?: boolean;
+    }[];
   },
 
   completeQuiz: async (quizId: string) => {
-    const res = await fetch(`${API_URL}/quiz/complete`, {
+    const res = await fetchWithAuth(`${API_URL}/quiz/complete`, {
       method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify({ quizId })
+      body: JSON.stringify({ quizId }),
     });
     if (!res.ok) throw new Error('Failed to complete quiz');
     const data = await res.json();
@@ -128,24 +329,182 @@ export const api = {
   },
 
   addQuestion: async (questionData: any) => {
-    const res = await fetch(`${API_URL}/questions`, {
+    const res = await fetchWithAuth(`${API_URL}/questions`, {
       method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify(questionData)
+      body: JSON.stringify(questionData),
     });
     const data = await res.json();
     if (!res.ok) throw new Error(data.message || 'Failed to add question');
     return data.data;
   },
 
-  bulkAddQuestions: async (questionsData: any[]) => {
-    const res = await fetch(`${API_URL}/questions/bulk`, {
-      method: 'POST',
-      headers: getHeaders(),
-      body: JSON.stringify(questionsData)
+  updateQuestion: async (id: string, questionData: any) => {
+    const res = await fetchWithAuth(`${API_URL}/questions/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(questionData),
     });
     const data = await res.json();
-    if (!res.ok) throw new Error(data.message || 'Failed to add questions bulk');
+    if (!res.ok) throw new Error(data.message || 'Failed to update question');
     return data.data;
-  }
+  },
+
+  bulkAddQuestions: async (questionsData: any[]) => {
+    const res = await fetchWithAuth(`${API_URL}/questions/bulk`, {
+      method: 'POST',
+      body: JSON.stringify(questionsData),
+    });
+    const data = await res.json();
+    if (!res.ok)
+      throw new Error(data.message || 'Failed to add questions bulk');
+    return data.data;
+  },
+
+  getQuestions: async () => {
+    const res = await fetchWithAuth(`${API_URL}/questions`);
+    if (!res.ok) throw new Error('Failed to fetch questions');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getSubtopics: async (topic: string) => {
+    const res = await fetchWithAuth(
+      `${API_URL}/questions/subtopics?topic=${encodeURIComponent(topic)}`
+    );
+    if (!res.ok) throw new Error('Failed to fetch subtopics');
+    const data = await res.json();
+    return data.data as string[];
+  },
+
+  getQuestionStats: async () => {
+    const res = await fetchWithAuth(`${API_URL}/questions/stats`);
+    if (!res.ok) throw new Error('Failed to fetch question stats');
+    const data = await res.json();
+    return data.data;
+  },
+
+  // ===== Amaliy Masalalar (Problems) =====
+
+  getProblemsAdmin: async () => {
+    // Usually admin needs all problems, client route returns them too but we can just use the public endpoint for now
+    const res = await fetchWithAuth(`${API_URL}/problems`);
+    if (!res.ok) throw new Error('Failed to fetch problems');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getProblem: async (slugOrId: string) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/${slugOrId}`);
+    if (!res.ok) throw new Error('Failed to fetch problem');
+    const data = await res.json();
+    return data.data;
+  },
+
+  runProblem: async (id: string, code: string, language: string) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/${id}/run`, {
+      method: 'POST',
+      body: JSON.stringify({ code, language }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to run problem');
+    return data;
+  },
+
+  submitProblem: async (id: string, code: string, language: string) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/${id}/submit`, {
+      method: 'POST',
+      body: JSON.stringify({ code, language }),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to submit problem');
+    return data;
+  },
+
+  addProblem: async (problemData: any) => {
+    const res = await fetchWithAuth(`${API_URL}/problems`, {
+      method: 'POST',
+      body: JSON.stringify(problemData),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to add problem');
+    return data.data;
+  },
+
+  addProblemsBulk: async (problemsData: any[]) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/bulk`, {
+      method: 'POST',
+      body: JSON.stringify(problemsData),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to add problems');
+    return data.data;
+  },
+
+  deleteProblem: async (id: string) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/${id}`, {
+      method: 'DELETE',
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to delete problem');
+    return data.data;
+  },
+
+  // ===== Community & Social =====
+
+  getRecommendedUsers: async () => {
+    const res = await fetchWithAuth(`${API_URL}/users/recommendations`);
+    if (!res.ok) throw new Error('Failed to fetch recommendations');
+    const data = await res.json();
+    return data.data;
+  },
+
+  followUser: async (id: string) => {
+    const res = await fetchWithAuth(`${API_URL}/users/${id}/follow`, {
+      method: 'POST',
+    });
+    if (!res.ok) throw new Error('Failed to follow user');
+    const data = await res.json();
+    return data.data;
+  },
+
+  unfollowUser: async (id: string) => {
+    const res = await fetchWithAuth(`${API_URL}/users/${id}/unfollow`, {
+      method: 'POST',
+    });
+    if (!res.ok) throw new Error('Failed to unfollow user');
+    const data = await res.json();
+    return data.data;
+  },
+
+  voteProblem: async (id: string, vote: 'up' | 'down') => {
+    const res = await fetchWithAuth(
+      `${API_URL}/community/problems/${id}/vote`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ vote }),
+      }
+    );
+    if (!res.ok) {
+      const errText = await res.text();
+      throw new Error(`Failed to vote: ${errText}`);
+    }
+    const data = await res.json();
+    return data.data;
+  },
+
+  getPendingProblems: async () => {
+    const res = await fetchWithAuth(`${API_URL}/community/problems/pending`);
+    if (!res.ok) throw new Error('Failed to fetch pending problems');
+    const data = await res.json();
+    return data.data;
+  },
+
+  submitCommunityProblem: async (problemData: any) => {
+    const res = await fetchWithAuth(`${API_URL}/community/problems/submit`, {
+      method: 'POST',
+      body: JSON.stringify(problemData),
+    });
+    if (!res.ok) throw new Error('Failed to submit community problem');
+    const data = await res.json();
+    return data.data;
+  },
 };

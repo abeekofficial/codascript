@@ -1,79 +1,74 @@
+import 'dotenv/config';
 import mongoose from 'mongoose';
-import fs from 'fs';
-import path from 'path';
-import dotenv from 'dotenv';
 import { QuestionModel } from './models/Question';
+import { UserModel } from './models/User';
+import bcrypt from 'bcryptjs';
 
-dotenv.config();
+// Import directly via relative path, tsx handles it perfectly
+// @ts-ignore
+import { ADMIN_QUESTIONS } from '../../web/src/data/questions';
 
-async function seedDatabase() {
+async function seed() {
   try {
-    const uri = process.env.MONGODB_URI;
-    if (!uri) {
-      throw new Error('MONGODB_URI is not defined in environment variables');
-    }
+    await mongoose.connect('mongodb://localhost:27017/codascript');
+    console.log('Connected to DB');
+
+    // 1. Seed Admin User
+    const adminEmail = process.env.ADMIN_SEED_EMAIL;
+    const adminPassword = process.env.ADMIN_SEED_PASSWORD;
     
-    await mongoose.connect(uri);
-    console.log('Connected to MongoDB');
-
-    const quizzesDir = path.join(__dirname, 'data', 'quizzes');
-    const files = fs.readdirSync(quizzesDir).filter(file => file.endsWith('.json'));
-    let totalUpserted = 0;
-    let totalDuplicates = 0;
-
-    for (const file of files) {
-      const filePath = path.join(quizzesDir, file);
-      const fileData = fs.readFileSync(filePath, 'utf-8');
-      const questions = JSON.parse(fileData);
-
-      for (const q of questions) {
-        // Map JSON format to Mongoose schema
-        const topic = q.topic;
-        const difficulty = q.difficulty;
-        const question = q.question;
-        const options = q.options;
-        const correctOptionId = q.correctOptionIndex;
-        const explanation = q.explanation;
-
-        if (!topic || !difficulty || !question || !options || correctOptionId === undefined) {
-            console.warn(`[WARNING] Skipping invalid question in ${file}: ${question}`);
-            continue;
-        }
-
-        const result = await QuestionModel.updateOne(
-          { topic, question },
-          {
-            $set: {
-              topic,
-              difficulty,
-              question,
-              options,
-              correctOptionId,
-              explanation
-            }
-          },
-          { upsert: true }
-        );
-        
-        if (result.upsertedCount > 0) {
-            totalUpserted++;
-        } else if (result.modifiedCount > 0) {
-            totalUpserted++; // Count as updated if we're upserting
-        } else {
-            totalDuplicates++;
-        }
-      }
-      console.log(`Processed ${file}`);
+    if (!adminEmail || !adminPassword) {
+      throw new Error('Missing ADMIN_SEED_EMAIL or ADMIN_SEED_PASSWORD in environment variables');
     }
 
-    console.log(`Seeding completed successfully. Total questions upserted/updated: ${totalUpserted}, unchanged/duplicates: ${totalDuplicates}`);
+    let admin = await UserModel.findOne({ email: adminEmail });
+    if (!admin) {
+      const hashedPassword = await bcrypt.hash(adminPassword, 10);
+      admin = new UserModel({
+        name: 'Admin',
+        email: adminEmail,
+        password: hashedPassword,
+        role: 'admin',
+        totalXP: 0,
+        completedQuizzes: 0
+      });
+      await admin.save();
+      console.log(`Created admin user: ${adminEmail}`);
+    } else {
+      admin.role = 'admin';
+      await admin.save();
+      console.log(`Updated existing user ${adminEmail} to admin role.`);
+    }
+
+    // 2. Seed Questions
+    // Clear existing questions
+    await QuestionModel.deleteMany({});
+    console.log('Cleared existing questions');
+
+    // Transform and insert
+    const formattedQuestions = ADMIN_QUESTIONS.map((q: any) => ({
+      topic: q.tech === 'js' ? 'JavaScript' : 
+             q.tech === 'ts' ? 'TypeScript' : 
+             q.tech === 'react' ? 'React' : 
+             q.tech === 'html' ? 'HTML' : 
+             q.tech === 'css' ? 'CSS' : q.tech,
+      difficulty: q.difficulty,
+      question: q.prompt,
+      options: q.options,
+      correctOptionId: q.correctIndex,
+      explanation: q.explanation,
+      code: q.code || ''
+    }));
+
+    await QuestionModel.insertMany(formattedQuestions, { ordered: false });
+    console.log(`Successfully seeded ${formattedQuestions.length} questions from data/questions.ts`);
+
   } catch (error) {
-    console.error('Error seeding database:', error);
-    process.exit(1);
+    console.error('Seeding error:', error);
   } finally {
-    await mongoose.disconnect();
-    console.log('Disconnected from MongoDB');
+    mongoose.disconnect();
+    process.exit(0);
   }
 }
 
-seedDatabase();
+seed();

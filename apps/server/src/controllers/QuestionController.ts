@@ -41,20 +41,44 @@ export class QuestionController {
 
   static async getTopics(req: Request, res: Response, next: NextFunction) {
     try {
-      const topics = await questionService.getTopics();
-      res.status(200).json({ success: true, data: topics });
+      const data = await questionService.getTopics();
+      res.status(200).json({ success: true, data });
+    } catch (error) { next(error); }
+  }
+
+  static async getSubtopics(req: Request, res: Response, next: NextFunction) {
+    try {
+      const { topic } = req.query;
+      if (!topic) throw { statusCode: 400, message: 'Topic is required' };
+      const data = await questionService.getSubtopics(topic as string);
+      res.status(200).json({ success: true, data });
     } catch (error) { next(error); }
   }
 
   static async getCount(req: Request, res: Response, next: NextFunction) {
     try {
-      const { topic, difficulty, mode } = req.query;
+      const { topic, difficulty, mode, subtopic } = req.query;
       const count = await questionService.getCount(
         topic as string || '', 
         difficulty as string || 'mixed', 
-        (mode as 'topic' | 'mixed') || 'topic'
+        (mode as 'topic' | 'mixed') || 'topic',
+        subtopic as string
       );
       res.status(200).json({ success: true, data: count });
+    } catch (error) { next(error); }
+  }
+
+  static async getStats(req: Request, res: Response, next: NextFunction) {
+    try {
+      const stats = await questionService.getQuestionStats();
+      res.status(200).json({ success: true, data: stats });
+    } catch (error) { next(error); }
+  }
+
+  static async getAll(req: Request, res: Response, next: NextFunction) {
+    try {
+      const qs = await questionService.getAll();
+      res.status(200).json({ success: true, data: qs });
     } catch (error) { next(error); }
   }
 }

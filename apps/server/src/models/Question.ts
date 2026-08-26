@@ -6,12 +6,25 @@ const questionSchema = new Schema<Question>({
   subtopic: { type: String },
   difficulty: { type: String, required: true },
   question: { type: String, required: true },
-  options: [{ type: String, required: true }],
-  correctOptionId: { type: Number, required: true },
+  options: [{ type: String }],
+  correctOptionId: { type: Number },
   explanation: { type: String },
   code: { type: String },
+  type: { type: String, enum: ['multiple_choice', 'code'], default: 'multiple_choice' },
+  language: { type: String },
+  starterCode: { type: String },
+  testCases: [{
+    input: { type: String },
+    expectedOutput: { type: String },
+    isHidden: { type: Boolean, default: false }
+  }],
   tags: [{ type: String }],
-  isActive: { type: Boolean, default: true }
+  isActive: { type: Boolean, default: true },
+  genericId: { type: String, unique: true, sparse: true, index: true },
+  author: { type: Schema.Types.ObjectId, ref: 'User' },
+  status: { type: String, enum: ['pending', 'approved', 'rejected'], default: 'approved' },
+  upvotes: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  downvotes: [{ type: Schema.Types.ObjectId, ref: 'User' }]
 }, { timestamps: true });
 
 // Create compound index to optimize queries
