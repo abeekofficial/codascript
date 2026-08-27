@@ -83,7 +83,7 @@ export default function ProblemsPage() {
             return (
               <Link 
                 key={p.id} 
-                href={`/masalalar/${p.slug}`}
+                href={`/problems/${p.slug}`}
                 className="group flex items-center justify-between rounded-2xl border border-line bg-surface p-5 transition-colors hover:border-neon hover:bg-elevated"
               >
                 <div>

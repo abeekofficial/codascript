@@ -20,14 +20,14 @@ import { useAuthStore } from '@/store/authStore';
 
 const NAV = [
   { to: '/dashboard', label: 'Boshqaruv paneli', icon: LayoutDashboardIcon, end: true },
-  { to: '/test-tanlash', label: 'Testlar', icon: ListChecksIcon },
-  { to: '/tarix', label: 'Test tarixi', icon: ClockIcon },
-  { to: '/natijalar', label: 'Natijalarim', icon: BarChart3Icon },
-  { to: '/masalalar', label: 'Amaliy masalalar', icon: CodeIcon },
-  { to: '/jamiyat', label: 'Jamiyat', icon: UsersIcon },
+  { to: '/quizzes', label: 'Testlar', icon: ListChecksIcon },
+  { to: '/history', label: 'Test tarixi', icon: ClockIcon },
+  { to: '/results', label: 'Natijalarim', icon: BarChart3Icon },
+  { to: '/problems', label: 'Amaliy masalalar', icon: CodeIcon },
+  { to: '/community', label: 'Jamiyat', icon: UsersIcon },
   { to: '/leaderboard', label: 'Leaderboard', icon: TrophyIcon },
-  { to: '/profil', label: 'Profilim', icon: UserIcon },
-  { to: '/sozlamalar', label: 'Sozlamalar', icon: SettingsIcon }
+  { to: '/profile', label: 'Profilim', icon: UserIcon },
+  { to: '/settings', label: 'Sozlamalar', icon: SettingsIcon }
 ];
 
 export function Sidebar() {

@@ -82,7 +82,7 @@ function RecommendedUsers() {
     <div className="space-y-4">
       {users.map(user => (
         <div key={user._id} className="flex items-center justify-between gap-3">
-          <Link href={`/foydalanuvchi/${user.username || user._id}`} className="flex items-center gap-3 min-w-0 flex-1 hover:opacity-80 transition-opacity">
+          <Link href={`/users/${user.username || user._id}`} className="flex items-center gap-3 min-w-0 flex-1 hover:opacity-80 transition-opacity">
             <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-elevated text-xs font-bold text-ink-dim">
               {user.name ? user.name.charAt(0).toUpperCase() : 'U'}
             </span>
@@ -173,7 +173,7 @@ export default function Leaderboard() {
                       )}
                     </td>
                     <td className="px-2 py-3.5">
-                      <Link href={`/foydalanuvchi/${(row as any).username || row._id}`} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+                      <Link href={`/users/${(row as any).username || row._id}`} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
                         <span
                           className={[
                             'flex h-9 w-9 shrink-0 items-center justify-center rounded-xl text-xs font-bold',

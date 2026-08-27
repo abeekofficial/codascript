@@ -62,7 +62,7 @@ export default function TestTanlash() {
         questionCount: count
       });
       
-      router.push('/test-jarayoni');
+      router.push('/quiz-session');
     } catch (e) {
       console.error(e);
       alert('Testni boshlashda xatolik yuz berdi');

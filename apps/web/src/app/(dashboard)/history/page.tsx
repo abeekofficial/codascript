@@ -82,7 +82,7 @@ export default function Tarix() {
       ) : attempts.length === 0 ? (
         <div className="rounded-2xl border border-line bg-surface p-10 text-center">
           <p className="text-ink-dim">Hali yakunlangan testlar yo'q.</p>
-          <a href="/test-tanlash" className="mt-4 inline-block rounded-xl bg-neon px-5 py-2.5 text-sm font-semibold text-bg hover:bg-neon-hover">
+          <a href="/quizzes" className="mt-4 inline-block rounded-xl bg-neon px-5 py-2.5 text-sm font-semibold text-bg hover:bg-neon-hover">
             Test boshlash
           </a>
         </div>

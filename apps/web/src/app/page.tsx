@@ -33,7 +33,7 @@ export default function LandingPage() {
         </div>
         <nav className="hidden md:flex gap-6 text-sm font-medium text-gray-400">
           <Link href="/" className="text-white">Bosh sahifa</Link>
-          <Link href="/test-tanlash" className="hover:text-white transition">Testlar</Link>
+          <Link href="/quizzes" className="hover:text-white transition">Testlar</Link>
           <Link href="/leaderboard" className="hover:text-white transition">Leaderboard</Link>
           <Link href="#" className="hover:text-white transition">Blog</Link>
           <Link href="#" className="hover:text-white transition">Yordam</Link>

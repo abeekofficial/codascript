@@ -44,7 +44,7 @@ export default function TestJarayoni() {
 
   useEffect(() => {
     if (!quizId || questions.length === 0) {
-      router.push('/test-tanlash');
+      router.push('/quizzes');
       return;
     }
     const id = window.setInterval(() => {
@@ -87,7 +87,7 @@ export default function TestJarayoni() {
       } catch (err) {}
 
       finishQuiz();
-      router.push('/natijalar');
+      router.push('/results');
     } catch (e) {
       console.error(e);
       alert('Testni yakunlashda xatolik');
@@ -139,7 +139,7 @@ export default function TestJarayoni() {
             type="button"
             onClick={() => {
               resetQuiz();
-              router.push('/test-tanlash');
+              router.push('/quizzes');
             }}
             aria-label="Testdan chiqish"
             className="flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink-dim transition-colors duration-150 hover:border-danger/50 hover:text-danger"

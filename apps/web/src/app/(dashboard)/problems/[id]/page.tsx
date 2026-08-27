@@ -33,15 +33,27 @@ export default function ProblemDetailsPage() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    let cancelled = false;
+    const controller = new AbortController();
+    
     api.getProblem(id)
       .then(data => {
-        if (data) {
+        if (!cancelled && data) {
           setProblem(data);
           setCode(data.starterCode?.javascript || '');
         }
       })
-      .catch(err => console.error(err))
-      .finally(() => setLoading(false));
+      .catch(err => {
+        if (!cancelled) console.error(err);
+      })
+      .finally(() => {
+        if (!cancelled) setLoading(false);
+      });
+      
+    return () => {
+      cancelled = true;
+      controller.abort();
+    };
   }, [id]);
 
   const handleRun = async () => {
@@ -50,10 +62,17 @@ export default function ProblemDetailsPage() {
     setResult(null);
     
     try {
-      const apiRes = await api.runProblem(problem.id, code, problem.topic);
+      const apiRes = await api.runProblem(problem.id, code, 'javascript');
       
       if (apiRes.success) {
         const { status, passedTests, totalTests, results } = apiRes.data;
+        if (status === 'no_test_cases') {
+          setResult({
+            status: 'error',
+            error: 'Masalada test holatlari mavjud emas. Admin tekshirishi kerak.'
+          });
+          return;
+        }
         const isSuccess = status === 'accepted';
         setResult({
           status: isSuccess ? 'success' : 'error',
@@ -82,10 +101,17 @@ export default function ProblemDetailsPage() {
     setResult(null);
     
     try {
-      const apiRes = await api.submitProblem(problem.id, code, problem.topic);
+      const apiRes = await api.submitProblem(problem.id, code, 'javascript');
       
       if (apiRes.success) {
         const { status, passedTests, totalTests, results } = apiRes.data;
+        if (status === 'no_test_cases') {
+          setResult({
+            status: 'error',
+            error: 'Masalada test holatlari mavjud emas. Admin tekshirishi kerak.'
+          });
+          return;
+        }
         const isSuccess = status === 'accepted';
         setResult({
           status: isSuccess ? 'success' : 'error',
@@ -131,7 +157,7 @@ export default function ProblemDetailsPage() {
       {/* Header */}
       <header className="flex shrink-0 items-center justify-between border-b border-line bg-surface px-6 py-3">
         <div className="flex items-center gap-4">
-          <Link href="/masalalar" className="text-ink-dim hover:text-ink transition-colors">
+          <Link href="/problems" className="text-ink-dim hover:text-ink transition-colors">
             <ArrowLeftIcon className="h-5 w-5" />
           </Link>
           <div className="flex flex-col">
@@ -150,7 +176,7 @@ export default function ProblemDetailsPage() {
             </div>
             {problem.author && (
               <span className="text-xs text-ink-dim mt-0.5">
-                Muallif: <Link href={`/foydalanuvchi/${problem.author.username || problem.author}`} className="hover:text-neon transition-colors">@{problem.author.username || problem.author}</Link>
+                Muallif: <Link href={`/users/${problem.author.username || problem.author}`} className="hover:text-neon transition-colors">@{problem.author.username || problem.author}</Link>
               </span>
             )}
           </div>

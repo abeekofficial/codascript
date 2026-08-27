@@ -53,10 +53,15 @@ export class ProblemService {
     code: string,
     language: string
   ): Promise<RunResult> {
+    const problem = await this.repository.findById(problemId);
+    if (!problem) {
+      throw new Error('Problem not found');
+    }
+
     if (problem.testCases.length === 0) {
       // submitCode uchun
       return {
-        success: false,
+        success: true,
         data: {
           problemId,
           status: 'no_test_cases',
@@ -66,10 +71,6 @@ export class ProblemService {
           score: 0,
         },
       };
-    }
-    const problem = await this.repository.findById(problemId);
-    if (!problem) {
-      throw new Error('Problem not found');
     }
 
     if (language !== 'javascript') {
@@ -150,10 +151,17 @@ export class ProblemService {
     code: string,
     language: string
   ): Promise<RunResult> {
-    if (problem.testCases.length === 0) {
-      // submitCode uchun
+    const problem = await this.repository.findById(problemId);
+    if (!problem) {
+      throw new Error('Problem not found');
+    }
+
+    const publicTestCases = problem.testCases.filter(tc => !tc.isHidden);
+
+    if (publicTestCases.length === 0) {
+      // runCode uchun faqat public testCaselar tekshiriladi
       return {
-        success: false,
+        success: true,
         data: {
           problemId,
           status: 'no_test_cases',
@@ -163,10 +171,6 @@ export class ProblemService {
           score: 0,
         },
       };
-    }
-    const problem = await this.repository.findById(problemId);
-    if (!problem) {
-      throw new Error('Problem not found');
     }
 
     if (language !== 'javascript') {
@@ -179,7 +183,6 @@ export class ProblemService {
     let hasTimeLimitExceeded = false;
 
     // Test code against PUBLIC test cases only
-    const publicTestCases = problem.testCases.filter(tc => !tc.isHidden);
     for (const testCase of publicTestCases) {
       const res = await SandboxService.executeJavascript(code, testCase.input);
 

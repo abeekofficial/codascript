@@ -78,7 +78,7 @@ export function TopBar() {
         </div>
 
         <Link
-          href="/profil"
+          href="/profile"
           className="flex items-center gap-3 rounded-xl border border-line bg-surface py-1.5 pl-1.5 pr-3 transition-colors duration-150 hover:border-neon/50"
         >
           {user?.avatar ? (

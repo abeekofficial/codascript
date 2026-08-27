@@ -59,7 +59,7 @@ export default function Dashboard() {
         description={streak > 0 ? `${streak} kunlik seriyangiz bor. Uzmang!` : "Bugun birinchi testingizni yeching!"}
         actions={
           <Link
-            href="/test-tanlash"
+            href="/quizzes"
             className="flex items-center gap-2 rounded-xl bg-neon px-4 py-2.5 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover"
           >
             <PlayIcon className="h-4 w-4" aria-hidden="true" />
@@ -79,7 +79,7 @@ export default function Dashboard() {
             </p>
           </div>
           <Link
-            href="/test-tanlash"
+            href="/quizzes"
             className="ml-auto shrink-0 rounded-lg bg-warning/15 px-3 py-1.5 text-xs font-semibold text-warning hover:bg-warning/25"
           >
             Test yechish
@@ -133,7 +133,7 @@ export default function Dashboard() {
             {TECHS.map((t) => (
               <li key={t.id}>
                 <Link
-                  href={`/test-tanlash?tech=${t.id}`}
+                  href={`/quizzes?tech=${t.id}`}
                   className="flex items-center gap-3 rounded-xl border border-line bg-elevated px-4 py-3 text-sm transition-colors duration-150 hover:border-neon/50"
                 >
                   <span className="h-2.5 w-2.5 rounded-full" style={{ backgroundColor: t.color }} />
@@ -150,7 +150,7 @@ export default function Dashboard() {
       <section className="mt-6 rounded-2xl border border-line bg-surface p-6">
         <div className="mb-4 flex items-baseline justify-between gap-3">
           <h2 className="text-base font-semibold">So'nggi testlar</h2>
-          <Link href="/tarix" className="text-sm font-medium text-neon hover:text-neon-hover">
+          <Link href="/history" className="text-sm font-medium text-neon hover:text-neon-hover">
             Barchasi
           </Link>
         </div>

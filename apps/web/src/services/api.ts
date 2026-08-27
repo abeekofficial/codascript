@@ -448,6 +448,17 @@ export const api = {
     return data.data;
   },
 
+  updateProblem: async (id: string, problemData: any) => {
+    const res = await fetchWithAuth(`${API_URL}/problems/${id}`, {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(problemData),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to update problem');
+    return data.data;
+  },
+
   // ===== Community & Social =====
 
   getRecommendedUsers: async () => {

@@ -41,6 +41,8 @@ export default function AdminProblemsPage() {
   const [message, setMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
+  const [editingId, setEditingId] = useState<string | null>(null);
+
   const loadData = async () => {
     try {
       const ps = await api.getProblemsAdmin();
@@ -62,8 +64,38 @@ export default function AdminProblemsPage() {
   );
 
   function openNew() {
+    setEditingId(null);
     setDraft(emptyDraft);
     setPanelOpen(true);
+  }
+
+  function openEdit(p: ClientProblem) {
+    setEditingId(p.id);
+    setDraft({
+      title: p.title,
+      slug: p.slug,
+      difficulty: p.difficulty as 'easy' | 'medium' | 'hard',
+      topic: p.topic,
+      description: p.description,
+      examples: p.examples || [{ input: '', output: '' }],
+      starterCode: p.starterCode?.javascript || '',
+      testCases: (p.testCases || []).map(tc => ({
+        input: tc.input,
+        expectedOutput: tc.expectedOutput ?? '',
+        isHidden: tc.isHidden
+      }))
+    });
+    setPanelOpen(true);
+  }
+
+  async function handleDelete(id: string) {
+    if (!confirm("Rostdan ham bu masalani o'chirmoqchimisiz?")) return;
+    try {
+      await api.deleteProblem(id);
+      loadData();
+    } catch (err: any) {
+      alert(`Xatolik: ${err.message}`);
+    }
   }
 
   async function save(e: React.FormEvent) {
@@ -76,8 +108,13 @@ export default function AdminProblemsPage() {
         starterCode: { javascript: draft.starterCode }
       };
       
-      await api.addProblem(payload);
-      setMessage('Masala muvaffaqiyatli qo\'shildi!');
+      if (editingId) {
+        await api.updateProblem(editingId, payload);
+        setMessage('Masala muvaffaqiyatli yangilandi!');
+      } else {
+        await api.addProblem(payload);
+        setMessage('Masala muvaffaqiyatli qo\'shildi!');
+      }
       setPanelOpen(false);
       loadData();
     } catch (err: any) {
@@ -167,6 +204,7 @@ export default function AdminProblemsPage() {
                 <th scope="col" className="px-5 py-3 font-medium">Sarlavha</th>
                 <th scope="col" className="px-3 py-3 font-medium">Topic</th>
                 <th scope="col" className="px-3 py-3 font-medium">Qiyinlik</th>
+                <th scope="col" className="px-3 py-3 font-medium text-right">Amallar</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-line">
@@ -179,6 +217,20 @@ export default function AdminProblemsPage() {
                   <td className="px-3 py-3.5"><span className="text-xs font-medium">{q.topic}</span></td>
                   <td className="px-3 py-3.5">
                     <span className="text-xs font-medium uppercase">{q.difficulty}</span>
+                  </td>
+                  <td className="px-3 py-3.5 text-right">
+                    <button
+                      onClick={() => openEdit(q)}
+                      className="mr-3 text-neon hover:underline text-sm font-medium"
+                    >
+                      Tahrirlash
+                    </button>
+                    <button
+                      onClick={() => handleDelete(q.id)}
+                      className="text-danger hover:underline text-sm font-medium"
+                    >
+                      O'chirish
+                    </button>
                   </td>
                 </tr>
               ))}
@@ -212,7 +264,7 @@ export default function AdminProblemsPage() {
               className="coda-scroll fixed right-0 top-0 z-50 flex h-full w-full max-w-lg flex-col overflow-y-auto border-l border-line bg-surface"
             >
               <div className="flex items-center justify-between border-b border-line px-6 py-4">
-                <h2 className="text-base font-semibold">Yangi masala qo‘shish</h2>
+                <h2 className="text-base font-semibold">{editingId ? "Masalani tahrirlash" : "Yangi masala qo‘shish"}</h2>
                 <button
                   type="button"
                   onClick={() => setPanelOpen(false)}

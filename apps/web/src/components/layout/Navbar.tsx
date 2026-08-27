@@ -38,7 +38,7 @@ export default function Navbar() {
               <Link href="/leaderboard" className="text-sm font-medium transition-colors hover:text-primary">
                 Reyting
               </Link>
-              <Link href="/profile" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <Link href="/profilee" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
                 {user?.avatar ? (
                   <img src={user.avatar} alt="Avatar" className="w-8 h-8 rounded-full border border-border bg-muted object-cover" />
                 ) : (

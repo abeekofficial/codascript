@@ -178,7 +178,7 @@ export default function Natijalar() {
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row">
         <Link
-          href="/test-tanlash"
+          href="/quizzes"
           className="flex flex-1 items-center justify-center gap-2 rounded-xl bg-neon px-5 py-3 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover"
         >
           <WrenchIcon className="h-4 w-4" aria-hidden="true" />

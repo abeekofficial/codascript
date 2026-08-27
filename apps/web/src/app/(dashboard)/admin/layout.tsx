@@ -50,13 +50,13 @@ export default function AdminLayout({
             href="/admin"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Testlar bazasi
+            Quizzes
           </a>
           <a
-            href="/admin/masalalar"
+            href="/admin/problems"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Masalalar bazasi
+            Problems
           </a>
         </div>
 
