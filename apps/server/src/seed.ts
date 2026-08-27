@@ -14,11 +14,18 @@ async function seed() {
     console.log('Connected to DB');
 
     // 1. Seed Admin User
-    const adminEmail = process.env.ADMIN_SEED_EMAIL;
-    const adminPassword = process.env.ADMIN_SEED_PASSWORD;
+    const adminEmail = process.env.SEED_ADMIN_EMAIL;
+    const adminPassword = process.env.SEED_ADMIN_PASSWORD;
     
     if (!adminEmail || !adminPassword) {
-      throw new Error('Missing ADMIN_SEED_EMAIL or ADMIN_SEED_PASSWORD in environment variables');
+      throw new Error('Missing SEED_ADMIN_EMAIL or SEED_ADMIN_PASSWORD in environment variables');
+    }
+
+    if (adminPassword === 'admin123') {
+      console.warn('\n========================================================================');
+      console.warn('WARNING: You are using the default "admin123" password for the admin account.');
+      console.warn('Please change SEED_ADMIN_PASSWORD in your environment variables IMMEDIATELY.');
+      console.warn('========================================================================\n');
     }
 
     let admin = await UserModel.findOne({ email: adminEmail });
