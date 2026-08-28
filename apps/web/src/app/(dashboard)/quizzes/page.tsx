@@ -184,33 +184,37 @@ export default function TestTanlash() {
 
           <section className="rounded-2xl border border-line bg-surface p-6">
             <h2 className="mb-4 text-base font-semibold">Savollar soni</h2>
-            <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-5">
-              {QUESTION_COUNTS.map((c) => {
-                const active = c === count;
-                // Wait for loading or check against available
-                const disabled = !isLoading && c > available;
-                return (
-                  <button
-                    key={c}
-                    type="button"
-                    disabled={disabled}
-                    onClick={() => setCount(c)}
-                    aria-pressed={active}
-                    className={[
-                      'rounded-xl border py-4 text-center transition-colors duration-150',
-                      disabled
-                        ? 'cursor-not-allowed border-line/60 bg-elevated/40 text-ink-muted/50'
-                        : active
-                        ? 'border-neon bg-neon/10 text-ink'
-                        : 'border-line bg-elevated text-ink-dim hover:border-ink-muted hover:text-ink'
-                    ].join(' ')}
-                  >
-                    <span className="block text-xl font-bold">{c}</span>
-                    <span className="block text-[11px] text-ink-muted">savol</span>
-                  </button>
-                );
-              })}
-            </div>
+            {available === 0 ? (
+              <p className="text-sm text-ink-dim py-4">Bu submavzuda hozircha savol yo'q</p>
+            ) : (
+              <div className="grid grid-cols-2 gap-2.5 sm:grid-cols-5">
+                {dynamicCounts.map((c) => {
+                  const active = c === count;
+                  // Wait for loading or check against available
+                  const disabled = !isLoading && c > available;
+                  return (
+                    <button
+                      key={c}
+                      type="button"
+                      disabled={disabled}
+                      onClick={() => setCount(c)}
+                      aria-pressed={active}
+                      className={[
+                        'rounded-xl border py-4 text-center transition-colors duration-150',
+                        disabled
+                          ? 'cursor-not-allowed border-line/60 bg-elevated/40 text-ink-muted/50'
+                          : active
+                          ? 'border-neon bg-neon/10 text-ink'
+                          : 'border-line bg-elevated text-ink-dim hover:border-ink-muted hover:text-ink'
+                      ].join(' ')}
+                    >
+                      <span className="block text-xl font-bold">{c}</span>
+                      <span className="block text-[11px] text-ink-muted">savol</span>
+                    </button>
+                  );
+                })}
+              </div>
+            )}
           </section>
         </div>
 
