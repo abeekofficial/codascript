@@ -10,7 +10,9 @@ import { ADMIN_QUESTIONS } from '../../web/src/data/questions';
 
 async function seed() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/codascript');
+    const uri = process.env.MONGODB_URI;
+    if (!uri) throw new Error('MONGODB_URI is not defined in environment variables');
+    await mongoose.connect(uri);
     console.log('Connected to DB');
 
     // 1. Seed Admin User

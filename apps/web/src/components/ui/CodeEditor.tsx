@@ -43,6 +43,7 @@ export function CodeEditor({ language, value, onChange, height = '100%', readOnl
           scrollBeyondLastLine: false,
           readOnly,
           fontFamily: "'JetBrains Mono', 'Fira Code', monospace",
+          wordWrap: 'on',
         }}
         loading={
           <div className="flex h-full items-center justify-center bg-surface text-sm text-ink-dim">

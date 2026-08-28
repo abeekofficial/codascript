@@ -436,19 +436,31 @@ export default function AdminPage() {
               </div>
 
               <form onSubmit={save} className="flex flex-1 flex-col gap-5 p-6">
-                <label className="block">
-                  <span className="mb-2 block text-sm font-medium">
-                    Texnologiya (Topic)
-                  </span>
-                  <input
-                    value={draft.topic}
-                    onChange={e =>
-                      setDraft({ ...draft, topic: e.target.value })
-                    }
-                    required
-                    className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                  />
-                </label>
+                <div className="flex gap-4">
+                  <label className="block flex-1">
+                    <span className="mb-2 block text-sm font-medium">
+                      Texnologiya (Topic)
+                    </span>
+                    <input
+                      value={draft.topic}
+                      onChange={e =>
+                        setDraft({ ...draft, topic: e.target.value })
+                      }
+                      required
+                      className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
+                    />
+                  </label>
+
+                  <label className="block flex-1">
+                    <span className="mb-2 block text-sm font-medium">Submavzu (Ixtiyoriy)</span>
+                    <input
+                      value={draft.subtopic || ''}
+                      onChange={e => setDraft({ ...draft, subtopic: e.target.value })}
+                      placeholder="Masalan: Closures"
+                      className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
+                    />
+                  </label>
+                </div>
 
                 <div>
                   <span className="mb-2 block text-sm font-medium">
@@ -796,6 +808,7 @@ export default function AdminPage() {
                   placeholder={`[
   {
     "topic": "JavaScript",
+    "subtopic": "Closures",
     "difficulty": "easy",
     "question": "Savol matni",
     "options": ["A", "B", "C", "D"],

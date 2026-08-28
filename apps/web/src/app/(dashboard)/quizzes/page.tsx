@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { ClockIcon, PlayIcon, SparklesIcon, ZapIcon } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
@@ -35,7 +35,20 @@ export default function TestTanlash() {
   });
   
   const available = availableData || 0;
-  const notEnough = count > available || available === 0;
+
+  const dynamicCounts = useMemo(() => {
+    const fitting = QUESTION_COUNTS.filter((c) => c <= available);
+    if (fitting.length === 0 && available > 0) return [available];
+    return fitting;
+  }, [available]);
+
+  useEffect(() => {
+    if (dynamicCounts.length > 0 && !dynamicCounts.includes(count)) {
+      setCount(dynamicCounts[0]);
+    }
+  }, [dynamicCounts, count]);
+
+  const notEnough = available === 0 || !dynamicCounts.includes(count);
   const estimatedMinutes = Math.round(count * 1.2);
 
   const [starting, setStarting] = useState(false);

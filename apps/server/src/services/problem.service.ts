@@ -98,8 +98,20 @@ export class ProblemService {
           actualOutput = res.error;
         }
       } else {
-        // Compare output (trim whitespace)
-        passed = actualOutput === testCase.expectedOutput.trim();
+        // Compare output with deep equality fallback for JSON/numbers
+        const actTrim = actualOutput.trim();
+        const expTrim = testCase.expectedOutput.trim();
+        if (actTrim === expTrim) {
+          passed = true;
+        } else {
+          try {
+            const actJson = JSON.parse(actTrim);
+            const expJson = JSON.parse(expTrim);
+            passed = JSON.stringify(actJson) === JSON.stringify(expJson);
+          } catch {
+            passed = false;
+          }
+        }
       }
 
       if (!passed) {
@@ -198,8 +210,20 @@ export class ProblemService {
           actualOutput = res.error;
         }
       } else {
-        // Compare output (trim whitespace)
-        passed = actualOutput === testCase.expectedOutput.trim();
+        // Compare output with deep equality fallback for JSON/numbers
+        const actTrim = actualOutput.trim();
+        const expTrim = testCase.expectedOutput.trim();
+        if (actTrim === expTrim) {
+          passed = true;
+        } else {
+          try {
+            const actJson = JSON.parse(actTrim);
+            const expJson = JSON.parse(expTrim);
+            passed = JSON.stringify(actJson) === JSON.stringify(expJson);
+          } catch {
+            passed = false;
+          }
+        }
       }
 
       if (!passed) {
