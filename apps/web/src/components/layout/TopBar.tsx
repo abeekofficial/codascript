@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BellIcon, FlameIcon, SearchIcon, ZapIcon, MenuIcon, TerminalIcon, UserIcon, SettingsIcon, ClockIcon, BookmarkIcon, UsersIcon, HelpCircleIcon, LogOutIcon } from "lucide-react";
 import { useAuthStore } from "@/store/authStore";
-
+import { MobileSidePanel } from "@/components/layout/MobileSidePanel";
 const NOTIFICATIONS = [
   { id: "n1", title: "Yangi haftalik reyting e’lon qilindi", time: "5 daqiqa oldin", unread: true },
   { id: "n2", title: "JavaScript testida 850 XP yig‘dingiz", time: "2 soat oldin", unread: true },
@@ -27,16 +27,6 @@ export function TopBar() {
     document.addEventListener("mousedown", onClick);
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
-
-  const DRAWER_LINKS = [
-    { to: "/profile", label: "Profilim", icon: UserIcon },
-    { to: "/settings", label: "Sozlamalar", icon: SettingsIcon },
-    { to: "/notifications", label: "Bildirishnomalar", icon: BellIcon },
-    { to: "/history-xp", label: "XP Tarixi", icon: ZapIcon },
-    { to: "/saved", label: "Saqlanganlar", icon: BookmarkIcon },
-    { to: "/friends", label: "Do‘stlar", icon: UsersIcon },
-    { to: "/help", label: "Yordam", icon: HelpCircleIcon }
-  ];
 
   return (
     <>
@@ -134,65 +124,7 @@ export function TopBar() {
         </div>
       </header>
 
-      {/* Mobile Drawer */}
-      {drawerOpen && (
-        <div className="fixed inset-0 z-50 flex justify-end lg:hidden">
-          <div className="absolute inset-0 bg-bg/80 backdrop-blur-sm" onClick={() => setDrawerOpen(false)} />
-          <div className="relative w-72 h-full bg-bg border-l border-line shadow-2xl overflow-y-auto flex flex-col">
-            <div className="p-5 flex flex-col gap-4 border-b border-line">
-              <div className="flex items-center gap-3">
-                {user?.avatar ? (
-                  <img src={user.avatar} alt="Avatar" className="h-12 w-12 rounded-full object-cover" />
-                ) : (
-                  <span className="flex h-12 w-12 items-center justify-center rounded-full bg-neon/15 text-neon text-lg font-bold">
-                    {user?.name?.charAt(0).toUpperCase() || "U"}
-                  </span>
-                )}
-                <div className="flex flex-col">
-                  <span className="font-semibold text-ink">{user?.name || "User"}</span>
-                  <span className="inline-flex w-fit items-center rounded-full bg-neon/10 px-2.5 py-0.5 text-xs font-medium text-neon mt-1">
-                    Level {user?.level || 1}
-                  </span>
-                </div>
-              </div>
-              
-              <div className="flex flex-col gap-1.5 mt-2">
-                <div className="flex items-center gap-2 text-sm font-medium text-neon">
-                  <ZapIcon className="h-4 w-4" />
-                  {user?.score || 0} XP
-                </div>
-                <div className="h-1.5 w-full rounded-full bg-elevated overflow-hidden">
-                  <div className="h-full bg-neon" style={{ width: `${((user?.score || 0) % 1000) / 10}%` }} />
-                </div>
-              </div>
-            </div>
-
-            <nav className="flex-1 py-4 flex flex-col gap-1 px-3">
-              {DRAWER_LINKS.map(({ to, label, icon: Icon }) => (
-                <Link
-                  key={to}
-                  href={to}
-                  onClick={() => setDrawerOpen(false)}
-                  className={`flex items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium transition-colors ${
-                    pathname === to ? "text-neon" : "text-ink-dim hover:text-ink"
-                  }`}
-                >
-                  <Icon className="h-[18px] w-[18px]" />
-                  {label}
-                </Link>
-              ))}
-              
-              <button
-                onClick={() => { setDrawerOpen(false); logout(); }}
-                className="mt-4 flex w-full items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium text-ink-dim hover:text-ink transition-colors"
-              >
-                <LogOutIcon className="h-[18px] w-[18px]" />
-                Chiqish
-              </button>
-            </nav>
-          </div>
-        </div>
-      )}
+      <MobileSidePanel isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} />
     </>
   );
 }
