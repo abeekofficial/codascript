@@ -3,7 +3,7 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { UserIcon, SettingsIcon, ZapIcon, BookmarkIcon, UsersIcon, HelpCircleIcon, LogOutIcon } from 'lucide-react';
+import { UserIcon, SettingsIcon, ZapIcon, BookmarkIcon, UsersIcon, HelpCircleIcon, LogOutIcon, ShieldIcon } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 
 // Note: /notifications is omitted as it does not exist in the codebase.
@@ -129,7 +129,19 @@ export function MobileSidePanel({ isOpen, onClose }: MobileSidePanelProps) {
             </nav>
 
             {/* Logout Button */}
-            <div className="p-4 border-t border-line mt-auto">
+            <div className="p-4 border-t border-line mt-auto flex flex-col gap-1">
+              {user?.role === 'admin' && (
+                <Link
+                  href="/admin"
+                  onClick={onClose}
+                  className={`flex items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium transition-colors ${
+                    pathname.startsWith('/admin') ? "text-neon bg-neon/5" : "text-ink-dim hover:text-ink hover:bg-elevated"
+                  }`}
+                >
+                  <ShieldIcon className="h-[18px] w-[18px]" />
+                  Admin panel
+                </Link>
+              )}
               <button
                 onClick={handleLogout}
                 className="flex w-full items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium text-ink-dim hover:text-ink hover:bg-elevated transition-colors"
