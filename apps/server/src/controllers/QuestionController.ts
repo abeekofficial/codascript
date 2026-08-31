@@ -1,5 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import { QuestionService } from '../services/QuestionService';
+import { NotificationModel } from '../models/Notification';
+import { UserModel } from '../models/User';
 
 const questionService = new QuestionService();
 
@@ -7,6 +9,20 @@ export class QuestionController {
   static async create(req: Request, res: Response, next: NextFunction) {
     try {
       const q = await questionService.createQuestion(req.body);
+      
+      const users = await UserModel.find().limit(500).select('_id');
+      if (users.length > 0) {
+        const notifications = users.map(u => ({
+          recipient: u._id,
+          type: 'new_official_content',
+          title: 'Yangi rasmiy test qo\'shildi!',
+          message: `Admin tomonidan yangi test savoli: "${q.question}" qo'shildi.`,
+          relatedItemType: 'question',
+          relatedItemId: q._id
+        }));
+        await NotificationModel.insertMany(notifications);
+      }
+
       res.status(201).json({ success: true, data: q });
     } catch (error) { next(error); }
   }

@@ -42,7 +42,7 @@ export const oauthLoginSchema = z.object({
     email: z.string().email(),
     name: z.string(),
     provider: z.string(),
-    avatar: z.string().url().optional()
+    avatar: z.string().url().optional().nullable().or(z.literal(''))
   })
 });
 

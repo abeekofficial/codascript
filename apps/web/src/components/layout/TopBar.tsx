@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import { BellIcon, FlameIcon, SearchIcon, ZapIcon, MenuIcon, TerminalIcon, UserIcon, SettingsIcon, ClockIcon, BookmarkIcon, UsersIcon, HelpCircleIcon, LogOutIcon } from "lucide-react";
 import { useAuthStore } from "@/store/authStore";
 import { MobileSidePanel } from "@/components/layout/MobileSidePanel";
+import { api } from "@/services/api";
 const NOTIFICATIONS = [
   { id: "n1", title: "Yangi haftalik reyting e’lon qilindi", time: "5 daqiqa oldin", unread: true },
   { id: "n2", title: "JavaScript testida 850 XP yig‘dingiz", time: "2 soat oldin", unread: true },
@@ -16,7 +17,10 @@ export function TopBar() {
   const [open, setOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const unread = NOTIFICATIONS.filter((n) => n.unread).length;
+  
+  const [unreadCount, setUnreadCount] = useState(0);
+  const [notifications, setNotifications] = useState<any[]>([]);
+
   const { user, logout } = useAuthStore();
   const pathname = usePathname();
 
@@ -27,6 +31,40 @@ export function TopBar() {
     document.addEventListener("mousedown", onClick);
     return () => document.removeEventListener("mousedown", onClick);
   }, []);
+
+  const fetchUnreadCount = async () => {
+    try {
+      if (user) {
+        const count = await api.getUnreadNotificationsCount();
+        setUnreadCount(count);
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  const fetchNotifications = async () => {
+    try {
+      if (user) {
+        const data = await api.getNotifications(1);
+        setNotifications(data.slice(0, 5)); // Show max 5 in dropdown
+      }
+    } catch (e) {
+      console.error(e);
+    }
+  };
+
+  useEffect(() => {
+    fetchUnreadCount();
+    const intervalId = setInterval(fetchUnreadCount, 60000); // poll every 60s
+    return () => clearInterval(intervalId);
+  }, [user]);
+
+  useEffect(() => {
+    if (open) {
+      fetchNotifications();
+    }
+  }, [open]);
 
   return (
     <>
@@ -71,25 +109,34 @@ export function TopBar() {
               onClick={() => setOpen((v) => !v)}
               aria-haspopup="true"
               aria-expanded={open}
-              aria-label={`Bildirishnomalar${unread ? `, ${unread} ta o'qilmagan` : ""}`}
+              aria-label={`Bildirishnomalar${unreadCount ? `, ${unreadCount} ta o'qilmagan` : ""}`}
               className="relative flex h-10 w-10 items-center justify-center rounded-xl border border-line bg-surface text-ink-dim transition-colors duration-150 hover:border-neon/50 hover:text-ink"
             >
               <BellIcon className="h-[18px] w-[18px]" aria-hidden="true" />
-              {unread > 0 && (
+              {unreadCount > 0 && (
                 <span className="absolute right-2 top-2 h-2 w-2 rounded-full bg-neon ring-2 ring-surface" />
               )}
             </button>
 
             {open && (
               <div className="absolute right-0 top-12 w-80 overflow-hidden rounded-2xl border border-line bg-surface shadow-2xl shadow-black/50">
-                <p className="border-b border-line px-4 py-3 text-sm font-semibold">Bildirishnomalar</p>
-                <ul>
-                  {NOTIFICATIONS.map((n) => (
-                    <li key={n.id} className="border-b border-line/60 px-4 py-3 last:border-0">
-                      <p className={`text-sm ${n.unread ? "text-ink" : "text-ink-dim"}`}>{n.title}</p>
-                      <p className="mt-0.5 text-xs text-ink-muted">{n.time}</p>
-                    </li>
-                  ))}
+                <div className="flex items-center justify-between border-b border-line px-4 py-3">
+                  <p className="text-sm font-semibold">Bildirishnomalar</p>
+                  <Link href="/notifications" onClick={() => setOpen(false)} className="text-xs text-neon hover:underline">Barchasini ko'rish</Link>
+                </div>
+                <ul className="max-h-[300px] overflow-y-auto coda-scroll">
+                  {notifications.length === 0 ? (
+                     <li className="px-4 py-6 text-center text-sm text-ink-dim">Bildirishnomalar yo'q</li>
+                  ) : (
+                    notifications.map((n) => (
+                      <li key={n._id} className="border-b border-line/60 px-4 py-3 last:border-0 hover:bg-elevated transition-colors">
+                        <Link href="/notifications" onClick={() => setOpen(false)}>
+                          <p className={`text-sm ${!n.isRead ? "text-ink font-semibold" : "text-ink-dim"}`}>{n.title}</p>
+                          <p className={`mt-1 text-xs ${!n.isRead ? "text-ink-dim" : "text-ink-muted"}`}>{n.message}</p>
+                        </Link>
+                      </li>
+                    ))
+                  )}
                 </ul>
               </div>
             )}

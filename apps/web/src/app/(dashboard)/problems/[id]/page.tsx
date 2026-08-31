@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
-import { ArrowLeftIcon, PlayIcon, SendIcon, CheckCircleIcon, XCircleIcon, ThumbsUpIcon, ThumbsDownIcon } from 'lucide-react';
+import { ArrowLeftIcon, PlayIcon, SendIcon, CheckCircleIcon, XCircleIcon, ThumbsUpIcon, ThumbsDownIcon, BookmarkIcon } from 'lucide-react';
 import Link from 'next/link';
 import { CodeEditor } from '@/components/ui/CodeEditor';
 import { ClientProblem } from '@codascript/types';
@@ -31,6 +31,13 @@ export default function ProblemDetailsPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [result, setResult] = useState<RunResult | null>(null);
   const [loading, setLoading] = useState(true);
+  const [isSaved, setIsSaved] = useState(false);
+
+  useEffect(() => {
+    if (problem) {
+      api.checkSaved('problem', problem.id || problem._id).then(setIsSaved).catch(console.error);
+    }
+  }, [problem]);
 
   useEffect(() => {
     let cancelled = false;
@@ -184,6 +191,25 @@ export default function ProblemDetailsPage() {
         
         <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           <div className="flex items-center gap-1 border-r border-line pr-2 sm:pr-3 mr-0 sm:mr-1">
+            <button
+              onClick={async () => {
+                try {
+                  const pId = problem.id || problem._id;
+                  if (isSaved) {
+                    await api.unsaveItem('problem', pId);
+                    setIsSaved(false);
+                  } else {
+                    await api.saveItem('problem', pId);
+                    setIsSaved(true);
+                  }
+                } catch (e) {
+                  console.error(e);
+                }
+              }}
+              className="p-1.5 text-ink-dim hover:text-neon hover:bg-elevated rounded-lg transition-colors flex items-center gap-1"
+            >
+              <BookmarkIcon className={`h-4 w-4 ${isSaved ? 'fill-neon text-neon' : ''}`} />
+            </button>
             <button onClick={() => handleVote('up')} className="p-1.5 text-ink-dim hover:text-green-500 hover:bg-elevated rounded-lg transition-colors flex items-center gap-1">
               <ThumbsUpIcon className="h-4 w-4" />
               <span className="text-[11px] sm:text-xs font-medium">{problem.upvotes || 0}</span>

@@ -7,6 +7,7 @@ import { PageHeader } from '@/components/ui/PageHeader';
 import { TECH_MAP } from '@/data/tech';
 import { useAuthStore } from '@/store/authStore';
 import { api, ProfileStats, GrowthDataPoint, SkillStat } from '@/services/api';
+import { FollowListModal } from '@/components/social/FollowListModal';
 
 const STAT_ICONS = [TrophyIcon, AwardIcon, FlameIcon, CalendarIcon];
 
@@ -65,6 +66,26 @@ export default function Profil() {
       alert('Xatolik yuz berdi');
     } finally {
       setSaving(false);
+    }
+  };
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState<'followers' | 'following'>('followers');
+  const [modalUsers, setModalUsers] = useState<any[]>([]);
+  const [modalLoading, setModalLoading] = useState(false);
+
+  const openModal = async (type: 'followers' | 'following') => {
+    setModalType(type);
+    setModalOpen(true);
+    setModalLoading(true);
+    try {
+      if (!user?.username) return;
+      const users = type === 'followers' ? await api.getFollowers(user.username) : await api.getFollowing(user.username);
+      setModalUsers(users);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setModalLoading(false);
     }
   };
 
@@ -132,6 +153,17 @@ export default function Profil() {
             <p className="mt-1 text-sm text-ink-dim">
               {user.email} • 2026-yildan beri
             </p>
+
+            <div className="flex items-center gap-4 mt-3">
+              <button onClick={() => openModal('followers')} className="flex items-center gap-1.5 text-sm hover:opacity-80 transition-opacity">
+                <span className="font-bold text-ink">{(user as any).followersCount || 0}</span>
+                <span className="text-ink-dim">Kuzatuvchilar</span>
+              </button>
+              <button onClick={() => openModal('following')} className="flex items-center gap-1.5 text-sm hover:opacity-80 transition-opacity">
+                <span className="font-bold text-ink">{(user as any).followingCount || 0}</span>
+                <span className="text-ink-dim">Kuzatilayotganlar</span>
+              </button>
+            </div>
 
             <div className="mt-5">
               <div className="mb-2 flex items-baseline justify-between text-sm">
@@ -290,6 +322,14 @@ export default function Profil() {
           )}
         </section>
       </div>
+      
+      <FollowListModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        title={modalType === 'followers' ? 'Kuzatuvchilar' : 'Kuzatilayotganlar'}
+        users={modalUsers}
+        loading={modalLoading}
+      />
     </div>
   );
 }

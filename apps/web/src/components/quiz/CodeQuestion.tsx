@@ -11,6 +11,7 @@ import {
   SendIcon,
   TerminalIcon,
   XCircleIcon,
+  BookmarkIcon,
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 
@@ -36,6 +37,11 @@ export function CodeQuestion({
   const [consoleLogs, setConsoleLogs] = useState<string[]>([]);
   const [activeTab, setActiveTab] = useState<'console' | 'results'>('results');
   const [showConsole, setShowConsole] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+
+  useEffect(() => {
+    api.checkSaved('question', question.id).then(setIsSaved).catch(console.error);
+  }, [question.id]);
 
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -213,7 +219,27 @@ export function CodeQuestion({
     <div className="flex flex-col lg:flex-row gap-4 h-[600px] w-full">
       {/* LEFT PANEL: Question & Examples */}
       <div className="flex-1 border border-line rounded-xl bg-surface p-6 overflow-y-auto coda-scroll">
-        <h3 className="text-xl font-bold mb-4">{question.question}</h3>
+        <div className="flex items-center justify-between mb-4">
+          <h3 className="text-xl font-bold">{question.question}</h3>
+          <button
+            onClick={async () => {
+              try {
+                if (isSaved) {
+                  await api.unsaveItem('question', question.id);
+                  setIsSaved(false);
+                } else {
+                  await api.saveItem('question', question.id);
+                  setIsSaved(true);
+                }
+              } catch (e) {
+                console.error(e);
+              }
+            }}
+            className="p-2 hover:bg-elevated rounded-xl transition-colors"
+          >
+            <BookmarkIcon className={`h-5 w-5 ${isSaved ? 'fill-neon text-neon' : 'text-ink-dim'}`} />
+          </button>
+        </div>
 
         {question.testCases && question.testCases.length > 0 && (
           <div className="mt-6 space-y-4">

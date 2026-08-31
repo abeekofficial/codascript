@@ -231,6 +231,67 @@ export const api = {
     return data.data;
   },
 
+  // ===== Notifications =====
+  getNotifications: async (page = 1) => {
+    const res = await fetchWithAuth(`${API_URL}/notifications?page=${page}`);
+    if (!res.ok) throw new Error('Failed to fetch notifications');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getUnreadNotificationsCount: async () => {
+    const res = await fetchWithAuth(`${API_URL}/notifications/unread-count`);
+    if (!res.ok) throw new Error('Failed to count notifications');
+    const data = await res.json();
+    return data.data;
+  },
+
+  markNotificationAsRead: async (id: string) => {
+    const res = await fetchWithAuth(`${API_URL}/notifications/${id}/read`, { method: 'PATCH' });
+    if (!res.ok) throw new Error('Failed to mark read');
+    return await res.json();
+  },
+
+  markAllNotificationsAsRead: async () => {
+    const res = await fetchWithAuth(`${API_URL}/notifications/read-all`, { method: 'PATCH' });
+    if (!res.ok) throw new Error('Failed to mark all read');
+    return await res.json();
+  },
+
+  // ===== Saved Items =====
+  checkSaved: async (itemType: string, itemId: string) => {
+    const res = await fetchWithAuth(`${API_URL}/saved/check?itemType=${itemType}&itemId=${itemId}`);
+    if (!res.ok) throw new Error('Failed to check saved status');
+    const data = await res.json();
+    return data.data.isSaved as boolean;
+  },
+
+  saveItem: async (itemType: string, itemId: string) => {
+    const res = await fetchWithAuth(`${API_URL}/saved`, {
+      method: 'POST',
+      body: JSON.stringify({ itemType, itemId })
+    });
+    if (!res.ok) throw new Error('Failed to save item');
+    return await res.json();
+  },
+
+  unsaveItem: async (itemType: string, itemId: string) => {
+    const res = await fetchWithAuth(`${API_URL}/saved/${itemType}/${itemId}`, {
+      method: 'DELETE'
+    });
+    if (!res.ok) throw new Error('Failed to unsave item');
+    return await res.json();
+  },
+
+  getSavedItems: async (type?: string) => {
+    let url = `${API_URL}/saved`;
+    if (type) url += `?type=${type}`;
+    const res = await fetchWithAuth(url);
+    if (!res.ok) throw new Error('Failed to get saved items');
+    const data = await res.json();
+    return data.data;
+  },
+
   // ===== Quiz tarix endpointi =====
 
   getHistory: async (page = 1, limit = 20) => {
@@ -482,6 +543,20 @@ export const api = {
       method: 'POST',
     });
     if (!res.ok) throw new Error('Failed to unfollow user');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getFollowers: async (username: string) => {
+    const res = await fetchWithAuth(`${API_URL}/users/${username}/followers`);
+    if (!res.ok) throw new Error('Failed to fetch followers');
+    const data = await res.json();
+    return data.data;
+  },
+
+  getFollowing: async (username: string) => {
+    const res = await fetchWithAuth(`${API_URL}/users/${username}/following`);
+    if (!res.ok) throw new Error('Failed to fetch following');
     const data = await res.json();
     return data.data;
   },

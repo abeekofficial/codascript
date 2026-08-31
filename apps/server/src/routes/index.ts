@@ -7,6 +7,8 @@ import problemRoutes from './problem.routes';
 
 import communityRoutes from './community.routes';
 import followRoutes from './follow.routes';
+import savedRoutes from './saved.routes';
+import notificationRoutes from './notification.routes';
 
 const router = Router();
 
@@ -17,6 +19,8 @@ router.use('/users', followRoutes);
 router.use('/users', userRoutes);
 router.use('/problems', problemRoutes);
 router.use('/community', communityRoutes);
+router.use('/saved', savedRoutes);
+router.use('/notifications', notificationRoutes);
 
 router.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });

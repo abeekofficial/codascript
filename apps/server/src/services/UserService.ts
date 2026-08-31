@@ -67,8 +67,13 @@ export class UserService {
   async getProfile(userId: string) {
     const user = await this.userRepository.findById(userId);
     if (!user) throw { statusCode: 404, message: 'User not found' };
-    const { password, ...safeUser } = user as any;
-    return safeUser;
+    const { password, followers, following, ...safeUser } = user as any;
+    
+    return {
+      ...safeUser,
+      followersCount: followers ? followers.length : 0,
+      followingCount: following ? following.length : 0
+    };
   }
 
   async getLeaderboard() {

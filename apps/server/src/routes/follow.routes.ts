@@ -96,6 +96,39 @@ export const getRecommendations: RequestHandler = async (req: AuthRequest, res: 
   }
 };
 
+// GET /api/users/:username/followers
+export const getFollowers: RequestHandler = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { username } = req.params;
+    const user = await UserModel.findOne({ username }).populate('followers', 'name username avatar level');
+    if (!user) {
+      res.status(404).json({ success: false, message: 'User not found' });
+      return;
+    }
+    res.status(200).json({ success: true, data: user.followers });
+  } catch (error: any) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+// GET /api/users/:username/following
+export const getFollowing: RequestHandler = async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { username } = req.params;
+    const user = await UserModel.findOne({ username }).populate('following', 'name username avatar level');
+    if (!user) {
+      res.status(404).json({ success: false, message: 'User not found' });
+      return;
+    }
+    res.status(200).json({ success: true, data: user.following });
+  } catch (error: any) {
+    res.status(500).json({ success: false, message: error.message });
+  }
+};
+
+router.get('/:username/followers', getFollowers);
+router.get('/:username/following', getFollowing);
+
 router.use(protect);
 router.get('/recommendations', getRecommendations);
 router.post('/:id/follow', followUser);

@@ -36,5 +36,5 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
     }
   }, [isHydrated, isAuthenticated, user, setUser, logout]);
 
-  return <SessionProvider basePath="/next-auth">{children}</SessionProvider>;
+  return <SessionProvider basePath="/api/auth">{children}</SessionProvider>;
 }

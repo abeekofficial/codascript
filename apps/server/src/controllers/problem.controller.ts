@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
 import { ProblemService } from '../services/problem.service';
+import { NotificationModel } from '../models/Notification';
+import { UserModel } from '../models/User';
 
 const problemService = new ProblemService();
 
@@ -93,6 +95,20 @@ export class ProblemController {
   static async createProblem(req: Request, res: Response) {
     try {
       const problem = await problemService.createProblem(req.body);
+      
+      const users = await UserModel.find().limit(500).select('_id');
+      if (users.length > 0) {
+        const notifications = users.map(u => ({
+          recipient: u._id,
+          type: 'new_official_content',
+          title: 'Yangi rasmiy masala qo\'shildi!',
+          message: `Admin tomonidan yangi kodlash masalasi: "${problem.title}" qo'shildi.`,
+          relatedItemType: 'problem',
+          relatedItemId: problem._id
+        }));
+        await NotificationModel.insertMany(notifications);
+      }
+
       res.status(201).json({ success: true, data: problem });
     } catch (error: any) {
       res.status(400).json({ success: false, message: error.message });

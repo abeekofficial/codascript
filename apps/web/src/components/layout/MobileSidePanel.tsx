@@ -10,9 +10,7 @@ import { useAuthStore } from '@/store/authStore';
 const PANEL_LINKS = [
   { to: '/profile', label: 'Profilim', icon: UserIcon },
   { to: '/settings', label: 'Sozlamalar', icon: SettingsIcon },
-  { to: '/history-xp', label: 'XP Tarixi', icon: ZapIcon },
   { to: '/saved', label: 'Saqlanganlar', icon: BookmarkIcon },
-  { to: '/friends', label: 'Do‘stlar', icon: UsersIcon },
   { to: '/help', label: 'Yordam', icon: HelpCircleIcon }
 ];
 

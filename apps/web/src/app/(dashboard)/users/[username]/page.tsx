@@ -6,12 +6,20 @@ import { api } from '@/services/api';
 import { User } from '@codascript/types';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { TrophyIcon, FlameIcon, StarIcon, CheckCircleIcon, CalendarIcon } from 'lucide-react';
+import { useAuthStore } from '@/store/authStore';
+
+import { FollowListModal } from '@/components/social/FollowListModal';
 
 export default function PublicProfilePage() {
   const { username } = useParams<{ username: string }>();
-  const [profile, setProfile] = useState<User | null>(null);
+  const [profile, setProfile] = useState<(User & { followersCount?: number, followingCount?: number, isFollowedByMe?: boolean }) | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState<'followers' | 'following'>('followers');
+  const [modalUsers, setModalUsers] = useState<any[]>([]);
+  const [modalLoading, setModalLoading] = useState(false);
 
   useEffect(() => {
     if (username) {
@@ -21,6 +29,20 @@ export default function PublicProfilePage() {
         .finally(() => setLoading(false));
     }
   }, [username]);
+
+  const openModal = async (type: 'followers' | 'following') => {
+    setModalType(type);
+    setModalOpen(true);
+    setModalLoading(true);
+    try {
+      const users = type === 'followers' ? await api.getFollowers(username as string) : await api.getFollowing(username as string);
+      setModalUsers(users);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setModalLoading(false);
+    }
+  };
 
   if (loading) {
     return <div className="text-center p-8">Yuklanmoqda...</div>;
@@ -58,15 +80,59 @@ export default function PublicProfilePage() {
               </span>
             )}
           </div>
-          <div className="flex-1 text-center sm:text-left">
-            <h1 className="text-3xl font-bold mb-1">{profile.name}</h1>
-            <p className="text-ink-dim font-mono mb-4">@{profile.username || username}</p>
-            {profile.bio && (
-              <p className="text-ink text-sm max-w-lg mb-4">{profile.bio}</p>
-            )}
-            <div className="flex items-center justify-center sm:justify-start gap-2 text-xs text-ink-dim">
-              <CalendarIcon className="h-4 w-4" />
-              <span>Qo'shilgan sana: {joinDate}</span>
+          <div className="flex-1 text-center sm:text-left flex flex-col justify-between">
+            <div>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                  <h1 className="text-3xl font-bold mb-1">{profile.name}</h1>
+                  <p className="text-ink-dim font-mono mb-4">@{profile.username || username}</p>
+                </div>
+                {/* Follow Button */}
+                {profile.isFollowedByMe !== undefined && useAuthStore.getState().user?._id !== profile._id && (
+                  <button
+                    onClick={async () => {
+                      try {
+                        if (profile.isFollowedByMe) {
+                          await api.unfollowUser(profile._id);
+                          setProfile({ ...profile, isFollowedByMe: false, followersCount: (profile.followersCount || 1) - 1 });
+                        } else {
+                          await api.followUser(profile._id);
+                          setProfile({ ...profile, isFollowedByMe: true, followersCount: (profile.followersCount || 0) + 1 });
+                        }
+                      } catch (e) {
+                        console.error(e);
+                      }
+                    }}
+                    className={`px-6 py-2 rounded-xl text-sm font-semibold transition-colors ${
+                      profile.isFollowedByMe
+                        ? 'border border-line bg-elevated text-ink hover:border-danger hover:text-danger'
+                        : 'bg-neon text-bg hover:bg-neon-hover'
+                    }`}
+                  >
+                    {profile.isFollowedByMe ? 'Kuzatishni bekor qilish' : 'Kuzatish'}
+                  </button>
+                )}
+              </div>
+
+              {profile.bio && (
+                <p className="text-ink text-sm max-w-lg mb-4">{profile.bio}</p>
+              )}
+            </div>
+
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4 mt-2">
+              <button onClick={() => openModal('followers')} className="flex items-center gap-1.5 text-sm hover:opacity-80 transition-opacity">
+                <span className="font-bold text-ink">{profile.followersCount || 0}</span>
+                <span className="text-ink-dim">Kuzatuvchilar</span>
+              </button>
+              <button onClick={() => openModal('following')} className="flex items-center gap-1.5 text-sm hover:opacity-80 transition-opacity">
+                <span className="font-bold text-ink">{profile.followingCount || 0}</span>
+                <span className="text-ink-dim">Kuzatilayotganlar</span>
+              </button>
+              <div className="w-px h-4 bg-line mx-2 hidden sm:block" />
+              <div className="flex items-center gap-2 text-xs text-ink-dim">
+                <CalendarIcon className="h-4 w-4" />
+                <span>Qo'shilgan sana: {joinDate}</span>
+              </div>
             </div>
           </div>
         </div>
@@ -111,6 +177,14 @@ export default function PublicProfilePage() {
           <p className="text-2xl font-bold">{profile.completedQuizzes || 0} ta test</p>
         </div>
       </div>
+      
+      <FollowListModal
+        isOpen={modalOpen}
+        onClose={() => setModalOpen(false)}
+        title={modalType === 'followers' ? 'Kuzatuvchilar' : 'Kuzatilayotganlar'}
+        users={modalUsers}
+        loading={modalLoading}
+      />
     </div>
   );
 }

@@ -25,6 +25,22 @@ export const protect = (req: AuthRequest, res: Response, next: NextFunction) => 
   }
 };
 
+export const optionalProtect = (req: AuthRequest, res: Response, next: NextFunction) => {
+  let token;
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    token = req.headers.authorization.split(' ')[1];
+  }
+  if (token) {
+    try {
+      const decoded = verifyAccessToken(token);
+      req.userId = decoded.userId;
+    } catch (error) {
+      // ignore
+    }
+  }
+  next();
+};
+
 import { UserModel } from '../models/User';
 
 export const admin = async (req: AuthRequest, res: Response, next: NextFunction) => {

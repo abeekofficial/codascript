@@ -3,13 +3,31 @@ import { Problem } from '../models/Problem';
 import { QuestionModel } from '../models/Question';
 import { protect, AuthRequest } from '../middlewares/auth';
 import mongoose from 'mongoose';
-
+import { NotificationModel } from '../models/Notification';
+import { UserModel } from '../models/User';
 const router = Router();
 
 const generateGenericId = (prefix: string) => {
   const randomStr = Math.random().toString(36).substring(2, 8).toUpperCase();
   return `${prefix}-${randomStr}`;
 };
+
+async function notifyCommunitySubmission(itemType: 'question' | 'problem', itemId: any, title: string, authorId: string) {
+  // 500 tagacha faol foydalanuvchini olamiz
+  const users = await UserModel.find({ _id: { $ne: authorId } }).limit(500).select('_id');
+  if (users.length === 0) return;
+
+  const notifications = users.map(u => ({
+    recipient: u._id,
+    type: 'community_submission',
+    title: `Yangi ${itemType === 'problem' ? 'masala' : 'savol'} taklif etildi`,
+    message: `Jamiyatga yangi taklif: "${title}". Ovoz bering!`,
+    relatedItemType: itemType,
+    relatedItemId: itemId
+  }));
+
+  await NotificationModel.insertMany(notifications);
+}
 
 // POST /api/community/problems/submit
 export const submitProblem: RequestHandler = async (req: AuthRequest, res: Response): Promise<void> => {
@@ -37,6 +55,8 @@ export const submitProblem: RequestHandler = async (req: AuthRequest, res: Respo
       upvotes: [],
       downvotes: []
     });
+
+    await notifyCommunitySubmission('problem', newProblem._id, newProblem.title, req.userId as string);
 
     res.status(201).json({ success: true, data: newProblem });
   } catch (error: any) {
@@ -70,6 +90,8 @@ export const submitQuestion: RequestHandler = async (req: AuthRequest, res: Resp
       upvotes: [],
       downvotes: []
     });
+
+    await notifyCommunitySubmission('question', newQuestion._id, newQuestion.question, req.userId as string);
 
     res.status(201).json({ success: true, data: newQuestion });
   } catch (error: any) {
@@ -132,6 +154,24 @@ export const voteItem: RequestHandler = async (req: AuthRequest, res: Response):
       if (upvoteRatio >= 0.5) {
         item.status = 'approved';
         item.isActive = true;
+        await NotificationModel.create({
+          recipient: item.author,
+          type: 'content_approved',
+          title: 'Taklifingiz tasdiqlandi!',
+          message: `Sizning "${item.title || item.question}" taklifingiz jamiyat tomonidan tasdiqlandi.`,
+          relatedItemType: type === 'problems' ? 'problem' : 'question',
+          relatedItemId: item._id
+        });
+      } else {
+        item.status = 'rejected';
+        await NotificationModel.create({
+          recipient: item.author,
+          type: 'content_rejected',
+          title: 'Taklifingiz rad etildi',
+          message: `Sizning "${item.title || item.question}" taklifingiz yetarli ovoz to'play olmadi.`,
+          relatedItemType: type === 'problems' ? 'problem' : 'question',
+          relatedItemId: item._id
+        });
       }
     }
 

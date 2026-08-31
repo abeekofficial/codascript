@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { motion } from 'framer-motion';
-import { ChevronLeftIcon, ChevronRightIcon, FlagIcon, TerminalIcon, TimerIcon, XIcon } from 'lucide-react';
+import { ChevronLeftIcon, ChevronRightIcon, FlagIcon, TerminalIcon, TimerIcon, XIcon, BookmarkIcon } from 'lucide-react';
 import { TECH_MAP } from '@/data/tech';
 import { useQuizStore } from '@/store/quizStore';
 import { useAuthStore } from '@/store/authStore';
@@ -58,8 +58,14 @@ export default function TestJarayoni() {
   const progressPct = ((currentQuestionIndex + 1) / questions.length) * 100;
   const lowTime = timeRemaining < 60;
 
-  // We are storing answer via backend, so we need a local submitting state if we wait
   const [submitting, setSubmitting] = useState(false);
+  const [isSaved, setIsSaved] = useState(false);
+
+  useEffect(() => {
+    if (question) {
+      api.checkSaved('question', question.id).then(setIsSaved).catch(console.error);
+    }
+  }, [question?.id]);
 
   async function select(index: number, optionText: string) {
     if (!quizId || !question) return;
@@ -184,7 +190,27 @@ export default function TestJarayoni() {
             </div>
 
             {question.type !== 'code' && (
-              <h1 className="mt-4 text-lg font-semibold leading-snug lg:text-xl">{question.question}</h1>
+              <div className="flex items-center justify-between mt-4">
+                <h1 className="text-lg font-semibold leading-snug lg:text-xl pr-4">{question.question}</h1>
+                <button
+                  onClick={async () => {
+                    try {
+                      if (isSaved) {
+                        await api.unsaveItem('question', question.id);
+                        setIsSaved(false);
+                      } else {
+                        await api.saveItem('question', question.id);
+                        setIsSaved(true);
+                      }
+                    } catch (e) {
+                      console.error(e);
+                    }
+                  }}
+                  className="p-2 hover:bg-elevated rounded-xl transition-colors shrink-0"
+                >
+                  <BookmarkIcon className={`h-5 w-5 ${isSaved ? 'fill-neon text-neon' : 'text-ink-dim'}`} />
+                </button>
+              </div>
             )}
 
             {question.type === 'code' ? (

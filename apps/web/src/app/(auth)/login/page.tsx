@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { signIn, useSession } from 'next-auth/react';
+import { signIn, signOut, useSession } from 'next-auth/react';
 import { useAuthStore } from '@/store/authStore';
 import { api } from '@/services/api';
 import { Button } from '@/components/ui/button';
@@ -22,35 +22,40 @@ export default function LoginPage() {
   const { data: session, status } = useSession();
 
   useEffect(() => {
-    if (status === 'authenticated' && session && (session as any).accessToken) {
-      setLoading(true);
-      const accessToken = (session as any).accessToken;
-      const refreshToken = (session as any).refreshToken;
-      
-      localStorage.setItem('token', accessToken);
-      if (refreshToken) localStorage.setItem('refreshToken', refreshToken);
+    if (status === 'authenticated') {
+      if (session && (session as any).accessToken) {
+        setLoading(true);
+        const accessToken = (session as any).accessToken;
+        const refreshToken = (session as any).refreshToken;
+        
+        localStorage.setItem('token', accessToken);
+        if (refreshToken) localStorage.setItem('refreshToken', refreshToken);
 
-      api.getProfile()
-        .then((profile) => {
-          login({
-            id: (profile as any)._id?.toString() || '',
-            name: profile.name,
-            username: (profile as any).username,
-            email: profile.email,
-            avatar: (profile as any).avatar,
-            bio: (profile as any).bio,
-            role: (profile as any).role,
-            totalXP: profile.totalXP,
-            level: profile.level,
-            currentStreak: profile.currentStreak,
-            completedQuizzes: profile.completedQuizzes,
-          }, accessToken, refreshToken);
-          router.push('/dashboard');
-        })
-        .catch(() => {
-          setError('OAuth profilini olishda xatolik yuz berdi');
-          setLoading(false);
-        });
+        api.getProfile()
+          .then((profile) => {
+            login({
+              id: (profile as any)._id?.toString() || '',
+              name: profile.name,
+              username: (profile as any).username,
+              email: profile.email,
+              avatar: (profile as any).avatar,
+              bio: (profile as any).bio,
+              role: (profile as any).role,
+              totalXP: profile.totalXP,
+              level: profile.level,
+              currentStreak: profile.currentStreak,
+              completedQuizzes: profile.completedQuizzes,
+            }, accessToken, refreshToken);
+            router.push('/dashboard');
+          })
+          .catch(() => {
+            setError('OAuth profilini olishda xatolik yuz berdi');
+            setLoading(false);
+          });
+      } else {
+        setError('Backend bilan ulanishda xatolik. Iltimos qayta urinib ko\'ring.');
+        signOut({ redirect: false });
+      }
     }
   }, [status, session, login, router]);
 
