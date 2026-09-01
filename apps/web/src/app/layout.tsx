@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 import QueryProvider from "@/providers/QueryProvider";
 import AuthProvider from "@/providers/AuthProvider";
 import { QuizProvider } from "@/contexts/QuizContext";
-import { OfflineDetector } from "@/components/status/OfflineDetector";
+import SpaceBackground from "@/components/background/SpaceBackground";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -66,16 +66,15 @@ export default function RootLayout({
       lang="uz"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-bg text-ink">
-        <QueryProvider>
-          <AuthProvider>
-            <QuizProvider>
-              <OfflineDetector>
-                {children}
-              </OfflineDetector>
-            </QuizProvider>
-          </AuthProvider>
-        </QueryProvider>
+      <body className="min-h-full flex flex-col text-ink">
+        <SpaceBackground />
+        <div className="relative z-10 flex min-h-full flex-1 flex-col">
+          <QueryProvider>
+            <AuthProvider>
+              <QuizProvider>{children}</QuizProvider>
+            </AuthProvider>
+          </QueryProvider>
+        </div>
       </body>
     </html>
   );

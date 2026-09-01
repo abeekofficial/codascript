@@ -1,8 +1,8 @@
-import React from 'react';
-import { Sidebar } from '@/components/layout/Sidebar';
-import { TopBar } from '@/components/layout/TopBar';
-import { MobileBottomNav } from '@/components/layout/MobileBottomNav';
-import { ProtectedRoute } from '@/components/layout/ProtectedRoute';
+import React from "react";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { TopBar } from "@/components/layout/TopBar";
+import { MobileBottomNav } from "@/components/layout/MobileBottomNav";
+import { ProtectedRoute } from "@/components/layout/ProtectedRoute";
 
 export default function DashboardLayout({
   children,
@@ -11,7 +11,7 @@ export default function DashboardLayout({
 }) {
   return (
     <ProtectedRoute>
-      <div className="flex h-full min-h-screen w-full bg-bg text-ink pb-[72px] lg:pb-0">
+      <div className="flex h-full min-h-screen w-full text-ink pb-[72px] lg:pb-0">
         <Sidebar />
         <div className="flex min-w-0 flex-1 flex-col">
           <TopBar />

@@ -1,9 +1,8 @@
-'use client';
+"use client";
 
-import { useAuthStore } from '@/store/authStore';
-import { useRouter } from 'next/navigation';
-import { useEffect } from 'react';
-import { LoaderCard } from '@/components/status/statusCard';
+import { useAuthStore } from "@/store/authStore";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function AdminLayout({
   children,
@@ -16,33 +15,33 @@ export default function AdminLayout({
   useEffect(() => {
     if (!isHydrated) return;
     if (!isAuthenticated) {
-      router.push('/');
+      router.push("/");
       return;
     }
     // user profildan hali yuklanmagan bo'lishi mumkin — shoshilib redirect qilmaymiz
-    if (user && user.role !== 'admin') {
-      router.push('/');
+    if (user && user.role !== "admin") {
+      router.push("/");
     }
   }, [isHydrated, isAuthenticated, user, router]);
 
   if (!isHydrated || !isAuthenticated || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Yuklanmoqda..." />
+        Loading...
       </div>
     );
   }
 
-  if (user.role !== 'admin') {
+  if (user.role !== "admin") {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Tekshirilmoqda..." subtitle="Admin huquqlari tekshirilmoqda" />
+        Loading...
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-bg py-8">
+    <div className="min-h-screen py-8">
       <div className="container mx-auto px-4 max-w-7xl">
         <h1 className="text-3xl font-bold mb-4 text-ink">Admin Dashboard</h1>
 
@@ -51,25 +50,13 @@ export default function AdminLayout({
             href="/admin"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Foydalanuvchilar
+            Quizzes
           </a>
           <a
-            href="/admin/testlar"
+            href="/admin/problems"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Testlar
-          </a>
-          <a
-            href="/admin/masalalar"
-            className="text-sm font-medium text-ink hover:text-neon transition-colors"
-          >
-            Masalalar
-          </a>
-          <a
-            href="/admin/moderatsiya"
-            className="text-sm font-medium text-ink hover:text-neon transition-colors"
-          >
-            Moderatsiya
+            Problems
           </a>
         </div>
 

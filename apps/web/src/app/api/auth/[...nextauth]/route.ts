@@ -2,8 +2,15 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 
-if (!process.env.NEXT_PUBLIC_API_URL) {
-  console.warn("⚠️ WARNING: NEXT_PUBLIC_API_URL is not set in NextAuth route, falling back to localhost - this will fail in production ⚠️");
+if (
+  !process.env.NEXT_PUBLIC_API_URL &&
+  process.env.VERCEL_ENV === "production"
+) {
+  process.env.NEXTAUTH_URL = "https://codascript.vercel.app";
+} else {
+  console.warn(
+    "⚠️ WARNING: NEXT_PUBLIC_API_URL is not set in NextAuth route, falling back to localhost - this will fail in production ⚠️",
+  );
 }
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000/api";
 
@@ -28,7 +35,8 @@ const handler = NextAuth({
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
               email: user.email,
-              name: user.name || (user.email ? user.email.split('@')[0] : "User"),
+              name:
+                user.name || (user.email ? user.email.split("@")[0] : "User"),
               provider: account.provider,
               avatar: user.image || "",
             }),
