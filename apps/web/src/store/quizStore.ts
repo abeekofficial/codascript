@@ -11,6 +11,7 @@ export interface ClientQuestion {
   language?: string;
   starterCode?: string;
   testCases?: { input: string; expectedOutput: string; isHidden?: boolean }[];
+  author?: any;
 }
 
 export interface AnswerResult {

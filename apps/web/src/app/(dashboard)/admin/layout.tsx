@@ -3,6 +3,7 @@
 import { useAuthStore } from '@/store/authStore';
 import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import { LoaderCard } from '@/components/status/statusCard';
 
 export default function AdminLayout({
   children,
@@ -27,7 +28,7 @@ export default function AdminLayout({
   if (!isHydrated || !isAuthenticated || !user) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        Loading...
+        <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Yuklanmoqda..." />
       </div>
     );
   }
@@ -35,7 +36,7 @@ export default function AdminLayout({
   if (user.role !== 'admin') {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        Loading...
+        <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Tekshirilmoqda..." subtitle="Admin huquqlari tekshirilmoqda" />
       </div>
     );
   }
@@ -50,13 +51,25 @@ export default function AdminLayout({
             href="/admin"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Quizzes
+            Foydalanuvchilar
           </a>
           <a
-            href="/admin/problems"
+            href="/admin/testlar"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
-            Problems
+            Testlar
+          </a>
+          <a
+            href="/admin/masalalar"
+            className="text-sm font-medium text-ink hover:text-neon transition-colors"
+          >
+            Masalalar
+          </a>
+          <a
+            href="/admin/moderatsiya"
+            className="text-sm font-medium text-ink hover:text-neon transition-colors"
+          >
+            Moderatsiya
           </a>
         </div>
 

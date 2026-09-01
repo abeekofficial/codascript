@@ -22,7 +22,9 @@ const userSchema = new Schema<User>({
     progress: { type: Number, default: 0 }
   }],
   followers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
-  following: [{ type: Schema.Types.ObjectId, ref: 'User' }]
+  following: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+  lastSeenAt: { type: Date, default: Date.now },
+  isBanned: { type: Boolean, default: false }
 }, { timestamps: true });
 
 export const UserModel = mongoose.model<User>('User', userSchema);

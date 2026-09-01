@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import Editor, { useMonaco } from '@monaco-editor/react';
+import { LoaderCard } from '@/components/status/statusCard';
 
 interface CodeEditorProps {
   language: string;
@@ -46,8 +47,10 @@ export function CodeEditor({ language, value, onChange, height = '100%', readOnl
           wordWrap: 'on',
         }}
         loading={
-          <div className="flex h-full items-center justify-center bg-surface text-sm text-ink-dim">
-            Muharrir yuklanmoqda...
+          <div className="flex h-full items-center justify-center bg-surface">
+            <div className="max-w-sm mx-auto scale-75 origin-center">
+              <LoaderCard illustrationSrc="/illustrations/loader-terminal.png" title="Muharrir yuklanmoqda..." />
+            </div>
           </div>
         }
       />

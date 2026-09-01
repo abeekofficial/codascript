@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 import QueryProvider from "@/providers/QueryProvider";
 import AuthProvider from "@/providers/AuthProvider";
 import { QuizProvider } from "@/contexts/QuizContext";
+import { OfflineDetector } from "@/components/status/OfflineDetector";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -69,7 +70,9 @@ export default function RootLayout({
         <QueryProvider>
           <AuthProvider>
             <QuizProvider>
-              {children}
+              <OfflineDetector>
+                {children}
+              </OfflineDetector>
             </QuizProvider>
           </AuthProvider>
         </QueryProvider>

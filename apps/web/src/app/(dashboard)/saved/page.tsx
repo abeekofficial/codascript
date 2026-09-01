@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { PageHeader } from '@/components/ui/PageHeader';
 import { api } from '@/services/api';
+import { LoaderCard } from '@/components/status/statusCard';
 import { BookmarkIcon, XIcon, TerminalIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -65,7 +67,7 @@ export default function SavedPage() {
 
       {loading ? (
         <div className="flex justify-center p-8">
-          <span className="text-ink-dim">Yuklanmoqda...</span>
+          <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Saqlangan masalalar yuklanmoqda..." />
         </div>
       ) : (
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">

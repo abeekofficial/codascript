@@ -1,844 +1,195 @@
 'use client';
 
-import { PageHeader } from '@/components/ui/PageHeader';
-import { DIFFICULTIES, TECHS, TECH_MAP } from '@/data/tech';
+import React, { useState, useEffect } from 'react';
 import { api } from '@/services/api';
-import { Difficulty, TechId } from '@/types/quiz';
-import { AnimatePresence, motion } from 'framer-motion';
-import {
-  PencilIcon,
-  PlusIcon,
-  SearchIcon,
-  Trash2Icon,
-  UploadCloudIcon,
-  XIcon,
-} from 'lucide-react';
-import React, { useEffect, useMemo, useState } from 'react';
+import { LoaderCard } from '@/components/status/statusCard';
+import { BanIcon, SearchIcon, ShieldCheckIcon, ShieldIcon, CheckCircle2Icon, UserIcon } from 'lucide-react';
+import { useAuthStore } from '@/store/authStore';
 
-const DIFFICULTY_COLOR: Record<Difficulty | string, string> = {
-  easy: '#10B981',
-  medium: '#FBBF24',
-  hard: '#F87171',
-  Beginner: '#10B981',
-  Intermediate: '#FBBF24',
-  Advanced: '#F87171',
-};
-
-interface Draft {
-  topic: string;
-  subtopic: string;
-  difficulty: string;
-  question: string;
-  options: string[];
-  correctOptionId: number;
-  explanation: string;
-  code: string;
-  type: 'multiple_choice' | 'code';
-  language: string;
-  starterCode: string;
-  testCases: { input: string; expectedOutput: string; isHidden: boolean }[];
-}
-
-const emptyDraft: Draft = {
-  topic: 'JavaScript',
-  subtopic: '',
-  difficulty: 'easy',
-  question: '',
-  options: ['', '', '', ''],
-  correctOptionId: 0,
-  explanation: '',
-  code: '',
-  type: 'multiple_choice',
-  language: 'javascript',
-  starterCode: '',
-  testCases: [],
-};
-
-export default function AdminPage() {
-  const [questions, setQuestions] = useState<any[]>([]);
-  const [statsMap, setStatsMap] = useState<Record<string, any>>({});
-  const [search, setSearch] = useState('');
-  const [techFilter, setTechFilter] = useState<string>('all');
-  const [difficultyFilter, setDifficultyFilter] = useState<string>('all');
-
-  const [panelOpen, setPanelOpen] = useState<boolean>(false);
-  const [jsonPanelOpen, setJsonPanelOpen] = useState<boolean>(false);
-  const [draft, setDraft] = useState<Draft>(emptyDraft);
-  const [editingId, setEditingId] = useState<string | null>(null);
-
-  const [jsonInput, setJsonInput] = useState('');
-  const [message, setMessage] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+export default function AdminUsersPage() {
+  const [users, setUsers] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [searchTerm, setSearchTerm] = useState('');
+  
+  const currentUser = useAuthStore(state => state.user);
 
   useEffect(() => {
-    const loadData = async () => {
-      try {
-        const [qs, stats] = await Promise.all([
-          api.getQuestions(),
-          api.getQuestionStats(),
-        ]);
-        setQuestions(qs);
-
-        const smap: Record<string, any> = {};
-        stats.forEach((s: any) => {
-          smap[s.questionId] = s;
-        });
-        setStatsMap(smap);
-      } catch (err) {
-        console.error('Failed to load admin data:', err);
-      }
-    };
-    loadData();
+    fetchUsers();
   }, []);
 
-  const filtered = useMemo(
-    () =>
-      questions.filter(
-        q =>
-          (techFilter === 'all' ||
-            q.topic.toLowerCase() === techFilter.toLowerCase()) &&
-          (difficultyFilter === 'all' || q.difficulty === difficultyFilter) &&
-          q.question.toLowerCase().includes(search.trim().toLowerCase())
-      ),
-    [questions, techFilter, difficultyFilter, search]
-  );
-
-  function openNew() {
-    setDraft(emptyDraft);
-    setEditingId(null);
-    setPanelOpen(true);
-  }
-
-  function openEdit(q: any) {
-    setDraft({
-      topic: q.topic || '',
-      subtopic: q.subtopic || '',
-      difficulty: q.difficulty || 'easy',
-      question: q.question || '',
-      options: q.options || ['', '', '', ''],
-      correctOptionId: q.correctOptionId || 0,
-      explanation: q.explanation || '',
-      code: q.code || '',
-      type: q.type || 'multiple_choice',
-      language: q.language || 'javascript',
-      starterCode: q.starterCode || '',
-      testCases: q.testCases || [],
-    });
-    setEditingId(q._id);
-    setPanelOpen(true);
-  }
-
-  async function save(e: React.FormEvent) {
-    e.preventDefault();
-    if (!draft.question.trim()) return;
-    setIsLoading(true);
+  const fetchUsers = async (search = '') => {
+    setLoading(true);
     try {
-      const q = {
-        ...draft,
-        options: draft.options.filter(o => o.trim() !== ''),
-      };
-
-      if (editingId) {
-        await api.updateQuestion(editingId, q);
-        setMessage('Savol muvaffaqiyatli yangilandi!');
-      } else {
-        await api.addQuestion(q);
-        setMessage("Savol muvaffaqiyatli qo'shildi!");
-      }
-      setPanelOpen(false);
-    } catch (err: any) {
-      setMessage(`Xatolik: ${err.message}`);
+      const data = await api.getAdminUsers(1, 50, search); // Assume this is implemented in api.ts
+      setUsers(data.users || []);
+    } catch (e) {
+      console.error(e);
     } finally {
-      setIsLoading(false);
+      setLoading(false);
     }
-  }
+  };
 
-  const handleJsonSubmit = async () => {
-    setIsLoading(true);
-    try {
-      const parsed = JSON.parse(jsonInput);
-      let arr = Array.isArray(parsed) ? parsed : [parsed];
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    fetchUsers(searchTerm);
+  };
 
-      // Auto-map aliases to correct schema fields
-      arr = arr.map((q: any) => ({
-        ...q,
-        correctOptionId:
-          q.correctOptionId !== undefined
-            ? q.correctOptionId
-            : q.correctOptionIndex,
-      }));
+  const handleToggleBan = async (id: string, currentlyBanned: boolean) => {
+    if (id === currentUser?._id) {
+      alert("O'z-o'zingizni bloklay olmaysiz");
+      return;
+    }
+    
+    if (confirm(currentlyBanned ? "Blokdan chiqarilsinmi?" : "Haqiqatan ham bloklansinmi?")) {
+      try {
+        const updated = await api.toggleUserBan(id, !currentlyBanned);
+        setUsers(users.map(u => u._id === id ? { ...u, isBanned: updated.isBanned } : u));
+      } catch (e) {
+        console.error(e);
+        alert('Xatolik yuz berdi');
+      }
+    }
+  };
 
-      await api.bulkAddQuestions(arr);
-      setMessage(`Muvaffaqiyatli ${arr.length} ta savol qo'shildi!`);
-      setJsonInput('');
-      setJsonPanelOpen(false);
-    } catch (error: any) {
-      setMessage(`Xatolik: ${error.message}`);
-    } finally {
-      setIsLoading(false);
+  const handleToggleRole = async (id: string, currentRole: string) => {
+    if (id === currentUser?._id) {
+      alert("O'z-o'zingizni adminlikdan ololmaysiz. Boshqa admin buni qilishi kerak.");
+      return;
+    }
+
+    const newRole = currentRole === 'admin' ? 'user' : 'admin';
+    if (confirm(`Rolni ${newRole} ga o'zgartirasizmi?`)) {
+      try {
+        const updated = await api.updateUserRole(id, newRole);
+        setUsers(users.map(u => u._id === id ? { ...u, role: updated.role } : u));
+      } catch (e: any) {
+        console.error(e);
+        alert(e.message || 'Xatolik yuz berdi');
+      }
     }
   };
 
   return (
-    <div className="mx-auto max-w-7xl">
-      <PageHeader
-        eyebrow="Admin"
-        title="Savollar bazasi"
-        description={`Yangi savol qo‘shing yoki mavjudlarini tahrirlang.`}
-        actions={
-          <div className="flex gap-2">
-            <button
-              type="button"
-              onClick={() => {
-                setJsonInput('');
-                setJsonPanelOpen(true);
-              }}
-              className="flex items-center gap-2 rounded-xl border border-line bg-surface px-4 py-2.5 text-sm font-semibold text-ink transition-colors duration-150 hover:bg-elevated"
-            >
-              <UploadCloudIcon className="h-4 w-4" aria-hidden="true" />
-              JSON yuklash
-            </button>
-            <button
-              type="button"
-              onClick={openNew}
-              className="flex items-center gap-2 rounded-xl bg-neon px-4 py-2.5 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover"
-            >
-              <PlusIcon className="h-4 w-4" aria-hidden="true" />
-              Yangi savol
-            </button>
+    <div>
+      <div className="mb-6 flex flex-wrap gap-4 items-center justify-between">
+        <h2 className="text-xl font-bold">Foydalanuvchilar</h2>
+        <form onSubmit={handleSearch} className="relative w-full max-w-sm">
+          <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-ink-muted" />
+          <input 
+            type="text" 
+            placeholder="Ism, email yoki username..." 
+            value={searchTerm}
+            onChange={e => setSearchTerm(e.target.value)}
+            className="w-full pl-9 pr-4 py-2 rounded-xl border border-line bg-surface text-sm focus:border-neon outline-none transition-colors"
+          />
+        </form>
+      </div>
+
+      <div className="rounded-2xl border border-line bg-surface overflow-hidden">
+        {loading ? (
+          <div className="p-12 flex justify-center">
+            <LoaderCard illustrationSrc="/illustrations/loader-astronaut.png" title="Foydalanuvchilar yuklanmoqda..." />
           </div>
-        }
-      />
-
-      {message && (
-        <div className="mb-4 p-4 rounded-xl border border-neon bg-neon/10 text-neon font-medium">
-          {message}
-        </div>
-      )}
-
-      <div className="mb-4 flex flex-wrap items-center gap-3">
-        <label className="relative flex min-w-[220px] flex-1 items-center">
-          <SearchIcon
-            className="pointer-events-none absolute left-3 h-4 w-4 text-ink-muted"
-            aria-hidden="true"
-          />
-          <span className="sr-only">Savollar ichidan qidirish</span>
-          <input
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            type="search"
-            placeholder="Savol matni bo‘yicha qidirish..."
-            className="h-10 w-full rounded-xl border border-line bg-surface pl-9 pr-3 text-sm text-ink placeholder:text-ink-muted transition-colors duration-150 focus:border-neon focus:outline-none"
-          />
-        </label>
-
-        <select
-          value={techFilter}
-          onChange={e => setTechFilter(e.target.value)}
-          aria-label="Texnologiya bo‘yicha filtr"
-          className="h-10 rounded-xl border border-line bg-surface px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-        >
-          <option value="all">Barcha texnologiyalar</option>
-          {TECHS.map(t => (
-            <option key={t.id} value={t.id}>
-              {t.label}
-            </option>
-          ))}
-        </select>
-
-        <div className="inline-flex rounded-xl border border-line bg-elevated p-1">
-          {DIFFICULTIES.map(d => (
-            <button
-              key={d.id}
-              type="button"
-              onClick={() => setDifficultyFilter(d.id)}
-              aria-pressed={difficultyFilter === d.id}
-              className={[
-                'rounded-lg px-3.5 py-1.5 text-sm font-medium transition-colors duration-150',
-                difficultyFilter === d.id
-                  ? 'bg-surface text-ink'
-                  : 'text-ink-dim hover:text-ink',
-              ].join(' ')}
-            >
-              {d.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="overflow-hidden rounded-2xl border border-line bg-surface">
-        <div className="coda-scroll overflow-x-auto">
-          <table className="w-full min-w-[820px] text-left text-sm">
-            <caption className="sr-only">Savollar jadvali</caption>
-            <thead>
-              <tr className="border-b border-line text-xs uppercase tracking-wide text-ink-muted">
-                <th scope="col" className="px-5 py-3 font-medium">
-                  Savol
-                </th>
-                <th scope="col" className="px-3 py-3 font-medium">
-                  Texnologiya
-                </th>
-                <th scope="col" className="px-3 py-3 font-medium">
-                  Qiyinlik
-                </th>
-                <th scope="col" className="px-3 py-3 font-medium">
-                  Statistika
-                </th>
-                <th scope="col" className="px-5 py-3 text-right font-medium">
-                  Amallar
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-line">
-              {filtered.map((q: any) => {
-                const tech = TECH_MAP[q.topic.toLowerCase() as TechId] || {
-                  color: '#6E7681',
-                  label: q.topic,
-                };
-                const stat = statsMap[q._id];
-                const needsReview =
-                  stat && stat.accuracy < 40 && stat.totalViews > 5;
-
-                return (
-                  <tr
-                    key={q._id}
-                    className={`transition-colors duration-150 hover:bg-elevated/50 ${needsReview ? 'bg-danger/5' : ''}`}
-                  >
-                    <td className="max-w-md px-5 py-3.5">
-                      <div className="flex items-start gap-2">
-                        {needsReview && (
-                          <span
-                            className="mt-0.5 text-danger"
-                            title="Ko'p xato qilinayotgan savol"
-                          >
-                            ⚠️
-                          </span>
-                        )}
-                        <div>
-                          <p className="truncate font-medium">{q.question}</p>
-                          <p className="mt-0.5 truncate text-xs text-ink-muted">
-                            {q._id}
-                          </p>
-                        </div>
-                      </div>
-                    </td>
-                    <td className="px-3 py-3.5">
-                      <span
-                        className="inline-flex items-center gap-2 rounded-lg px-2.5 py-1 text-xs font-medium"
-                        style={{
-                          backgroundColor: `${tech.color}1A`,
-                          color: tech.color,
-                        }}
-                      >
-                        <span
-                          className="h-2 w-2 rounded-full"
-                          style={{ backgroundColor: tech.color }}
-                        />
-                        {tech.label}
-                      </span>
-                    </td>
-                    <td className="px-3 py-3.5">
-                      <span
-                        className="text-xs font-medium"
-                        style={{
-                          color: DIFFICULTY_COLOR[q.difficulty] || '#F0F6FC',
-                        }}
-                      >
-                        {q.difficulty}
-                      </span>
-                    </td>
-                    <td className="px-3 py-3.5">
-                      {stat ? (
-                        <div className="text-xs">
-                          <p
-                            className="font-semibold"
-                            style={{
-                              color:
-                                stat.accuracy >= 70
-                                  ? '#10B981'
-                                  : stat.accuracy >= 40
-                                    ? '#FBBF24'
-                                    : '#F87171',
-                            }}
-                          >
-                            {stat.accuracy}% to'g'ri
-                          </p>
-                          <p className="text-ink-muted">
-                            {stat.totalViews} marta yechilgan
-                          </p>
-                        </div>
-                      ) : (
-                        <span className="text-xs text-ink-muted">—</span>
-                      )}
-                    </td>
-                    <td className="px-5 py-3.5">
-                      <div className="flex justify-end gap-2">
-                        <button
-                          type="button"
-                          onClick={() => openEdit(q)}
-                          aria-label={`${q.question} savolini tahrirlash`}
-                          className="flex h-8 w-8 items-center justify-center rounded-lg border border-line bg-elevated text-ink-dim transition-colors duration-150 hover:border-neon/60 hover:text-neon"
-                        >
-                          <PencilIcon className="h-4 w-4" aria-hidden="true" />
-                        </button>
-                      </div>
-                    </td>
-                  </tr>
-                );
-              })}
-              {questions.length === 0 && (
+        ) : users.length === 0 ? (
+          <div className="p-12 text-center text-ink-dim">
+            Foydalanuvchilar topilmadi.
+          </div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-left text-sm whitespace-nowrap">
+              <thead className="bg-elevated border-b border-line text-ink-dim uppercase text-xs font-semibold">
                 <tr>
-                  <td
-                    colSpan={4}
-                    className="px-5 py-14 text-center text-sm text-ink-dim"
-                  >
-                    Bu yerda hozircha savollar ro'yxatini ko'rish API si
-                    ulanmagan. Yangi savollar qo'shishingiz mumkin.
-                  </td>
+                  <th className="px-6 py-4">Foydalanuvchi</th>
+                  <th className="px-6 py-4">Email</th>
+                  <th className="px-6 py-4 text-center">Statistika</th>
+                  <th className="px-6 py-4 text-center">Status</th>
+                  <th className="px-6 py-4 text-center">Rol</th>
+                  <th className="px-6 py-4 text-right">Amallar</th>
                 </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <AnimatePresence>
-        {/* MANUAL ADD PANEL */}
-        {panelOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-              onClick={() => setPanelOpen(false)}
-              className="fixed inset-0 z-40 bg-black/60"
-            />
-            <motion.aside
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
-              role="dialog"
-              className="coda-scroll fixed right-0 top-0 z-50 flex h-full w-full max-w-md flex-col overflow-y-auto border-l border-line bg-surface"
-            >
-              <div className="flex items-center justify-between border-b border-line px-6 py-4">
-                <h2 className="text-base font-semibold">
-                  {editingId ? 'Savolni tahrirlash' : 'Yangi savol qo‘shish'}
-                </h2>
-                <button
-                  type="button"
-                  onClick={() => setPanelOpen(false)}
-                  className="flex h-9 w-9 items-center justify-center rounded-xl border border-line bg-elevated text-ink-dim transition-colors duration-150 hover:text-ink"
-                >
-                  <XIcon className="h-4 w-4" aria-hidden="true" />
-                </button>
-              </div>
-
-              <form onSubmit={save} className="flex flex-1 flex-col gap-5 p-6">
-                <div className="flex gap-4">
-                  <label className="block flex-1">
-                    <span className="mb-2 block text-sm font-medium">
-                      Texnologiya (Topic)
-                    </span>
-                    <input
-                      value={draft.topic}
-                      onChange={e =>
-                        setDraft({ ...draft, topic: e.target.value })
-                      }
-                      required
-                      className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                    />
-                  </label>
-
-                  <label className="block flex-1">
-                    <span className="mb-2 block text-sm font-medium">Submavzu (Ixtiyoriy)</span>
-                    <input
-                      value={draft.subtopic || ''}
-                      onChange={e => setDraft({ ...draft, subtopic: e.target.value })}
-                      placeholder="Masalan: Closures"
-                      className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                    />
-                  </label>
-                </div>
-
-                <div>
-                  <span className="mb-2 block text-sm font-medium">
-                    Qiyinlik
-                  </span>
-                  <div className="inline-flex w-full rounded-xl border border-line bg-elevated p-1">
-                    {['easy', 'medium', 'hard'].map(d => (
-                      <button
-                        key={d}
-                        type="button"
-                        onClick={() => setDraft({ ...draft, difficulty: d })}
-                        className={[
-                          'flex-1 rounded-lg py-2 text-sm font-medium transition-colors duration-150 capitalize',
-                          draft.difficulty === d
-                            ? 'bg-surface text-ink'
-                            : 'text-ink-dim hover:text-ink',
-                        ].join(' ')}
-                      >
-                        {d}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                <div className="flex gap-4">
-                  <label className="block flex-1">
-                    <span className="mb-2 block text-sm font-medium">
-                      Savol turi
-                    </span>
-                    <select
-                      value={draft.type}
-                      onChange={e =>
-                        setDraft({
-                          ...draft,
-                          type: e.target.value as 'multiple_choice' | 'code',
-                        })
-                      }
-                      className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                    >
-                      <option value="multiple_choice">
-                        Test (Multiple Choice)
-                      </option>
-                      <option value="code">Kod yozish (Code)</option>
-                    </select>
-                  </label>
-
-                  {draft.type === 'code' && (
-                    <label className="block flex-1">
-                      <span className="mb-2 block text-sm font-medium">
-                        Dasturlash tili
-                      </span>
-                      <select
-                        value={draft.language}
-                        onChange={e =>
-                          setDraft({ ...draft, language: e.target.value })
-                        }
-                        className="h-11 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                      >
-                        <option value="javascript">JavaScript</option>
-                        <option value="typescript">TypeScript</option>
-                        <option value="html">HTML</option>
-                        <option value="css">CSS</option>
-                      </select>
-                    </label>
-                  )}
-                </div>
-
-                <label className="block">
-                  <span className="mb-2 block text-sm font-medium">
-                    Savol matni
-                  </span>
-                  <textarea
-                    value={draft.question}
-                    onChange={e =>
-                      setDraft({ ...draft, question: e.target.value })
-                    }
-                    rows={3}
-                    required
-                    className="w-full rounded-xl border border-line bg-elevated p-3 text-sm text-ink placeholder:text-ink-muted transition-colors duration-150 focus:border-neon focus:outline-none"
-                  />
-                </label>
-
-                {draft.type === 'multiple_choice' ? (
-                  <>
-                    <label className="block">
-                      <span className="mb-2 block text-sm font-medium">
-                        Code Snippet (Ixtiyoriy)
-                      </span>
-                      <textarea
-                        value={draft.code}
-                        onChange={e =>
-                          setDraft({ ...draft, code: e.target.value })
-                        }
-                        rows={3}
-                        className="w-full rounded-xl border border-line bg-elevated p-3 text-sm font-mono text-ink placeholder:text-ink-muted transition-colors duration-150 focus:border-neon focus:outline-none"
-                      />
-                    </label>
-
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="block text-sm font-medium">
-                          Javob variantlari
-                        </span>
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setDraft({
-                              ...draft,
-                              options: [...draft.options, ''],
-                            })
-                          }
-                          className="text-xs font-semibold text-neon hover:underline"
-                        >
-                          + Variant qo'shish
-                        </button>
+              </thead>
+              <tbody className="divide-y divide-line">
+                {users.map(u => {
+                  const rejectRate = u.stats && u.stats.total > 0 ? (u.stats.rejected / u.stats.total) : 0;
+                  const isSpammer = rejectRate > 0.6 && u.stats?.total >= 3;
+                  return (
+                  <tr key={u._id} className={`transition-colors hover:bg-elevated/50 ${u.isBanned ? 'bg-red-500/5' : ''} ${isSpammer && !u.isBanned ? 'bg-orange-500/10' : ''}`}>
+                    <td className="px-6 py-4">
+                      <div className="flex items-center gap-3">
+                        <div className="relative">
+                          {u.avatar ? (
+                            <img src={u.avatar} alt="avatar" className="w-10 h-10 rounded-xl object-cover" />
+                          ) : (
+                            <div className="w-10 h-10 rounded-xl bg-neon/10 text-neon flex items-center justify-center font-bold text-lg">
+                              {u.name?.charAt(0)}
+                            </div>
+                          )}
+                          {/* Online status indicator */}
+                          <div className={`absolute -bottom-1 -right-1 w-3.5 h-3.5 rounded-full border-2 border-surface ${u.isOnline ? 'bg-green-500' : 'bg-ink-muted'}`} title={u.isOnline ? 'Online' : 'Offline'} />
+                        </div>
+                        <div>
+                          <p className="font-semibold text-ink">{u.name}</p>
+                          <p className="text-xs text-ink-dim">@{u.username || 'user'}</p>
+                        </div>
                       </div>
-                      {draft.options.map((opt, i) => (
-                        <div key={i} className="flex gap-3 items-center">
-                          <input
-                            type="radio"
-                            name="correctOption"
-                            checked={draft.correctOptionId === i}
-                            onChange={() =>
-                              setDraft({ ...draft, correctOptionId: i })
-                            }
-                            className="h-4 w-4 accent-neon"
-                          />
-                          <input
-                            value={opt}
-                            onChange={e => {
-                              const newOpts = [...draft.options];
-                              newOpts[i] = e.target.value;
-                              setDraft({ ...draft, options: newOpts });
-                            }}
-                            className="h-10 w-full rounded-xl border border-line bg-elevated px-3 text-sm text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                            placeholder={`Variant ${i + 1}`}
-                          />
-                          {draft.options.length > 2 && (
-                            <button
-                              type="button"
-                              onClick={() => {
-                                const newOpts = draft.options.filter(
-                                  (_, idx) => idx !== i
-                                );
-                                let newCorrect = draft.correctOptionId;
-                                if (draft.correctOptionId === i) newCorrect = 0;
-                                else if (draft.correctOptionId > i)
-                                  newCorrect -= 1;
-                                setDraft({
-                                  ...draft,
-                                  options: newOpts,
-                                  correctOptionId: newCorrect,
-                                });
-                              }}
-                              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-line text-ink-muted hover:text-danger hover:border-danger transition-colors"
-                              aria-label="Variantni o'chirish"
-                            >
-                              <Trash2Icon className="h-4 w-4" />
-                            </button>
+                    </td>
+                    <td className="px-6 py-4 text-ink-dim">
+                      {u.email}
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      {u.stats ? (
+                        <div className="text-xs flex flex-col gap-1 items-center">
+                          <span className="text-ink-dim">Yuborilgan: <b>{u.stats.total}</b></span>
+                          {u.stats.total > 0 && (
+                            <div className="flex gap-2">
+                              <span className="text-green-500 bg-green-500/10 px-1.5 rounded">T: {u.stats.approved}</span>
+                              <span className="text-red-500 bg-red-500/10 px-1.5 rounded">R: {u.stats.rejected}</span>
+                            </div>
                           )}
                         </div>
-                      ))}
-                    </div>
-                  </>
-                ) : (
-                  <>
-                    <label className="block">
-                      <span className="mb-2 block text-sm font-medium">
-                        Starter Code (Boshlang'ich kod)
-                      </span>
-                      <textarea
-                        value={draft.starterCode}
-                        onChange={e =>
-                          setDraft({ ...draft, starterCode: e.target.value })
-                        }
-                        rows={4}
-                        className="w-full rounded-xl border border-line bg-elevated p-3 text-sm font-mono text-ink placeholder:text-ink-muted transition-colors duration-150 focus:border-neon focus:outline-none"
-                      />
-                    </label>
-
-                    <div className="space-y-3">
-                      <div className="flex items-center justify-between">
-                        <span className="block text-sm font-medium">
-                          Test Case'lar
+                      ) : (
+                        <span className="text-ink-dim text-xs">-</span>
+                      )}
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      {u.isBanned ? (
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-red-500/10 text-red-500">
+                          <BanIcon className="w-3.5 h-3.5" />
+                          Bloklangan
                         </span>
-                        <button
-                          type="button"
-                          onClick={() =>
-                            setDraft({
-                              ...draft,
-                              testCases: [
-                                ...draft.testCases,
-                                {
-                                  input: '',
-                                  expectedOutput: '',
-                                  isHidden: false,
-                                },
-                              ],
-                            })
-                          }
-                          className="text-xs font-semibold text-neon hover:underline"
-                        >
-                          + Test qo'shish
-                        </button>
-                      </div>
-                      {draft.testCases.map((tc, i) => (
-                        <div
-                          key={i}
-                          className="flex flex-col gap-2 p-3 rounded-xl border border-line bg-elevated"
-                        >
-                          <div className="flex justify-between items-center">
-                            <span className="text-xs font-semibold text-ink-muted">
-                              Test {i + 1}
-                            </span>
-                            <div className="flex items-center gap-3">
-                              <label className="flex items-center gap-1.5 text-xs">
-                                <input
-                                  type="checkbox"
-                                  checked={tc.isHidden}
-                                  onChange={e => {
-                                    const newTcs = [...draft.testCases];
-                                    newTcs[i].isHidden = e.target.checked;
-                                    setDraft({ ...draft, testCases: newTcs });
-                                  }}
-                                  className="accent-neon"
-                                />
-                                Yashirin
-                              </label>
-                              <button
-                                type="button"
-                                onClick={() => {
-                                  const newTcs = draft.testCases.filter(
-                                    (_, idx) => idx !== i
-                                  );
-                                  setDraft({ ...draft, testCases: newTcs });
-                                }}
-                                className="text-danger hover:underline text-xs"
-                              >
-                                O'chirish
-                              </button>
-                            </div>
-                          </div>
-                          <input
-                            value={tc.input}
-                            onChange={e => {
-                              const newTcs = [...draft.testCases];
-                              newTcs[i].input = e.target.value;
-                              setDraft({ ...draft, testCases: newTcs });
-                            }}
-                            className="h-9 w-full rounded-lg border border-line bg-surface px-3 text-xs font-mono transition-colors focus:border-neon outline-none"
-                            placeholder="Input (masalan: sum(2, 3))"
-                          />
-                          <input
-                            value={tc.expectedOutput}
-                            onChange={e => {
-                              const newTcs = [...draft.testCases];
-                              newTcs[i].expectedOutput = e.target.value;
-                              setDraft({ ...draft, testCases: newTcs });
-                            }}
-                            className="h-9 w-full rounded-lg border border-line bg-surface px-3 text-xs font-mono transition-colors focus:border-neon outline-none"
-                            placeholder="Kutilgan natija (masalan: 5)"
-                          />
-                        </div>
-                      ))}
-                    </div>
-                  </>
-                )}
-
-                <label className="block">
-                  <span className="mb-2 block text-sm font-medium">
-                    Tushuntirish (Ixtiyoriy)
-                  </span>
-                  <textarea
-                    value={draft.explanation}
-                    onChange={e =>
-                      setDraft({ ...draft, explanation: e.target.value })
-                    }
-                    rows={3}
-                    className="w-full rounded-xl border border-line bg-elevated p-3 text-sm text-ink placeholder:text-ink-muted transition-colors duration-150 focus:border-neon focus:outline-none"
-                  />
-                </label>
-
-                <div className="mt-auto flex gap-3 pt-4">
-                  <button
-                    type="button"
-                    onClick={() => setPanelOpen(false)}
-                    className="flex-1 rounded-xl border border-line bg-elevated px-4 py-2.5 text-sm font-medium text-ink transition-colors duration-150 hover:border-ink-muted"
-                  >
-                    Bekor qilish
-                  </button>
-                  <button
-                    type="submit"
-                    disabled={isLoading}
-                    className="flex-1 rounded-xl bg-neon px-4 py-2.5 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover disabled:opacity-50"
-                  >
-                    {isLoading ? 'Saqlanmoqda...' : 'Saqlash'}
-                  </button>
-                </div>
-              </form>
-            </motion.aside>
-          </>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md text-xs font-medium bg-green-500/10 text-green-500">
+                          <CheckCircle2Icon className="w-3.5 h-3.5" />
+                          Faol
+                        </span>
+                      )}
+                    </td>
+                    <td className="px-6 py-4 text-center">
+                      <button 
+                        onClick={() => handleToggleRole(u._id, u.role)}
+                        disabled={u._id === currentUser?._id}
+                        className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${u.role === 'admin' ? 'bg-warning/10 text-warning hover:bg-warning/20' : 'bg-elevated text-ink-dim hover:text-ink hover:bg-line'} ${u._id === currentUser?._id ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      >
+                        {u.role === 'admin' ? <ShieldCheckIcon className="w-4 h-4" /> : <UserIcon className="w-4 h-4" />}
+                        {u.role === 'admin' ? 'Admin' : 'User'}
+                      </button>
+                    </td>
+                    <td className="px-6 py-4 text-right">
+                      <button 
+                        onClick={() => handleToggleBan(u._id, u.isBanned)}
+                        disabled={u._id === currentUser?._id || u.role === 'admin'}
+                        className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-colors ${u.isBanned ? 'bg-ink text-surface hover:bg-ink-dim' : 'bg-red-500/10 text-red-500 hover:bg-red-500/20'} ${(u._id === currentUser?._id || u.role === 'admin') ? 'opacity-50 cursor-not-allowed' : ''}`}
+                      >
+                        {u.isBanned ? 'Blokdan ochish' : 'Bloklash'}
+                      </button>
+                    </td>
+                  </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
         )}
-
-        {/* JSON UPLOAD PANEL */}
-        {jsonPanelOpen && (
-          <>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.2, ease: [0.23, 1, 0.32, 1] }}
-              onClick={() => setJsonPanelOpen(false)}
-              className="fixed inset-0 z-40 bg-black/60"
-            />
-            <motion.aside
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ duration: 0.28, ease: [0.23, 1, 0.32, 1] }}
-              role="dialog"
-              className="coda-scroll fixed right-0 top-0 z-50 flex h-full w-full max-w-lg flex-col overflow-y-auto border-l border-line bg-surface"
-            >
-              <div className="flex items-center justify-between border-b border-line px-6 py-4">
-                <h2 className="text-base font-semibold">
-                  JSON orqali ko'p savol qo'shish
-                </h2>
-                <button
-                  type="button"
-                  onClick={() => setJsonPanelOpen(false)}
-                  className="flex h-9 w-9 items-center justify-center rounded-xl border border-line bg-elevated text-ink-dim transition-colors duration-150 hover:text-ink"
-                >
-                  <XIcon className="h-4 w-4" aria-hidden="true" />
-                </button>
-              </div>
-
-              <div className="flex flex-1 flex-col gap-5 p-6">
-                <p className="text-sm text-ink-dim">
-                  Quyidagi maydonga savollar ro'yxatini JSON (array) shaklida
-                  kiriting.
-                </p>
-                <textarea
-                  value={jsonInput}
-                  onChange={e => setJsonInput(e.target.value)}
-                  className="h-96 w-full rounded-xl border border-line bg-elevated p-4 font-mono text-xs text-ink transition-colors duration-150 focus:border-neon focus:outline-none"
-                  placeholder={`[
-  {
-    "topic": "JavaScript",
-    "subtopic": "Closures",
-    "difficulty": "easy",
-    "question": "Savol matni",
-    "options": ["A", "B", "C", "D"],
-    "correctOptionId": 0
-  }
-]`}
-                />
-
-                <div className="mt-auto flex gap-3 pt-4">
-                  <button
-                    type="button"
-                    onClick={() => setJsonPanelOpen(false)}
-                    className="flex-1 rounded-xl border border-line bg-elevated px-4 py-2.5 text-sm font-medium text-ink transition-colors duration-150 hover:border-ink-muted"
-                  >
-                    Bekor qilish
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleJsonSubmit}
-                    disabled={isLoading}
-                    className="flex-1 rounded-xl bg-neon px-4 py-2.5 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover disabled:opacity-50"
-                  >
-                    {isLoading ? 'Yuklanmoqda...' : 'Yuklash'}
-                  </button>
-                </div>
-              </div>
-            </motion.aside>
-          </>
-        )}
-      </AnimatePresence>
+      </div>
     </div>
   );
 }

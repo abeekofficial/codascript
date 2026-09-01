@@ -1,11 +1,12 @@
 import { Request, Response, NextFunction } from 'express';
 import { verifyAccessToken } from '../utils/jwt';
+import { UserModel } from '../models/User';
 
 export interface AuthRequest extends Request {
   userId?: string;
 }
 
-export const protect = (req: AuthRequest, res: Response, next: NextFunction) => {
+export const protect = async (req: AuthRequest, res: Response, next: NextFunction): Promise<void> => {
   let token;
 
   if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
@@ -13,15 +14,30 @@ export const protect = (req: AuthRequest, res: Response, next: NextFunction) => 
   }
 
   if (!token) {
-    return res.status(401).json({ success: false, message: 'Not authorized, no token' });
+    res.status(401).json({ success: false, message: 'Not authorized, no token' });
+    return;
   }
 
   try {
     const decoded = verifyAccessToken(token);
     req.userId = decoded.userId;
+
+    const user = await UserModel.findById(req.userId).select('isBanned');
+    if (!user) {
+      res.status(401).json({ success: false, message: 'User not found' });
+      return;
+    }
+    if (user.isBanned) {
+      res.status(403).json({ success: false, message: 'Hisobingiz bloklangan' });
+      return;
+    }
+
+    UserModel.updateOne({ _id: req.userId }, { lastSeenAt: new Date() }).catch(e => console.error(e));
+
     next();
   } catch (error) {
-    return res.status(401).json({ success: false, message: 'Not authorized, token failed' });
+    res.status(401).json({ success: false, message: 'Not authorized, token failed' });
+    return;
   }
 };
 
@@ -40,8 +56,6 @@ export const optionalProtect = (req: AuthRequest, res: Response, next: NextFunct
   }
   next();
 };
-
-import { UserModel } from '../models/User';
 
 export const admin = async (req: AuthRequest, res: Response, next: NextFunction) => {
   if (!req.userId) {

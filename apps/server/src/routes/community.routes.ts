@@ -34,6 +34,23 @@ export const submitProblem: RequestHandler = async (req: AuthRequest, res: Respo
   try {
     const { title, difficulty, topic, description, constraints, examples, starterCode, testCases, tags } = req.body;
     
+    if (!title || title.length < 10) {
+      res.status(400).json({ success: false, message: 'Masala sarlavhasi kamida 10 ta belgidan iborat bo\'lishi kerak' });
+      return;
+    }
+    if (!description || description.length < 10) {
+      res.status(400).json({ success: false, message: 'Masala tavsifi kamida 10 ta belgidan iborat bo\'lishi kerak' });
+      return;
+    }
+    if (!starterCode || (typeof starterCode === 'object' && !starterCode.javascript) || (typeof starterCode === 'string' && starterCode.trim() === '')) {
+      res.status(400).json({ success: false, message: 'Boshlang\'ich kod bo\'sh bo\'lishi mumkin emas' });
+      return;
+    }
+    if (!testCases || !Array.isArray(testCases) || testCases.length === 0) {
+      res.status(400).json({ success: false, message: 'Kamida 1 ta test case kiritilishi kerak' });
+      return;
+    }
+
     // Auto-generate slug if not provided, just basic
     const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '') + '-' + generateGenericId('').substring(1).toLowerCase();
 
@@ -68,6 +85,38 @@ export const submitProblem: RequestHandler = async (req: AuthRequest, res: Respo
 export const submitQuestion: RequestHandler = async (req: AuthRequest, res: Response): Promise<void> => {
   try {
     const { topic, subtopic, difficulty, question, options, correctOptionId, explanation, code, type, language, starterCode, testCases, tags } = req.body;
+
+    if (!question || question.length < 10) {
+      res.status(400).json({ success: false, message: 'Savol matni kamida 10 ta belgidan iborat bo\'lishi kerak' });
+      return;
+    }
+
+    if (type === 'multiple_choice') {
+      if (!options || !Array.isArray(options) || options.length < 2) {
+        res.status(400).json({ success: false, message: 'Kamida 2 ta variant bo\'lishi kerak' });
+        return;
+      }
+      for (const opt of options) {
+        if (!opt || opt.trim().length === 0) {
+          res.status(400).json({ success: false, message: 'Variantlar bo\'sh bo\'lishi mumkin emas' });
+          return;
+        }
+      }
+      const uniqueOptions = new Set(options.map((o: string) => o.trim()));
+      if (uniqueOptions.size !== options.length) {
+        res.status(400).json({ success: false, message: 'Variantlar bir-biridan farq qilishi kerak (duplikat mumkin emas)' });
+        return;
+      }
+    } else {
+      if (!starterCode || starterCode.trim() === '') {
+        res.status(400).json({ success: false, message: 'Boshlang\'ich kod bo\'sh bo\'lishi mumkin emas' });
+        return;
+      }
+      if (!testCases || !Array.isArray(testCases) || testCases.length === 0) {
+        res.status(400).json({ success: false, message: 'Kamida 1 ta test case kiritilishi kerak' });
+        return;
+      }
+    }
 
     const newQuestion = await QuestionModel.create({
       topic,

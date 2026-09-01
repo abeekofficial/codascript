@@ -1,6 +1,14 @@
 import type { NextConfig } from "next";
 import path from "path";
 
+const withPWA = require("@ducanh2912/next-pwa").default({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  fallbacks: {
+    document: "/~offline",
+  },
+});
+
 if (!process.env.NEXT_PUBLIC_API_URL) {
   console.warn("⚠️ WARNING: NEXT_PUBLIC_API_URL is not set, falling back to localhost - this will fail in production ⚠️");
 }
@@ -79,4 +87,4 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default withPWA(nextConfig);

@@ -186,6 +186,11 @@ export default function TestJarayoni() {
                   Savol {currentQuestionIndex + 1}
                 </span>
                 <span className="text-xs font-medium text-warning">{difficultyLabel}</span>
+                {question.author && (
+                  <span className="text-xs font-medium text-neon ml-auto flex items-center gap-1 bg-neon/10 px-2 py-0.5 rounded">
+                    @{question.author.username || question.author.name || 'user'} tomonidan
+                  </span>
+                )}
               </div>
             </div>
 

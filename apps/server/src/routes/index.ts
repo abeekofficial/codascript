@@ -9,6 +9,7 @@ import communityRoutes from './community.routes';
 import followRoutes from './follow.routes';
 import savedRoutes from './saved.routes';
 import notificationRoutes from './notification.routes';
+import adminRoutes from './admin.routes';
 
 const router = Router();
 
@@ -21,6 +22,7 @@ router.use('/problems', problemRoutes);
 router.use('/community', communityRoutes);
 router.use('/saved', savedRoutes);
 router.use('/notifications', notificationRoutes);
+router.use('/admin', adminRoutes);
 
 router.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });

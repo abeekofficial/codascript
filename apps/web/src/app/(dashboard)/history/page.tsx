@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { TECH_MAP } from '@/data/tech';
 import { api } from '@/services/api';
+import { LoaderCard } from '@/components/status/statusCard';
 import { ClockIcon, CheckCircle2Icon, XCircleIcon, Loader2Icon, ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 
 interface HistoryAttempt {
@@ -77,7 +78,7 @@ export default function Tarix() {
 
       {loading ? (
         <div className="flex h-64 items-center justify-center">
-          <Loader2Icon className="h-8 w-8 animate-spin text-ink-dim" />
+          <LoaderCard illustrationSrc="/illustrations/loader-astronaut.png" title="Yuklanmoqda..." />
         </div>
       ) : attempts.length === 0 ? (
         <div className="rounded-2xl border border-line bg-surface p-10 text-center">

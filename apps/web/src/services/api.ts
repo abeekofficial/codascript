@@ -106,6 +106,42 @@ function performLogout() {
 }
 
 export const api = {
+  // ===== Admin / Users =====
+  getAdminUsers: async (page = 1, limit = 20, search = '', role = '') => {
+    let url = `${API_URL}/admin/users?page=${page}&limit=${limit}`;
+    if (search) url += `&search=${encodeURIComponent(search)}`;
+    if (role) url += `&role=${encodeURIComponent(role)}`;
+    
+    const res = await fetchWithAuth(url);
+    if (!res.ok) throw new Error('Failed to fetch admin users');
+    const data = await res.json();
+    return data.data;
+  },
+
+  toggleUserBan: async (id: string, ban: boolean) => {
+    const endpoint = ban ? 'ban' : 'unban';
+    const res = await fetchWithAuth(`${API_URL}/admin/users/${id}/${endpoint}`, {
+      method: 'PATCH',
+    });
+    if (!res.ok) throw new Error('Failed to toggle user ban');
+    const data = await res.json();
+    return data.data;
+  },
+
+  updateUserRole: async (id: string, role: string) => {
+    const res = await fetchWithAuth(`${API_URL}/admin/users/${id}/role`, {
+      method: 'PATCH',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ role }),
+    });
+    if (!res.ok) {
+      const d = await res.json().catch(() => ({}));
+      throw new Error(d.message || 'Failed to update user role');
+    }
+    const data = await res.json();
+    return data.data;
+  },
+
   login: async (email: string, password: string) => {
     const res = await fetch(`${API_URL}/auth/login`, {
       method: 'POST',
@@ -593,4 +629,68 @@ export const api = {
     const data = await res.json();
     return data.data;
   },
+
+  voteQuestion: async (id: string, vote: 'up' | 'down') => {
+    const res = await fetchWithAuth(
+      `${API_URL}/community/questions/${id}/vote`,
+      {
+        method: 'POST',
+        body: JSON.stringify({ vote }),
+      }
+    );
+    if (!res.ok) {
+      const errText = await res.text();
+      throw new Error(`Failed to vote on question: ${errText}`);
+    }
+    const data = await res.json();
+    return data.data;
+  },
+
+  getPendingQuestions: async () => {
+    const res = await fetchWithAuth(`${API_URL}/community/questions/pending`);
+    if (!res.ok) throw new Error('Failed to fetch pending questions');
+    const data = await res.json();
+    return data.data;
+  },
+
+  submitCommunityQuestion: async (questionData: any) => {
+    const res = await fetchWithAuth(`${API_URL}/community/questions/submit`, {
+      method: 'POST',
+      body: JSON.stringify(questionData),
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to submit community question');
+    return data.data;
+  },
+
+  getPendingCommunity: async () => {
+    const res = await fetchWithAuth(`${API_URL}/admin/community/pending`);
+    if (!res.ok) throw new Error('Failed to fetch pending community items');
+    return await res.json();
+  },
+
+  forceApproveCommunity: async (type: string, id: string) => {
+    const res = await fetchWithAuth(`${API_URL}/admin/community/${type}/${id}/force-approve`, {
+      method: 'PATCH'
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to approve');
+    return data.data;
+  },
+
+  forceRejectCommunity: async (type: string, id: string, reason: string) => {
+    const res = await fetchWithAuth(`${API_URL}/admin/community/${type}/${id}/force-reject`, {
+      method: 'PATCH',
+      body: JSON.stringify({ reason })
+    });
+    const data = await res.json();
+    if (!res.ok) throw new Error(data.message || 'Failed to reject');
+    return data.data;
+  },
+
+  getUserSubmissionsStats: async (userId: string) => {
+    const res = await fetchWithAuth(`${API_URL}/admin/users/${userId}/submissions`);
+    if (!res.ok) throw new Error('Failed to fetch user submissions');
+    return await res.json();
+  }
 };

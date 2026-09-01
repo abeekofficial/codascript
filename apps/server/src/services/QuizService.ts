@@ -39,6 +39,7 @@ export class QuizService {
         type: q.type,
         language: q.language,
         starterCode: q.starterCode,
+        author: q.author,
         testCases: q.testCases ? q.testCases.map(tc => tc.isHidden ? { isHidden: true, input: '', expectedOutput: '' } : tc) : undefined
       };
     });

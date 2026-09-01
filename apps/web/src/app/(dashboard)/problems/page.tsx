@@ -5,6 +5,7 @@ import { PageHeader } from '@/components/ui/PageHeader';
 import { DIFFICULTIES, TECHS } from '@/data/tech';
 import { ClientProblem } from '@codascript/types';
 import { api } from '@/services/api';
+import { LoaderCard } from '@/components/status/statusCard';
 
 export default function ProblemsPage() {
   const [topic, setTopic] = useState('all');
@@ -67,8 +68,8 @@ export default function ProblemsPage() {
 
       <div className="grid gap-4">
         {loading ? (
-           <div className="rounded-2xl border border-line bg-surface p-8 text-center text-ink-dim">
-             Yuklanmoqda...
+           <div className="flex h-64 items-center justify-center">
+             <LoaderCard illustrationSrc="/illustrations/loader-terminal.png" title="Masalalar yuklanmoqda..." />
            </div>
         ) : filtered.length === 0 ? (
           <div className="rounded-2xl border border-line bg-surface p-8 text-center text-ink-dim">

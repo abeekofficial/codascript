@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { api } from '@/services/api';
 import { Button } from '@/components/ui/button';
+import { ErrorCard } from '@/components/status/statusCard';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from '@/components/ui/card';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -47,59 +48,71 @@ export default function ForgotPasswordPage() {
             </CardDescription>
           </CardHeader>
           <form onSubmit={handleSubmit}>
-            <CardContent className="space-y-4">
-              <AnimatePresence mode="wait">
-                {status === 'success' ? (
-                  <motion.div
-                    key="success"
-                    initial={{ opacity: 0, height: 0 }}
-                    animate={{ opacity: 1, height: 'auto' }}
-                    className="p-3 bg-green-500/10 border border-green-500/50 text-green-500 text-sm font-medium rounded text-center"
-                  >
-                    {message}
-                  </motion.div>
-                ) : (
-                  <motion.div key="form" className="space-y-4">
-                    {status === 'error' && (
-                      <div className="p-3 bg-red-500/10 border border-red-500/50 text-red-500 text-sm font-mono rounded">
+            {status === 'error' ? (
+              <CardContent className="pt-6">
+                <div className="mx-auto w-full max-w-sm">
+                  <ErrorCard
+                    illustrationSrc="/illustrations/error-spilled-coffee.png"
+                    title="Xatolik"
+                    subtitle={message}
+                    actionLabel="Qayta urinish"
+                    actionIcon="retry"
+                    onAction={() => setStatus('idle')}
+                  />
+                </div>
+              </CardContent>
+            ) : (
+              <>
+                <CardContent className="space-y-4">
+                  <AnimatePresence mode="wait">
+                    {status === 'success' ? (
+                      <motion.div
+                        key="success"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        className="p-3 bg-green-500/10 border border-green-500/50 text-green-500 text-sm font-medium rounded text-center"
+                      >
                         {message}
-                      </div>
+                      </motion.div>
+                    ) : (
+                      <motion.div key="form" className="space-y-4">
+                        <div className="space-y-2">
+                          <label className="text-sm font-medium">Email</label>
+                          <Input 
+                            type="email" 
+                            placeholder="name@example.com" 
+                            required 
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            disabled={status === 'loading'}
+                          />
+                        </div>
+                      </motion.div>
                     )}
-                    <div className="space-y-2">
-                      <label className="text-sm font-medium">Email</label>
-                      <Input 
-                        type="email" 
-                        placeholder="name@example.com" 
-                        required 
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        disabled={status === 'loading'}
-                      />
-                    </div>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-            </CardContent>
-            <CardFooter className="flex flex-col gap-4">
-              {status !== 'success' && (
-                <Button 
-                  type="submit" 
-                  className="w-full bg-neon text-[#0B0F14] hover:bg-neon-hover font-bold h-11" 
-                  disabled={status === 'loading' || !email}
-                >
-                  {status === 'loading' ? 'Yuborilmoqda...' : 'Havola yuborish'}
-                </Button>
-              )}
-              
-              <Button 
-                type="button" 
-                variant="link" 
-                className="w-full text-gray-400 hover:text-white"
-                onClick={() => router.push('/login')}
-              >
-                Tizimga kirish sahifasiga qaytish
-              </Button>
-            </CardFooter>
+                  </AnimatePresence>
+                </CardContent>
+                <CardFooter className="flex flex-col gap-4">
+                  {status !== 'success' && (
+                    <Button 
+                      type="submit" 
+                      className="w-full bg-neon text-[#0B0F14] hover:bg-neon-hover font-bold h-11" 
+                      disabled={status === 'loading' || !email}
+                    >
+                      {status === 'loading' ? 'Yuborilmoqda...' : 'Havola yuborish'}
+                    </Button>
+                  )}
+                  
+                  <Button 
+                    type="button" 
+                    variant="link" 
+                    className="w-full text-gray-400 hover:text-white"
+                    onClick={() => router.push('/login')}
+                  >
+                    Tizimga kirish sahifasiga qaytish
+                  </Button>
+                </CardFooter>
+              </>
+            )}
           </form>
         </Card>
       </motion.div>

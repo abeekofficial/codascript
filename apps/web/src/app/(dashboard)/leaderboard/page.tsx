@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { CrownIcon, MedalIcon, TrendingUpIcon } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
+import { LoaderCard } from '@/components/status/statusCard';
 import { api } from '@/services/api';
 import { LeaderboardUser } from '@/types/quiz';
 
@@ -75,7 +76,11 @@ function RecommendedUsers() {
     }
   };
 
-  if (loading) return <div className="text-sm text-ink-dim">Yuklanmoqda...</div>;
+  if (loading) return (
+    <div className="flex h-full min-h-[50vh] items-center justify-center">
+      <LoaderCard illustrationSrc="/illustrations/loader-astronaut.png" title="Yuklanmoqda..." />
+    </div>
+  );
   if (!users.length) return <div className="text-sm text-ink-dim">Foydalanuvchilar topilmadi</div>;
 
   return (

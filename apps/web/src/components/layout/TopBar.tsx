@@ -124,20 +124,39 @@ export function TopBar() {
                   <p className="text-sm font-semibold">Bildirishnomalar</p>
                   <Link href="/notifications" onClick={() => setOpen(false)} className="text-xs text-neon hover:underline">Barchasini ko'rish</Link>
                 </div>
-                <ul className="max-h-[300px] overflow-y-auto coda-scroll">
-                  {notifications.length === 0 ? (
-                     <li className="px-4 py-6 text-center text-sm text-ink-dim">Bildirishnomalar yo'q</li>
-                  ) : (
-                    notifications.map((n) => (
-                      <li key={n._id} className="border-b border-line/60 px-4 py-3 last:border-0 hover:bg-elevated transition-colors">
-                        <Link href="/notifications" onClick={() => setOpen(false)}>
-                          <p className={`text-sm ${!n.isRead ? "text-ink font-semibold" : "text-ink-dim"}`}>{n.title}</p>
-                          <p className={`mt-1 text-xs ${!n.isRead ? "text-ink-dim" : "text-ink-muted"}`}>{n.message}</p>
-                        </Link>
-                      </li>
-                    ))
-                  )}
-                </ul>
+                  <ul className="max-h-[300px] overflow-y-auto coda-scroll">
+                    {notifications.length === 0 ? (
+                       <li className="px-4 py-6 text-center text-sm text-ink-dim">Bildirishnomalar yo'q</li>
+                    ) : (
+                      notifications.map((n) => {
+                        let href = '/notifications';
+                        if (n.relatedItemType === 'problem' && n.relatedItemId) {
+                          href = `/problems/${n.relatedItemId}`;
+                        } else if (n.relatedItemType === 'question') {
+                          href = '/community';
+                        }
+                        
+                        return (
+                          <li key={n._id} className="border-b border-line/60 px-4 py-3 last:border-0 hover:bg-elevated transition-colors cursor-pointer">
+                            <Link href={href} onClick={async () => {
+                              setOpen(false);
+                              if (!n.isRead) {
+                                try {
+                                  await api.markNotificationAsRead(n._id);
+                                  fetchUnreadCount();
+                                } catch (e) {
+                                  console.error(e);
+                                }
+                              }
+                            }}>
+                              <p className={`text-sm ${!n.isRead ? "text-ink font-semibold" : "text-ink-dim"}`}>{n.title}</p>
+                              <p className={`mt-1 text-xs ${!n.isRead ? "text-ink-dim" : "text-ink-muted"}`}>{n.message}</p>
+                            </Link>
+                          </li>
+                        );
+                      })
+                    )}
+                  </ul>
               </div>
             )}
           </div>

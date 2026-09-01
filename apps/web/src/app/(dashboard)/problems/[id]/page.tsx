@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useRouter } from 'next/navigation';
 import { ArrowLeftIcon, PlayIcon, SendIcon, CheckCircleIcon, XCircleIcon, ThumbsUpIcon, ThumbsDownIcon, BookmarkIcon } from 'lucide-react';
+import { LoaderCard } from '@/components/status/statusCard';
 import Link from 'next/link';
 import { CodeEditor } from '@/components/ui/CodeEditor';
 import { ClientProblem } from '@codascript/types';
@@ -156,7 +157,11 @@ export default function ProblemDetailsPage() {
     }
   };
 
-  if (loading) return <div className="p-8 text-center text-ink-dim">Yuklanmoqda...</div>;
+  if (loading) return (
+    <div className="flex h-full min-h-[50vh] items-center justify-center">
+      <LoaderCard illustrationSrc="/illustrations/loader-terminal.png" title="Masala yuklanmoqda..." />
+    </div>
+  );
   if (!problem) return <div className="p-8 text-center text-red-500">Masala topilmadi!</div>;
 
   return (
@@ -181,11 +186,16 @@ export default function ProblemDetailsPage() {
                 {problem.difficulty}
               </span>
             </div>
-            {problem.author && (
-              <span className="text-[11px] sm:text-xs text-ink-dim mt-1">
-                Muallif: <Link href={`/users/${problem.author.username || problem.author}`} className="hover:text-neon transition-colors">@{problem.author.username || problem.author}</Link>
-              </span>
-            )}
+              {problem.author ? (
+                <span className="text-[11px] sm:text-xs text-ink-dim mt-1">
+                  Muallif: <Link href={`/users/${problem.author.username || problem.author.name || 'user'}`} className="hover:text-neon transition-colors">@{problem.author.username || problem.author.name || 'user'}</Link>
+                </span>
+              ) : (
+                <span className="text-[11px] sm:text-xs text-ink-dim mt-1 flex items-center gap-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-neon"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" x2="20" y1="19" y2="19"></line></svg>
+                  CodaScript jamoasi
+                </span>
+              )}
           </div>
         </div>
         

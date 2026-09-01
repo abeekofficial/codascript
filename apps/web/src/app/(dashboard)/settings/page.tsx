@@ -6,6 +6,7 @@ import { UserIcon, ShieldIcon, BellIcon, MonitorIcon, Trash2Icon } from 'lucide-
 import { useAuthStore } from '@/store/authStore';
 import { api } from '@/services/api';
 import { useRouter } from 'next/navigation';
+import { ErrorCard } from '@/components/status/statusCard';
 
 export default function SozlamalarPage() {
   const { user, login, logout } = useAuthStore();
@@ -126,11 +127,20 @@ export default function SozlamalarPage() {
 
         <main className="flex-1 min-w-0">
           {message.text && (
-            <div className={`mb-6 rounded-xl p-4 text-sm font-medium border ${
-              message.type === 'success' ? 'bg-neon/10 border-neon/50 text-neon' : 'bg-danger/10 border-danger/50 text-danger'
-            }`}>
-              {message.text}
-            </div>
+            message.type === 'error' ? (
+              <div className="mb-6 max-w-sm mx-auto">
+                <ErrorCard
+                  illustrationSrc="/illustrations/error-spilled-coffee.png"
+                  title="Xatolik"
+                  subtitle={message.text}
+                  onAction={() => setMessage({ type: '', text: '' })}
+                />
+              </div>
+            ) : (
+              <div className="mb-6 rounded-xl p-4 text-sm font-medium border bg-neon/10 border-neon/50 text-neon">
+                {message.text}
+              </div>
+            )
           )}
 
           {activeTab === 'profile' && (

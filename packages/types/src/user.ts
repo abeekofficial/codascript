@@ -23,6 +23,8 @@ export interface User {
   currentStreak: number;
   completedQuizzes?: number;
   lastActiveDate: Date | string;
+  lastSeenAt?: Date | string;
+  isBanned?: boolean;
   followers?: string[];
   following?: string[];
   trackProgress: UserTrackProgress[];

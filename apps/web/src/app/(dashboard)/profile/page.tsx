@@ -5,6 +5,7 @@ import { CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YA
 import { AwardIcon, CalendarIcon, FlameIcon, TrophyIcon, ZapIcon, EditIcon, CheckIcon, XIcon, Loader2Icon } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
 import { TECH_MAP } from '@/data/tech';
+import { LoaderCard } from '@/components/status/statusCard';
 import { useAuthStore } from '@/store/authStore';
 import { api, ProfileStats, GrowthDataPoint, SkillStat } from '@/services/api';
 import { FollowListModal } from '@/components/social/FollowListModal';
@@ -221,7 +222,9 @@ export default function Profil() {
           <div className="h-72 w-full">
             {loading ? (
               <div className="flex h-full items-center justify-center">
-                <Loader2Icon className="h-8 w-8 animate-spin text-ink-dim" />
+                <div className="scale-75 origin-center">
+                  <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Yuklanmoqda..." />
+                </div>
               </div>
             ) : growthData.length === 0 ? (
               <div className="flex h-full items-center justify-center text-sm text-ink-dim">
@@ -278,11 +281,13 @@ export default function Profil() {
 
         <section className="rounded-2xl border border-line bg-surface p-6">
           <h2 className="text-base font-semibold">Texnologiyalar bo'yicha</h2>
-          {loading ? (
-            <div className="flex h-40 items-center justify-center">
-              <Loader2Icon className="h-8 w-8 animate-spin text-ink-dim" />
-            </div>
-          ) : skills.length === 0 ? (
+            {loading ? (
+              <div className="flex h-40 items-center justify-center">
+                <div className="scale-75 origin-center">
+                  <LoaderCard illustrationSrc="/illustrations/loader-coding-boy.png" title="Yuklanmoqda..." />
+                </div>
+              </div>
+            ) : skills.length === 0 ? (
             <p className="mt-5 text-sm text-ink-dim">
               Hali yetarli ma'lumot yo'q. Turli mavzularda test yechib boshlang!
             </p>

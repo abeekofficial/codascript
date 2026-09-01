@@ -4,6 +4,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { PlusIcon, SearchIcon, XIcon, UploadCloudIcon } from 'lucide-react';
 import { PageHeader } from '@/components/ui/PageHeader';
+import { ErrorCard } from '@/components/status/statusCard';
 import { api } from '@/services/api';
 import { ClientProblem } from '@codascript/types';
 
@@ -177,9 +178,15 @@ export default function AdminProblemsPage() {
       />
       
       {message && (
-        <div className="mb-4 p-4 rounded-xl border border-neon bg-neon/10 text-neon font-medium">
-          {message}
-        </div>
+        message.startsWith('Xatolik') ? (
+          <div className="mb-4 max-w-sm mx-auto">
+            <ErrorCard illustrationSrc="/illustrations/error-spilled-coffee.png" title="Xatolik" subtitle={message} onAction={() => setMessage('')} />
+          </div>
+        ) : (
+          <div className="mb-4 p-4 rounded-xl border border-neon bg-neon/10 text-neon font-medium">
+            {message}
+          </div>
+        )
       )}
 
       <div className="mb-4 flex flex-wrap items-center gap-3">

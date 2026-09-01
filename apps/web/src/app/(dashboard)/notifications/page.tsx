@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { api } from '@/services/api';
 import { BellIcon, CheckIcon, CheckCircleIcon } from 'lucide-react';
+import { LoaderCard } from '@/components/status/statusCard';
 
 export default function NotificationsPage() {
   const [notifications, setNotifications] = useState<any[]>([]);
@@ -69,7 +70,9 @@ export default function NotificationsPage() {
 
       <div className="rounded-2xl border border-line bg-surface overflow-hidden">
         {loading ? (
-          <div className="p-8 text-center text-ink-dim">Yuklanmoqda...</div>
+          <div className="flex h-64 items-center justify-center">
+            <LoaderCard illustrationSrc="/illustrations/loader-astronaut.png" title="Bildirishnomalar yuklanmoqda..." />
+          </div>
         ) : notifications.length === 0 ? (
           <div className="p-12 text-center text-ink-dim">
             <BellIcon className="h-10 w-10 mx-auto mb-3 opacity-50" />
@@ -99,7 +102,7 @@ export default function NotificationsPage() {
                   {n.relatedItemType && n.relatedItemId && (
                     <div className="mt-3">
                       <Link
-                        href={n.relatedItemType === 'problem' ? `/problems/${n.relatedItemId}` : '/quizzes'}
+                        href={n.relatedItemType === 'problem' ? `/problems/${n.relatedItemId}` : n.relatedItemType === 'question' ? '/community' : '/quizzes'}
                         className="text-xs font-medium text-neon hover:underline"
                         onClick={() => !n.isRead && markAsRead(n._id)}
                       >

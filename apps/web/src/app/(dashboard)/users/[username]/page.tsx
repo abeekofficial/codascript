@@ -5,6 +5,7 @@ import { useParams } from 'next/navigation';
 import { api } from '@/services/api';
 import { User } from '@codascript/types';
 import { PageHeader } from '@/components/ui/PageHeader';
+import { ErrorCard, LoaderCard } from '@/components/status/statusCard';
 import { TrophyIcon, FlameIcon, StarIcon, CheckCircleIcon, CalendarIcon } from 'lucide-react';
 import { useAuthStore } from '@/store/authStore';
 
@@ -45,14 +46,24 @@ export default function PublicProfilePage() {
   };
 
   if (loading) {
-    return <div className="text-center p-8">Yuklanmoqda...</div>;
+    return (
+      <div className="flex h-full min-h-[50vh] items-center justify-center">
+        <LoaderCard illustrationSrc="/illustrations/loader-astronaut.png" title="Yuklanmoqda..." />
+      </div>
+    );
   }
 
   if (error || !profile) {
     return (
-      <div className="text-center p-8">
-        <h2 className="text-xl font-bold text-danger mb-2">Xatolik</h2>
-        <p className="text-ink-dim">{error || 'Foydalanuvchi topilmadi'}</p>
+      <div className="flex h-full min-h-[50vh] items-center justify-center">
+        <ErrorCard
+          illustrationSrc="/illustrations/error-cat-404.png"
+          title="Topilmadi"
+          subtitle={error || 'Foydalanuvchi topilmadi'}
+          actionLabel="Bosh sahifaga qaytish"
+          actionIcon="home"
+          onAction={() => window.location.href = '/dashboard'}
+        />
       </div>
     );
   }

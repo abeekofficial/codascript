@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { api } from '@/services/api';
 import { ClientQuestion, useQuizStore } from '@/store/quizStore';
+import { LoaderCard } from '@/components/status/statusCard';
 import Editor from '@monaco-editor/react';
 import {
   CheckCircleIcon,
@@ -405,8 +406,10 @@ export function CodeQuestion({
                 </div>
               )}
               {activeTab === 'results' && !testResults && isEvaluating && (
-                <div className="text-gray-500 animate-pulse">
-                  Tekshirilmoqda...
+                <div className="flex h-32 items-center justify-center">
+                  <div className="max-w-sm mx-auto scale-75 origin-center">
+                    <LoaderCard illustrationSrc="/illustrations/loader-terminal.png" title="Tekshirilmoqda..." />
+                  </div>
                 </div>
               )}
             </div>

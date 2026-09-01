@@ -5,6 +5,7 @@ import { api } from '@/services/api';
 import { useQuizStore, AnswerResult } from '@/store/quizStore';
 import { useEffect, useState, useCallback } from 'react';
 import { Button } from '@/components/ui/button';
+import { ErrorCard, LoaderCard } from '@/components/status/statusCard';
 import { useParams, useRouter } from 'next/navigation';
 import { Clock, ArrowLeft, ArrowRight, CheckCircle2, Terminal, XCircle, RotateCcw, Home } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -132,16 +133,23 @@ export default function QuizPage() {
   };
 
   if (topicsLoading) {
-    return <div className="flex-1 flex items-center justify-center p-8 text-center font-mono animate-pulse text-primary min-h-screen">&gt; Loading modules...</div>;
+    return (
+      <div className="flex-1 flex items-center justify-center p-8 min-h-screen">
+        <LoaderCard illustrationSrc="/illustrations/loader-dino.png" title="Modullar yuklanmoqda..." />
+      </div>
+    );
   }
 
   if (topicsError) {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center p-8 text-center font-mono min-h-screen">
-        <XCircle className="w-16 h-16 text-red-500 mb-4" />
-        <h2 className="text-2xl text-red-500 mb-2">System Error</h2>
-        <p className="text-muted-foreground">Unable to connect to the database. Please check your connection and try again.</p>
-        <Button onClick={() => window.location.reload()} className="mt-6 font-mono rounded-none">Retry Connection</Button>
+      <div className="flex-1 flex flex-col items-center justify-center p-8 min-h-screen">
+        <ErrorCard
+          illustrationSrc="/illustrations/error-confused-boy.png"
+          title="Tizim xatosi"
+          subtitle="Ma'lumotlar bazasiga ulanib bo'lmadi. Iltimos, aloqani tekshiring va qaytadan urinib ko'ring."
+          onAction={() => window.location.reload()}
+          actionLabel="Qayta urinish"
+        />
       </div>
     );
   }
@@ -298,8 +306,12 @@ export default function QuizPage() {
           </div>
 
           {startMutation.isError && (
-            <div className="mb-4 p-4 bg-red-500/10 border border-red-500/50 text-red-500 font-mono text-sm">
-              &gt; Error: Could not start quiz. Please check your connection or database.
+            <div className="mb-4">
+              <ErrorCard
+                illustrationSrc="/illustrations/error-spilled-coffee.png"
+                title="Xatolik"
+                subtitle="Testni boshlab bo'lmadi. Iltimos, aloqa yoki ma'lumotlar bazasini tekshiring."
+              />
             </div>
           )}
 

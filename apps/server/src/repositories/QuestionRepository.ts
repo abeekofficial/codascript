@@ -51,7 +51,28 @@ export class QuestionRepository {
     }
 
     // Using aggregation to randomize directly in DB
-    const pipeline: any[] = [{ $match: query }, { $sample: { size: limit === 'all' ? 10000 : limit } }];
+    const pipeline: any[] = [
+      { $match: query }, 
+      { $sample: { size: limit === 'all' ? 10000 : limit } },
+      {
+        $lookup: {
+          from: 'users',
+          localField: 'author',
+          foreignField: '_id',
+          as: 'authorData'
+        }
+      },
+      {
+        $addFields: {
+          author: { $arrayElemAt: ['$authorData', 0] }
+        }
+      },
+      {
+        $project: {
+          authorData: 0
+        }
+      }
+    ];
     return QuestionModel.aggregate(pipeline);
   }
 
