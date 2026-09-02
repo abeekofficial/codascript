@@ -2,15 +2,13 @@ import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import GithubProvider from "next-auth/providers/github";
 
-if (
-  !process.env.NEXT_PUBLIC_API_URL &&
-  process.env.VERCEL_ENV === "production"
-) {
-  process.env.NEXTAUTH_URL = "https://codascript.vercel.app";
-} else {
+if (!process.env.NEXT_PUBLIC_API_URL) {
   console.warn(
     "⚠️ WARNING: NEXT_PUBLIC_API_URL is not set in NextAuth route, falling back to localhost - this will fail in production ⚠️",
   );
+  if (process.env.VERCEL_ENV === "production") {
+    process.env.NEXTAUTH_URL = "https://codascript.vercel.app";
+  }
 }
 const API_URL = process.env.NEXT_PUBLIC_API_URL || "http://127.0.0.1:5000/api";
 

@@ -152,43 +152,46 @@ export default function LandingPage() {
 
           <div className="relative mx-auto w-full max-w-lg lg:ml-auto">
             {/* Mock Editor UI */}
-            <div className="rounded-2xl border border-[#30363D] bg-[#161B22] shadow-2xl shadow-black/50 overflow-hidden">
-              <div className="flex items-center gap-2 px-4 py-3 border-b border-[#30363D] bg-[#0B0F14]">
-                <div className="flex gap-1.5">
-                  <div className="w-3 h-3 rounded-full bg-red-500" />
-                  <div className="w-3 h-3 rounded-full bg-yellow-500" />
-                  <div className="w-3 h-3 rounded-full bg-green-500" />
+            <div className="[perspective:1000px]">
+              <div className="rounded-2xl border border-[#30363D] bg-[#161B22] shadow-2xl shadow-black/50 overflow-hidden ] [transform:rotateX(15deg)_rotateY(-15deg)]">
+                <div className="flex items-center gap-2 px-4 py-3 border-b border-[#30363D] bg-[#0B0F14]">
+                  <div className="flex gap-1.5">
+                    <div className="w-3 h-3 rounded-full bg-red-500" />
+                    <div className="w-3 h-3 rounded-full bg-yellow-500" />
+                    <div className="w-3 h-3 rounded-full bg-green-500" />
+                  </div>
+                  <div className="ml-4 text-xs font-mono text-gray-500 flex-1 text-center pr-10">
+                    React Component
+                  </div>
                 </div>
-                <div className="ml-4 text-xs font-mono text-gray-500 flex-1 text-center pr-10">
-                  React Component
+                <div className="p-5 font-mono text-sm leading-relaxed text-gray-300">
+                  <p>
+                    <span className="text-purple-400">function</span>{" "}
+                    <span className="text-blue-400">LevelUpMessage</span>(){" "}
+                    {"{"}
+                  </p>
+                  <p className="pl-4">
+                    <span className="text-purple-400">return</span> (
+                  </p>
+                  <p className="pl-8 text-green-400">
+                    &lt;div className="coda-script"&gt;
+                  </p>
+                  <p className="pl-12 text-yellow-300">
+                    &lt;h1&gt;Sizning navbatdagi darajangiz!&lt;/h1&gt;
+                  </p>
+                  <p className="pl-8 text-green-400">&lt;/div&gt;</p>
+                  <p className="pl-4">)</p>
+                  <p>{"}"}</p>
+                  <br />
+                  <p>
+                    <span className="text-purple-400">console</span>.
+                    <span className="text-blue-400">log</span>(
+                    <span className="text-yellow-300">
+                      "Kodingizni tekshiring..."
+                    </span>
+                    );
+                  </p>
                 </div>
-              </div>
-              <div className="p-5 font-mono text-sm leading-relaxed text-gray-300">
-                <p>
-                  <span className="text-purple-400">function</span>{" "}
-                  <span className="text-blue-400">LevelUpMessage</span>() {"{"}
-                </p>
-                <p className="pl-4">
-                  <span className="text-purple-400">return</span> (
-                </p>
-                <p className="pl-8 text-green-400">
-                  &lt;div className="coda-script"&gt;
-                </p>
-                <p className="pl-12 text-yellow-300">
-                  &lt;h1&gt;Sizning navbatdagi darajangiz!&lt;/h1&gt;
-                </p>
-                <p className="pl-8 text-green-400">&lt;/div&gt;</p>
-                <p className="pl-4">)</p>
-                <p>{"}"}</p>
-                <br />
-                <p>
-                  <span className="text-purple-400">console</span>.
-                  <span className="text-blue-400">log</span>(
-                  <span className="text-yellow-300">
-                    "Kodingizni tekshiring..."
-                  </span>
-                  );
-                </p>
               </div>
             </div>
           </div>
