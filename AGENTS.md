@@ -120,4 +120,4 @@ uchun), matn uchun qat'iy string qoldir.
 - `Question` va `Problem` domenlarini aralashtirma — ikkalasi alohida model/route.
 - `apps/web/AGENTS.md`dagi Next.js managed bloqni o'chirma/e'tiborsiz qoldirma (2-bo'limga
   qara) — versiyaga mos hujjat sifatida undan foydalan.
-- Har doim kodga o'zgartirish kiritgandan so'ng (qo'shish yoki o'chirish), o'zgarishlar uchun INGLIZ tilida darhol git commit yozishni (masalan `git add . && git commit -m "..."`) unutmang.
+- Senga to'g'ridan-to'g'ri loyihada `git commit` yoki `git add` kabi buyruqlarni ishlashish QAT'IYAN VA HECH QACHON MUMKIN EMAS. Qachonki nimadir o'zgartirish kiritsang, o'sha kiritgan o'zgartirishing mazmunidan kelib chiqib, commit buyrug'ini faqat menga chat orqali yubor! Men barcha git jarayonlarini O'ZIM MANUAL QILAMAN. Bunga qat'iy rioya qil!
