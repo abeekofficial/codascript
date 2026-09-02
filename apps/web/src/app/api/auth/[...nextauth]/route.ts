@@ -6,11 +6,11 @@ if (!process.env.NEXT_PUBLIC_API_URL) {
   console.warn(
     "⚠️ WARNING: NEXT_PUBLIC_API_URL is not set in NextAuth route, falling back to localhost - this will fail in production ⚠️",
   );
-  if (process.env.VERCEL) {
+  if (process.env.NODE_ENV === 'production') {
     process.env.NEXTAUTH_URL = "https://codascript.vercel.app";
   }
 }
-const API_URL = process.env.NEXT_PUBLIC_API_URL || (process.env.VERCEL ? "https://codascript.onrender.com/api" : "http://127.0.0.1:5000/api");
+const API_URL = process.env.NEXT_PUBLIC_API_URL || (process.env.NODE_ENV === 'production' ? "https://codascript.onrender.com/api" : "http://127.0.0.1:5000/api");
 
 const handler = NextAuth({
   providers: [
