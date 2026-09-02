@@ -128,7 +128,7 @@ export class UserService {
       resetPasswordExpires: new Date(resetPasswordExpires)
     });
 
-    const resetUrl = `${origin}/reset-parol?token=${resetToken}`;
+    const resetUrl = `${origin}/reset-password?token=${resetToken}`;
     const message = `Parolingizni tiklash uchun quyidagi havolaga o'ting:\n\n${resetUrl}\n\nBu havola 15 daqiqadan so'ng o'z kuchini yo'qotadi.`;
 
     try {
@@ -139,10 +139,7 @@ export class UserService {
         message
       });
     } catch (error) {
-      await this.userRepository.update(user._id.toString(), {
-        resetPasswordToken: undefined,
-        resetPasswordExpires: undefined
-      });
+      // DONT reset tokens here, so the user can still use the generated token manually if email fails in QA
       // Test muhitida email xizmatini ulamasdan ham tokenni konsolga chiqaramiz (QA uchun)
       console.log('RESET URL (Email yuborilmadi, lekin QA uchun):', resetUrl);
     }

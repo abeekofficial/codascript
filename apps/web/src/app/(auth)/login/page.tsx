@@ -251,7 +251,7 @@ export default function LoginPage() {
                       type="button" 
                       variant="link" 
                       className="w-full text-gray-400 hover:text-white -mt-2"
-                      onClick={() => router.push('/parolni-unutdim')}
+                      onClick={() => router.push('/forgot-password')}
                     >
                       Parolni unutdingizmi?
                     </Button>

@@ -54,7 +54,7 @@ export function Sidebar() {
       <div className="flex h-16 items-center gap-2.5 border-b border-line px-5">
         <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-neon/15 text-neon">
           {/* <TerminalIcon className="h-5 w-5" aria-hidden="true" /> */}
-          <Image src={"/icon.png"} width={"32"} height={"32"} />
+          <Image src={"/icon.png"} alt="Logo" width={"32"} height={"32"} />
         </span>
         <span className="text-[17px] font-bold tracking-tight">
           Coda<span className="text-neon">Script</span>

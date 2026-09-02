@@ -50,6 +50,12 @@ export default function AdminLayout({
             href="/admin"
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
+            Users
+          </a>
+          <a
+            href="/admin/tests"
+            className="text-sm font-medium text-ink hover:text-neon transition-colors"
+          >
             Quizzes
           </a>
           <a
@@ -57,6 +63,12 @@ export default function AdminLayout({
             className="text-sm font-medium text-ink hover:text-neon transition-colors"
           >
             Problems
+          </a>
+          <a
+            href="/admin/moderation"
+            className="text-sm font-medium text-ink hover:text-neon transition-colors"
+          >
+            Moderation
           </a>
         </div>
 
