@@ -3,6 +3,6 @@ packages:
   - 'packages/*'
 
 allowBuilds:
-  - "esbuild"
-  - "isolated-vm"
-  - "unrs-resolver"
+  esbuild: true
+  isolated-vm: true
+  unrs-resolver: true
