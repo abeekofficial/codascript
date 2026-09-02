@@ -101,7 +101,12 @@ function performLogout() {
   if (typeof window !== 'undefined') {
     localStorage.removeItem('token');
     localStorage.removeItem('refreshToken');
-    window.location.href = '/login';
+    // next-auth/react dan signOut funksiyasini chaqirish
+    import('next-auth/react').then(({ signOut }) => {
+      signOut({ callbackUrl: '/login' });
+    }).catch(() => {
+      window.location.href = '/login';
+    });
   }
 }
 
