@@ -21,5 +21,12 @@
     "@types/node": "^26.2.0",
     "turbo": "^2.10.10",
     "typescript": "^7.0.2"
+  },
+  "pnpm": {
+    "approvedBuilds": [
+      "esbuild",
+      "isolated-vm",
+      "unrs-resolver"
+    ]
   }
 }
