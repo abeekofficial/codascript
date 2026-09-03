@@ -1,4 +1,4 @@
-import { Problem, IProblem } from '../models/Problem';
+import { Problem, IProblem } from "../models/Problem";
 
 export class ProblemRepository {
   async findAll(filter: any = {}): Promise<IProblem[]> {
@@ -10,7 +10,7 @@ export class ProblemRepository {
   }
 
   async findBySlug(slug: string): Promise<IProblem | null> {
-    return Problem.findOne({ slug });
+    return Problem.findOne({ slug }).populate("author", "name username avatar");
   }
 
   async create(data: Partial<IProblem>): Promise<IProblem> {

@@ -1,7 +1,7 @@
-import { ClientProblem, RunResult, TestCaseResult } from '@codascript/types';
-import { IProblem } from '../models/Problem';
-import { ProblemRepository } from '../repositories/problem.repository';
-import { SandboxService } from './sandbox.service';
+import { ClientProblem, RunResult, TestCaseResult } from "@codascript/types";
+import { IProblem } from "../models/Problem";
+import { ProblemRepository } from "../repositories/problem.repository";
+import { SandboxService } from "./sandbox.service";
 
 export class ProblemService {
   private repository: ProblemRepository;
@@ -39,7 +39,7 @@ export class ProblemService {
 
   async updateProblem(
     id: string,
-    data: Partial<IProblem>
+    data: Partial<IProblem>,
   ): Promise<IProblem | null> {
     return this.repository.update(id, data);
   }
@@ -51,11 +51,11 @@ export class ProblemService {
   async submitCode(
     problemId: string,
     code: string,
-    language: string
+    language: string,
   ): Promise<RunResult> {
     const problem = await this.repository.findById(problemId);
     if (!problem) {
-      throw new Error('Problem not found');
+      throw new Error("Problem not found");
     }
 
     if (problem.testCases.length === 0) {
@@ -64,7 +64,7 @@ export class ProblemService {
         success: true,
         data: {
           problemId,
-          status: 'no_test_cases',
+          status: "no_test_cases",
           passedTests: 0,
           totalTests: 0,
           results: [],
@@ -73,8 +73,8 @@ export class ProblemService {
       };
     }
 
-    if (language !== 'javascript') {
-      throw new Error('Only JavaScript is currently supported');
+    if (language !== "javascript") {
+      throw new Error("Only JavaScript is currently supported");
     }
 
     const results: TestCaseResult[] = [];
@@ -90,9 +90,9 @@ export class ProblemService {
       let passed = false;
 
       if (res.error) {
-        if (res.error.includes('timeout') || res.executionTimeMs >= 2000) {
+        if (res.error.includes("timeout") || res.executionTimeMs >= 2000) {
           hasTimeLimitExceeded = true;
-          actualOutput = 'Time Limit Exceeded';
+          actualOutput = "Time Limit Exceeded";
         } else {
           hasRuntimeError = true;
           actualOutput = res.error;
@@ -119,13 +119,13 @@ export class ProblemService {
       }
 
       results.push({
-        input: testCase.isHidden ? 'Hidden Test Case' : testCase.input,
+        input: testCase.isHidden ? "Hidden Test Case" : testCase.input,
         expectedOutput: testCase.isHidden
-          ? 'Hidden Test Case'
+          ? "Hidden Test Case"
           : testCase.expectedOutput,
         actualOutput:
           testCase.isHidden && !res.error && passed
-            ? 'Hidden Test Case'
+            ? "Hidden Test Case"
             : actualOutput,
         passed,
         executionTimeMs: res.executionTimeMs,
@@ -134,16 +134,16 @@ export class ProblemService {
       // Stop on first failure to simulate standard CP platforms, or just run all. Let's run all to give full feedback.
     }
 
-    const passedCount = results.filter(r => r.passed).length;
+    const passedCount = results.filter((r) => r.passed).length;
     const score =
       problem.testCases.length > 0
         ? Math.round((passedCount / problem.testCases.length) * 100)
         : 0;
 
-    let status: RunResult['data']['status'] = 'wrong_answer';
-    if (hasRuntimeError) status = 'runtime_error';
-    else if (hasTimeLimitExceeded) status = 'time_limit_exceeded';
-    else if (allPassed) status = 'accepted';
+    let status: RunResult["data"]["status"] = "wrong_answer";
+    if (hasRuntimeError) status = "runtime_error";
+    else if (hasTimeLimitExceeded) status = "time_limit_exceeded";
+    else if (allPassed) status = "accepted";
 
     return {
       success: true,
@@ -161,14 +161,14 @@ export class ProblemService {
   async runCode(
     problemId: string,
     code: string,
-    language: string
+    language: string,
   ): Promise<RunResult> {
     const problem = await this.repository.findById(problemId);
     if (!problem) {
-      throw new Error('Problem not found');
+      throw new Error("Problem not found");
     }
 
-    const publicTestCases = problem.testCases.filter(tc => !tc.isHidden);
+    const publicTestCases = problem.testCases.filter((tc) => !tc.isHidden);
 
     if (publicTestCases.length === 0) {
       // runCode uchun faqat public testCaselar tekshiriladi
@@ -176,7 +176,7 @@ export class ProblemService {
         success: true,
         data: {
           problemId,
-          status: 'no_test_cases',
+          status: "no_test_cases",
           passedTests: 0,
           totalTests: 0,
           results: [],
@@ -185,8 +185,8 @@ export class ProblemService {
       };
     }
 
-    if (language !== 'javascript') {
-      throw new Error('Only JavaScript is currently supported');
+    if (language !== "javascript") {
+      throw new Error("Only JavaScript is currently supported");
     }
 
     const results: TestCaseResult[] = [];
@@ -202,9 +202,9 @@ export class ProblemService {
       let passed = false;
 
       if (res.error) {
-        if (res.error.includes('timeout') || res.executionTimeMs >= 2000) {
+        if (res.error.includes("timeout") || res.executionTimeMs >= 2000) {
           hasTimeLimitExceeded = true;
-          actualOutput = 'Time Limit Exceeded';
+          actualOutput = "Time Limit Exceeded";
         } else {
           hasRuntimeError = true;
           actualOutput = res.error;
@@ -239,16 +239,16 @@ export class ProblemService {
       });
     }
 
-    const passedCount = results.filter(r => r.passed).length;
+    const passedCount = results.filter((r) => r.passed).length;
     const score =
       publicTestCases.length > 0
         ? Math.round((passedCount / publicTestCases.length) * 100)
         : 0;
 
-    let status: RunResult['data']['status'] = 'wrong_answer';
-    if (hasRuntimeError) status = 'runtime_error';
-    else if (hasTimeLimitExceeded) status = 'time_limit_exceeded';
-    else if (allPassed) status = 'accepted';
+    let status: RunResult["data"]["status"] = "wrong_answer";
+    if (hasRuntimeError) status = "runtime_error";
+    else if (hasTimeLimitExceeded) status = "time_limit_exceeded";
+    else if (allPassed) status = "accepted";
 
     return {
       success: true,
@@ -283,6 +283,7 @@ export class ProblemService {
       examples: p.examples,
       starterCode: p.starterCode,
       tags: p.tags,
+      author: p?.author,
       isActive: p.isActive,
       createdAt: p.createdAt,
       updatedAt: p.updatedAt,

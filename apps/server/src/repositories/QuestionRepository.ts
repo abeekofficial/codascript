@@ -1,5 +1,5 @@
-import { QuestionModel } from '../models/Question';
-import { Question } from '@codascript/types';
+import { QuestionModel } from "../models/Question";
+import { Question } from "@codascript/types";
 
 export class QuestionRepository {
   async create(data: Partial<Question>): Promise<Question> {
@@ -33,70 +33,76 @@ export class QuestionRepository {
   }
 
   async findByTopicAndDifficulty(
-    topic: string, 
-    difficulty: string, 
-    mode: 'topic' | 'mixed', 
-    limit: number | 'all',
-    subtopic?: string
+    topic: string,
+    difficulty: string,
+    mode: "topic" | "mixed",
+    limit: number | "all",
+    subtopic?: string,
   ): Promise<Question[]> {
     const query: any = { isActive: true };
-    if (mode === 'topic' && topic) {
-      query.topic = { $regex: new RegExp('^' + topic + '$', 'i') };
-      if (subtopic && subtopic !== 'Barchasi') {
+    if (mode === "topic" && topic) {
+      query.topic = { $regex: new RegExp("^" + topic + "$", "i") };
+      if (subtopic && subtopic !== "Barchasi") {
         query.subtopic = subtopic;
       }
     }
-    if (difficulty !== 'mixed') {
+    if (difficulty !== "mixed") {
       query.difficulty = difficulty;
     }
 
     // Using aggregation to randomize directly in DB
     const pipeline: any[] = [
-      { $match: query }, 
-      { $sample: { size: limit === 'all' ? 10000 : limit } },
+      { $match: query },
+      { $sample: { size: limit === "all" ? 10000 : limit } },
       {
         $lookup: {
-          from: 'users',
-          localField: 'author',
-          foreignField: '_id',
-          as: 'authorData'
-        }
+          from: "users",
+          localField: "author",
+          foreignField: "_id",
+          as: "authorData",
+          pipeline: [{ $project: { name: 1, username: 1, avatar: 1 } }],
+        },
       },
       {
         $addFields: {
-          author: { $arrayElemAt: ['$authorData', 0] }
-        }
+          author: { $arrayElemAt: ["$authorData", 0] },
+        },
       },
       {
         $project: {
-          authorData: 0
-        }
-      }
+          authorData: 0,
+        },
+      },
     ];
     return QuestionModel.aggregate(pipeline);
   }
 
   async getTopics(): Promise<string[]> {
-    return QuestionModel.distinct('topic', { isActive: true });
+    return QuestionModel.distinct("topic", { isActive: true });
   }
 
   async getSubtopics(topic: string): Promise<string[]> {
-    return QuestionModel.distinct('subtopic', { 
-      topic: { $regex: new RegExp('^' + topic + '$', 'i') }, 
-      isActive: true, 
-      subtopic: { $ne: null } 
+    return QuestionModel.distinct("subtopic", {
+      topic: { $regex: new RegExp("^" + topic + "$", "i") },
+      isActive: true,
+      subtopic: { $ne: null },
     });
   }
 
-  async getCount(topic: string, difficulty: string, mode: 'topic' | 'mixed', subtopic?: string): Promise<number> {
+  async getCount(
+    topic: string,
+    difficulty: string,
+    mode: "topic" | "mixed",
+    subtopic?: string,
+  ): Promise<number> {
     const query: any = { isActive: true };
-    if (mode === 'topic' && topic) {
-      query.topic = { $regex: new RegExp('^' + topic + '$', 'i') };
-      if (subtopic && subtopic !== 'Barchasi') {
+    if (mode === "topic" && topic) {
+      query.topic = { $regex: new RegExp("^" + topic + "$", "i") };
+      if (subtopic && subtopic !== "Barchasi") {
         query.subtopic = subtopic;
       }
     }
-    if (difficulty !== 'mixed') {
+    if (difficulty !== "mixed") {
       query.difficulty = difficulty;
     }
     return QuestionModel.countDocuments(query);
