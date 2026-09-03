@@ -75,6 +75,8 @@ export const submitProblem: RequestHandler = async (req: AuthRequest, res: Respo
 
     await notifyCommunitySubmission('problem', newProblem._id, newProblem.title, req.userId as string);
 
+    await newProblem.populate('author', 'name username avatar');
+
     res.status(201).json({ success: true, data: newProblem });
   } catch (error: any) {
     res.status(500).json({ success: false, message: error.message });
@@ -141,6 +143,8 @@ export const submitQuestion: RequestHandler = async (req: AuthRequest, res: Resp
     });
 
     await notifyCommunitySubmission('question', newQuestion._id, newQuestion.question, req.userId as string);
+
+    await newQuestion.populate('author', 'name username avatar');
 
     res.status(201).json({ success: true, data: newQuestion });
   } catch (error: any) {

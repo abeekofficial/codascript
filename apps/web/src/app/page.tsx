@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { useAuthStore } from "@/store/authStore";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function LandingPage() {
   const { isAuthenticated, isHydrated } = useAuthStore();
@@ -35,7 +36,13 @@ export default function LandingPage() {
       <header className="flex items-center justify-between px-6 py-4 md:px-12 border-b border-[#1F2937]/50 sticky top-0 bg-[#0B0F14]/90 backdrop-blur z-50">
         <div className="flex items-center gap-2">
           <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-neon/15 text-neon">
-            <TerminalIcon className="h-5 w-5" aria-hidden="true" />
+            {/* <TerminalIcon className="h-5 w-5" aria-hidden="true" /> */}
+            <Image
+              src={"/icon.png"}
+              width={32}
+              height={32}
+              alt="Codascript Icon"
+            />
           </span>
           <span className="text-[17px] font-bold tracking-tight text-white">
             Coda<span className="text-neon">Script</span>

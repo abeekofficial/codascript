@@ -1,6 +1,10 @@
 import { QuestionModel } from "../models/Question";
 import { Question } from "@codascript/types";
 
+function escapeRegex(input: string): string {
+  return input.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
 export class QuestionRepository {
   async create(data: Partial<Question>): Promise<Question> {
     const q = new QuestionModel(data);
@@ -41,7 +45,7 @@ export class QuestionRepository {
   ): Promise<Question[]> {
     const query: any = { isActive: true };
     if (mode === "topic" && topic) {
-      query.topic = { $regex: new RegExp("^" + topic + "$", "i") };
+      query.topic = { $regex: new RegExp("^" + escapeRegex(topic) + "$", "i") };
       if (subtopic && subtopic !== "Barchasi") {
         query.subtopic = subtopic;
       }
@@ -83,7 +87,7 @@ export class QuestionRepository {
 
   async getSubtopics(topic: string): Promise<string[]> {
     return QuestionModel.distinct("subtopic", {
-      topic: { $regex: new RegExp("^" + topic + "$", "i") },
+      topic: { $regex: new RegExp("^" + escapeRegex(topic) + "$", "i") },
       isActive: true,
       subtopic: { $ne: null },
     });
@@ -97,7 +101,7 @@ export class QuestionRepository {
   ): Promise<number> {
     const query: any = { isActive: true };
     if (mode === "topic" && topic) {
-      query.topic = { $regex: new RegExp("^" + topic + "$", "i") };
+      query.topic = { $regex: new RegExp("^" + escapeRegex(topic) + "$", "i") };
       if (subtopic && subtopic !== "Barchasi") {
         query.subtopic = subtopic;
       }

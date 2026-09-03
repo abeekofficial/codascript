@@ -129,9 +129,8 @@ export const getFollowing: RequestHandler = async (req: Request, res: Response):
 router.get('/:username/followers', getFollowers);
 router.get('/:username/following', getFollowing);
 
-router.use(protect);
-router.get('/recommendations', getRecommendations);
-router.post('/:id/follow', followUser);
-router.post('/:id/unfollow', unfollowUser);
+router.get('/recommendations', protect, getRecommendations);
+router.post('/:id/follow', protect, followUser);
+router.post('/:id/unfollow', protect, unfollowUser);
 
 export default router;

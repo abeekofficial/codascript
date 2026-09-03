@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { useAuthStore } from '@/store/authStore';
@@ -21,10 +21,12 @@ export default function LoginPage() {
   const login = useAuthStore((state) => state.login);
   const router = useRouter();
   const { data: session, status } = useSession();
+  const hasAttemptedLogin = useRef(false);
 
   useEffect(() => {
-    if (status === 'authenticated') {
+    if (status === 'authenticated' && !hasAttemptedLogin.current) {
       if (session && (session as any).accessToken) {
+        hasAttemptedLogin.current = true;
         setLoading(true);
         const accessToken = (session as any).accessToken;
         const refreshToken = (session as any).refreshToken;
@@ -52,8 +54,11 @@ export default function LoginPage() {
           .catch(() => {
             setError('OAuth profilini olishda xatolik yuz berdi');
             setLoading(false);
+            // Optionally sign out so they aren't stuck authenticated with no profile
+            signOut({ redirect: false });
           });
       } else {
+        hasAttemptedLogin.current = true;
         setError('Backend bilan ulanishda xatolik. Iltimos qayta urinib ko\'ring.');
         signOut({ redirect: false });
       }

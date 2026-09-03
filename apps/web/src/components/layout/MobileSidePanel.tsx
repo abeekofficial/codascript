@@ -1,17 +1,26 @@
-'use client';
-import React, { useEffect } from 'react';
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
-import { UserIcon, SettingsIcon, ZapIcon, BookmarkIcon, UsersIcon, HelpCircleIcon, LogOutIcon, ShieldIcon } from 'lucide-react';
-import { useAuthStore } from '@/store/authStore';
+"use client";
+import React, { useEffect } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { motion, AnimatePresence } from "framer-motion";
+import {
+  UserIcon,
+  SettingsIcon,
+  ZapIcon,
+  BookmarkIcon,
+  UsersIcon,
+  HelpCircleIcon,
+  LogOutIcon,
+  ShieldIcon,
+} from "lucide-react";
+import { useAuthStore } from "@/store/authStore";
 
 // Note: /notifications is omitted as it does not exist in the codebase.
 const PANEL_LINKS = [
-  { to: '/profile', label: 'Profilim', icon: UserIcon },
-  { to: '/settings', label: 'Sozlamalar', icon: SettingsIcon },
-  { to: '/saved', label: 'Saqlanganlar', icon: BookmarkIcon },
-  { to: '/help', label: 'Yordam', icon: HelpCircleIcon }
+  { to: "/profile", label: "Profilim", icon: UserIcon },
+  { to: "/settings", label: "Sozlamalar", icon: SettingsIcon },
+  { to: "/saved", label: "Saqlanganlar", icon: BookmarkIcon },
+  { to: "/help", label: "Yordam", icon: HelpCircleIcon },
 ];
 
 interface MobileSidePanelProps {
@@ -26,21 +35,21 @@ export function MobileSidePanel({ isOpen, onClose }: MobileSidePanelProps) {
   // Close panel on escape key
   useEffect(() => {
     const handleEscape = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') onClose();
+      if (e.key === "Escape") onClose();
     };
-    if (isOpen) document.addEventListener('keydown', handleEscape);
-    return () => document.removeEventListener('keydown', handleEscape);
+    if (isOpen) document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
   }, [isOpen, onClose]);
 
   // Prevent scrolling when panel is open
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isOpen]);
 
@@ -62,45 +71,51 @@ export function MobileSidePanel({ isOpen, onClose }: MobileSidePanelProps) {
             className="absolute inset-0 bg-bg/80 backdrop-blur-sm"
             onClick={onClose}
           />
-          
+
           {/* Panel */}
           <motion.div
-            initial={{ x: '100%' }}
+            initial={{ x: "100%" }}
             animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ type: 'tween', duration: 0.3 }}
+            exit={{ x: "100%" }}
+            transition={{ type: "tween", duration: 0.3 }}
             className="absolute right-0 top-0 h-full w-[85%] max-w-sm bg-bg border-l border-line shadow-2xl flex flex-col"
           >
             {/* Header / User Info */}
             <div className="p-5 flex flex-col gap-4 border-b border-line">
               <div className="flex items-center gap-3">
                 {user?.avatar ? (
-                  <img src={user?.avatar} alt="Avatar" className="h-12 w-12 rounded-full object-cover" />
+                  <img
+                    src={user?.avatar}
+                    alt="Avatar"
+                    className="h-12 w-12 rounded-full object-cover"
+                  />
                 ) : (
                   <span className="flex h-12 w-12 items-center justify-center rounded-full bg-neon/15 text-neon text-lg font-bold">
                     {user?.name?.charAt(0).toUpperCase() || "U"}
                   </span>
                 )}
                 <div className="flex flex-col">
-                  <span className="font-semibold text-ink">{user?.name || "User"}</span>
+                  <span className="font-semibold text-ink">
+                    {user?.name || "User"}
+                  </span>
                   <span className="inline-flex w-fit items-center rounded-full bg-neon/10 px-2.5 py-0.5 text-xs font-medium text-neon mt-1">
                     Level {user?.level || 1}
                   </span>
                 </div>
               </div>
-              
+
               {/* XP Progress Bar */}
               <div className="flex flex-col gap-1.5 mt-2">
                 <div className="flex items-center justify-between text-sm font-medium">
                   <span className="flex items-center gap-2 text-neon">
                     <ZapIcon className="h-4 w-4" />
-                    {user?.score || 0} XP
+                    {user?.totalXP || 0} XP
                   </span>
                 </div>
                 <div className="h-1.5 w-full rounded-full bg-elevated overflow-hidden">
-                  <div 
-                    className="h-full bg-neon transition-all duration-500" 
-                    style={{ width: `${((user?.score || 0) % 1000) / 10}%` }} 
+                  <div
+                    className="h-full bg-neon transition-all duration-500"
+                    style={{ width: `${((user?.totalXP || 0) % 1000) / 10}%` }}
                   />
                 </div>
               </div>
@@ -116,7 +131,9 @@ export function MobileSidePanel({ isOpen, onClose }: MobileSidePanelProps) {
                     href={to}
                     onClick={onClose}
                     className={`flex items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium transition-colors ${
-                      isActive ? "text-neon bg-neon/5" : "text-ink-dim hover:text-ink hover:bg-elevated"
+                      isActive
+                        ? "text-neon bg-neon/5"
+                        : "text-ink-dim hover:text-ink hover:bg-elevated"
                     }`}
                   >
                     <Icon className="h-[18px] w-[18px]" />
@@ -128,12 +145,14 @@ export function MobileSidePanel({ isOpen, onClose }: MobileSidePanelProps) {
 
             {/* Logout Button */}
             <div className="p-4 border-t border-line mt-auto flex flex-col gap-1">
-              {user?.role === 'admin' && (
+              {user?.role === "admin" && (
                 <Link
                   href="/admin"
                   onClick={onClose}
                   className={`flex items-center gap-4 rounded-xl px-4 py-3 text-sm font-medium transition-colors ${
-                    pathname.startsWith('/admin') ? "text-neon bg-neon/5" : "text-ink-dim hover:text-ink hover:bg-elevated"
+                    pathname.startsWith("/admin")
+                      ? "text-neon bg-neon/5"
+                      : "text-ink-dim hover:text-ink hover:bg-elevated"
                   }`}
                 >
                   <ShieldIcon className="h-[18px] w-[18px]" />
