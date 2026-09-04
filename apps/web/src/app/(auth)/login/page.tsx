@@ -52,14 +52,14 @@ export default function LoginPage() {
             router.push('/dashboard');
           })
           .catch(() => {
-            setError('OAuth profilini olishda xatolik yuz berdi');
+            setError('OAuth profilini olishda xatolik yuz berdi. Balki server uxlab qolgandir, iltimos qayta urinib ko\'ring.');
             setLoading(false);
+            hasAttemptedLogin.current = false;
             // Optionally sign out so they aren't stuck authenticated with no profile
             signOut({ redirect: false });
           });
       } else {
-        hasAttemptedLogin.current = true;
-        setError('Backend bilan ulanishda xatolik. Iltimos qayta urinib ko\'ring.');
+        setError('Backend bilan ulanishda xatolik (Token olinmadi). Iltimos biroz kuting va qayta urinib ko\'ring.');
         signOut({ redirect: false });
       }
     }

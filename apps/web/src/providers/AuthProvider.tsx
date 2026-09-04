@@ -30,8 +30,11 @@ export default function AuthProvider({ children }: { children: React.ReactNode }
             completedQuizzes: profile.completedQuizzes,
           });
         })
-        .catch(() => {
-          logout();
+        .catch((err) => {
+          console.error("Failed to fetch profile in AuthProvider", err);
+          // Do not call logout() here!
+          // If the error was a 401 Unauthorized, api.ts fetchWithAuth will automatically handle the logout/refresh mechanism.
+          // If the error was a 504 Gateway Timeout or Network Error (e.g. Render server sleeping), logging out the user is a bad user experience.
         });
     }
   }, [isHydrated, isAuthenticated, user, setUser, logout]);
