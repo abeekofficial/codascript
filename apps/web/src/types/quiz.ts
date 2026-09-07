@@ -28,7 +28,7 @@ export interface QuizConfig {
   tech: TechId;
   subtopic?: string;
   difficulty: DifficultyFilter;
-  count: number;
+  count: number | 'all';
 }
 
 export interface QuizResult {

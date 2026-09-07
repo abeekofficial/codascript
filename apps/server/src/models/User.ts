@@ -27,4 +27,6 @@ const userSchema = new Schema<User>({
   isBanned: { type: Boolean, default: false }
 }, { timestamps: true });
 
+userSchema.index({ totalXP: -1 });
+userSchema.index({ email: 1 }); // might be useful
 export const UserModel = mongoose.model<User>('User', userSchema);

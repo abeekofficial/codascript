@@ -5,7 +5,10 @@ export const startQuizSchema = z.object({
     topic: z.string(),
     difficulty: z.enum(['mixed', 'easy', 'medium', 'hard']).optional().default('mixed'),
     mode: z.enum(['topic', 'mixed']).optional().default('topic'),
-    count: z.number().int().min(1).max(50).optional().default(10),
+    count: z.union([
+      z.number().int().min(1).max(100),
+      z.literal('all')
+    ]).optional().default(10),
     subtopic: z.string().optional()
   })
 });

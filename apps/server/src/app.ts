@@ -8,7 +8,17 @@ import helmet from 'helmet';
 
 const app = express();
 
-app.use(helmet());
+app.use(helmet({
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "https:"],
+      connectSrc: ["'self'"]
+    }
+  }
+}));
 
 const allowedOrigins = [
   'http://localhost:3000',
@@ -43,6 +53,10 @@ const limiter = rateLimit({
   max: 100
 });
 app.use(limiter);
+
+app.get('/', (req, res) => {
+  res.send('CodaScript API is running. Access /api for endpoints.');
+});
 
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'ok' });

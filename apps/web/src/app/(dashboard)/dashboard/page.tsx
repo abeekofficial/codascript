@@ -156,8 +156,15 @@ export default function Dashboard() {
         </div>
         <ul className="divide-y divide-line">
           {recentAttempts.length === 0 ? (
-            <div className="py-8 text-center text-ink-muted text-sm">
-              Hozircha natijalar yo'q. Birinchi testingizni ishlashni boshlang!
+            <div className="py-10 text-center flex flex-col items-center gap-4">
+              <p className="text-ink-muted text-sm">Hozircha natijalar yo'q.</p>
+              <Link
+                href="/quizzes"
+                className="flex items-center gap-2 rounded-xl bg-neon px-5 py-2.5 text-sm font-semibold text-bg transition-colors duration-150 hover:bg-neon-hover"
+              >
+                <PlayIcon className="h-4 w-4" aria-hidden="true" />
+                Birinchi testni boshlash
+              </Link>
             </div>
           ) : (
             recentAttempts.map((a: any) => (

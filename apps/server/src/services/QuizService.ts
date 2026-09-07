@@ -2,6 +2,8 @@ import { QuizAttemptRepository } from "../repositories/QuizAttemptRepository";
 import { QuestionRepository } from "../repositories/QuestionRepository";
 import { QuizAnswer } from "@codascript/types";
 import crypto from "crypto";
+import { UserModel } from "../models/User";
+import { QuizAttemptModel } from "../models/QuizAttempt";
 
 export class QuizService {
   private attemptRepo = new QuizAttemptRepository();
@@ -109,10 +111,37 @@ export class QuizService {
     let correctAnswerText = "";
 
     if (question.type === "code") {
-      // Code questions are evaluated client-side in a sandbox, so we trust the client's assertion
-      // selectedOptionIndex will be 1 if it passed all tests, 0 otherwise
-      isCorrect = selectedOptionIndex === 1;
-      correctAnswerText = "Code Execution Tests Passed";
+      if (!question.testCases || question.testCases.length === 0) {
+        isCorrect = false;
+        correctAnswerText = "No test cases found";
+      } else {
+        const { SandboxService } = require("./sandbox.service");
+        let allPassed = true;
+        for (const testCase of question.testCases) {
+          const res = await SandboxService.executeJavascript(selectedOptionText || "", testCase.input);
+          if (res.error) {
+            allPassed = false;
+            break;
+          }
+          const actTrim = res.output.trim();
+          const expTrim = testCase.expectedOutput.trim();
+          if (actTrim !== expTrim) {
+            try {
+              const actJson = JSON.parse(actTrim);
+              const expJson = JSON.parse(expTrim);
+              if (JSON.stringify(actJson) !== JSON.stringify(expJson)) {
+                allPassed = false;
+                break;
+              }
+            } catch {
+              allPassed = false;
+              break;
+            }
+          }
+        }
+        isCorrect = allPassed;
+        correctAnswerText = "Code Execution Tests Passed";
+      }
     } else {
       // Multiple choice
       correctAnswerText = question.options[question.correctOptionId];
@@ -169,7 +198,7 @@ export class QuizService {
     // Update user stats
     const earnedXP = attempt.correctAnswers * 10;
 
-    const { UserModel } = require("../models/User");
+    
     const user = await UserModel.findById(userId);
     if (user) {
       user.totalXP = (user.totalXP || 0) + earnedXP;
@@ -211,7 +240,7 @@ export class QuizService {
    * Foydalanuvchining profil statistikasini hisoblash
    */
   async getProfileStats(userId: string) {
-    const { QuizAttemptModel } = require("../models/QuizAttempt");
+    
 
     const stats = await QuizAttemptModel.aggregate([
       { $match: { userId, status: "completed" } },
@@ -258,7 +287,7 @@ export class QuizService {
    * Oylik o'sish grafigi uchun aggregatsiya
    */
   async getGrowthData(userId: string) {
-    const { QuizAttemptModel } = require("../models/QuizAttempt");
+    
 
     // So'nggi 8 oyni olish
     const eightMonthsAgo = new Date();
@@ -315,7 +344,7 @@ export class QuizService {
    * Mavzular bo'yicha ko'nikma darajasi
    */
   async getSkillStats(userId: string) {
-    const { QuizAttemptModel } = require("../models/QuizAttempt");
+    
 
     const skills = await QuizAttemptModel.aggregate([
       { $match: { userId, status: "completed" } },

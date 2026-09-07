@@ -97,10 +97,14 @@ async function fetchWithAuth(
   return res;
 }
 
+import { useAuthStore } from '../store/authStore';
+
 function performLogout() {
   if (typeof window !== 'undefined') {
     localStorage.removeItem('token');
     localStorage.removeItem('refreshToken');
+    useAuthStore.getState().logout();
+    
     // next-auth/react dan signOut funksiyasini chaqirish
     import('next-auth/react').then(({ signOut }) => {
       signOut({ callbackUrl: '/login' });

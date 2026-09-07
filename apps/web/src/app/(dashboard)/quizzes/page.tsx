@@ -48,18 +48,18 @@ export default function TestTanlash() {
 
   const dynamicCounts = useMemo(() => {
     const fitting = QUESTION_COUNTS.filter((c) => c <= available);
-    if (fitting.length === 0 && available > 0) return [available];
-    return fitting;
+    if (fitting.length === 0 && available > 0) return [available, 'all'];
+    return [...fitting, 'all'];
   }, [available]);
 
   useEffect(() => {
-    if (dynamicCounts.length > 0 && !dynamicCounts.includes(count)) {
-      setCount(dynamicCounts[0]);
+    if (dynamicCounts.length > 0 && !dynamicCounts.includes(count as any)) {
+      setCount(dynamicCounts[0] as any);
     }
   }, [dynamicCounts, count]);
 
-  const notEnough = available === 0 || !dynamicCounts.includes(count);
-  const estimatedMinutes = Math.round(count * 1.2);
+  const notEnough = available === 0 || !dynamicCounts.includes(count as any);
+  const estimatedMinutes = Math.round((count === 'all' ? available : count) * 1.2);
 
   const [starting, setStarting] = useState(false);
 
@@ -81,7 +81,7 @@ export default function TestTanlash() {
       useQuizStore.getState().startQuiz(
         data.quizId,
         data.questions,
-        count * 60, // 1 min per question
+        (count === 'all' ? available : count) * 60, // 1 min per question
       );
       useQuizStore.getState().setQuizConfig({
         topic: tech,
@@ -218,13 +218,13 @@ export default function TestTanlash() {
                 {dynamicCounts.map((c) => {
                   const active = c === count;
                   // Wait for loading or check against available
-                  const disabled = !isLoading && c > available;
+                  const disabled = !isLoading && c !== 'all' && (c as number) > available;
                   return (
                     <button
                       key={c}
                       type="button"
                       disabled={disabled}
-                      onClick={() => setCount(c)}
+                      onClick={() => setCount(c as any)}
                       aria-pressed={active}
                       className={[
                         "rounded-xl border py-4 text-center transition-colors duration-150",
@@ -235,9 +235,9 @@ export default function TestTanlash() {
                             : "border-line bg-elevated text-ink-dim hover:border-ink-muted hover:text-ink",
                       ].join(" ")}
                     >
-                      <span className="block text-xl font-bold">{c}</span>
+                      <span className="block text-xl font-bold">{c === 'all' ? 'Barchasi' : c}</span>
                       <span className="block text-[11px] text-ink-muted">
-                        savol
+                        {c === 'all' ? 'savollar' : 'savol'}
                       </span>
                     </button>
                   );
@@ -270,7 +270,7 @@ export default function TestTanlash() {
               </div>
               <div className="flex items-center justify-between">
                 <dt className="text-ink-dim">Savollar</dt>
-                <dd className="font-medium">{count} ta</dd>
+                <dd className="font-medium">{count === 'all' ? 'Barchasi' : `${count} ta`}</dd>
               </div>
               <div className="flex items-center justify-between">
                 <dt className="text-ink-dim">Taxminiy vaqt</dt>
@@ -286,7 +286,7 @@ export default function TestTanlash() {
                 <dt className="text-ink-dim">Mumkin XP</dt>
                 <dd className="flex items-center gap-1.5 font-medium text-neon">
                   <ZapIcon className="h-3.5 w-3.5" aria-hidden="true" />
-                  {count * 10} XP
+                  {(count === 'all' ? available : count) * 10} XP
                 </dd>
               </div>
             </dl>
